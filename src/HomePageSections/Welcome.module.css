@@ -1,0 +1,135 @@
+.welcome {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    height: 80vh;
+
+    margin: 6% 1%;
+    margin-bottom: 6%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.mainPart {
+    /* background-color: rgba(238, 130, 238, 0.5); */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0% 2%;
+    /* border-bottom: 1px solid #ffffff; */
+}
+
+.mainHead {
+    font-size: 5em;
+}
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect;
+    animation: 1s linear infinite condemned_blink_effect;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+/* .mainHead {
+    display: inline-block;
+    position: relative;
+}
+
+.mainHead:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.mainHead:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+/* .illustrations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 2%;
+} */
+
+/* .rightIllustration {
+    width: 100px;
+} */
+
+.figure {
+    height: 60vh;
+}
+
+.hLine {
+    width: 99%;
+    margin: 0% auto;
+    padding: 0%;
+
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.scroll {
+    /* background-color: rgba(0, 128, 0, 0.5); */
+    margin: 0% auto;
+    margin-top: auto;
+    padding: 0%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    font-size: 2em;
+    transform: rotate(90deg);
+    /* text-align: center; */
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
