@@ -62,6 +62,16 @@ blink {
     }
 }
 
+.blink_me {
+    animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 /* .mainHead {
     display: inline-block;
     position: relative;
@@ -131,5 +141,4 @@ blink {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
