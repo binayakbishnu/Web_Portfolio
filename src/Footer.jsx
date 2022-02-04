@@ -23,30 +23,30 @@ export default function Footer() {
         <footer className={`${footerStyles.footerParent}`}>
             <MDBFooter className={`${footerStyles.MDBParent} text-center`} color='black'>
                 <MDBContainer className='p-4'>
-                    <section className='mb-4'>
-                        <a className='btn btn-outline-light btn-floating m-1' href='https://www.github.com/BinayakBishnu' role='button' target='_blank'>
+                    <section className={`${footerStyles.socialIconSection} mb-4`}>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 ms-0`} href='https://www.github.com/BinayakBishnu' role='button' target='_blank'>
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
 
-                        <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
 
-                        <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
                             <FontAwesomeIcon icon={faBehance} />
                         </a>
 
-                        <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
 
-                        <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} href='#!' role='button'>
                             <FontAwesomeIcon icon={faContactCard} />
                         </a>
 
                         {/* <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
                         <MDBIcon fab icon='github' />
-                    </a> */}
+                        </a> */}
                     </section>
 
                     <section className=''>
@@ -73,9 +73,7 @@ export default function Footer() {
 
                     <section className='mb-4'>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-                            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-                            sequi voluptate quas.
+                            <strong>Peace!</strong>✌
                         </p>
                     </section>
 
