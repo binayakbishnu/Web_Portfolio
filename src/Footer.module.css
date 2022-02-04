@@ -1,0 +1,19 @@
+.footerParent{
+    /* background-color:red; */
+    padding-bottom: 1%;
+}
+
+.MDBParent{
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    /* height: 80vh; */
+
+    margin: 6% 1%;
+    margin-bottom: 0%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}

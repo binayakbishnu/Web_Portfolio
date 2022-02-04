@@ -23,7 +23,7 @@ import navStyles from './Navbar.module.css'
 
 export default function Nav() {
     return (
-        <nav className={`${navStyles.nav}`}>
+        <nav className={`${navStyles.navParent}`}>
             {/* <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
