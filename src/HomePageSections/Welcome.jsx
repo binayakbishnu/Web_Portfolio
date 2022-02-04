@@ -1,3 +1,8 @@
+/**
+ * This is a React component that renders a welcome page
+ * @returns A section element with a class of `welcome` and a child element of `div` with a class of
+ * `mainPart`.
+ */
 import React from 'react'
 // import Blink from 'react-blink-text';
 
@@ -20,10 +25,10 @@ function Welcome() {
                     <h1 className={`${welcomeStyles.mainHead}`}>
                         Welcome,<br />
                         I am<br />
-                        {/* Binayak Bishnu<blink classname={`${welcomeStyles.blinker}`}>_</blink> */}
+                        Binayak Bishnu<blink classname={`${welcomeStyles.blinker}`}>_</blink>
                         {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
                         {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
-                        Binayak Bishnu<BlinkingText />
+                        {/* Binayak Bishnu<BlinkingText /> */}
                     </h1>
                 {/* <div>
                     <h1 className={`${welcomeStyles.mainHead}`}>

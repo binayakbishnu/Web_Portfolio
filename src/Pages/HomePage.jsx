@@ -1,3 +1,6 @@
+/**
+ * This function is used to display the home page of the website
+ */
 import React from 'react'
 
 import AboutMe from '../HomePageSections/AboutMe'
@@ -23,7 +26,7 @@ function HomePage() {
 
             <AboutMe />
 
-            {/* <article className={`${homePageStyles.contactParent}`}>
+            <article className={`${homePageStyles.contactParent}`}>
                 <section className={`${homePageStyles.contactSection}`}>
                     <h2 className={`${homePageStyles.contactHead}`}>My Contact Details</h2>
 
@@ -46,7 +49,7 @@ function HomePage() {
                 <div className={`${homePageStyles.contactCloseDiv}`}>
                     <input type="button" value="X" className={`${homePageStyles.contactClose}`} onclick={closeContactBox} />
                 </div>
-            </article> */}
+            </article>
         </div>
     )
 }

@@ -1,3 +1,11 @@
+/**
+ * It creates a navbar with links to the home page, about page, and contact page. It also has a
+ * dropdown menu with links to the projects page.
+ * @returns The Navbar component is returning a Navbar element with a container element inside of it.
+ * The Navbar element is a bootstrap element that is used to create a navbar. The container element is
+ * a bootstrap element that is used to create a container for the navbar. The Navbar element is being
+ * given
+ */
 import React from 'react'
 import { NavLink } from "react-router-dom";
 
