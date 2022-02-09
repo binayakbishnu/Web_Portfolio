@@ -46,7 +46,7 @@ export default function Nav() {
                     <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
                         <ReactBootstrap.Nav className="me-auto">
-                            <ReactBootstrap.Nav.Link href="#features" className={`${navStyles.links} ${navStyles.leftLinks}`}>About Me</ReactBootstrap.Nav.Link>
+                            <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`}>About Me</ReactBootstrap.Nav.Link>
                             <ReactBootstrap.Nav.Link href="#features" className={`${navStyles.links} ${navStyles.leftLinks}`}>Tech Stack</ReactBootstrap.Nav.Link>
                             <ReactBootstrap.NavDropdown title="Top Projects" id="collasible-nav-dropdown" className={`${navStyles.links} ${navStyles.leftLinks}`}>
                                 <ReactBootstrap.NavDropdown.Item href="#action/3.1">Project 1</ReactBootstrap.NavDropdown.Item>
