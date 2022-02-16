@@ -28,19 +28,19 @@ export default function Footer() {
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
 
-                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.linkedin.com/in/binayakbishnu' role='button' target='_blank'>
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
 
-                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.behance.net/binayakbishnu' role='button' target='_blank'>
                             <FontAwesomeIcon icon={faBehance} />
                         </a>
 
-                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayak_bishnu' role='button' target='_blank'>
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
 
-                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} href='#!' role='button'>
+                        <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} href='#!' role='button' target='_blank'>
                             <FontAwesomeIcon icon={faContactCard} />
                         </a>
 
@@ -190,10 +190,10 @@ export default function Footer() {
                     </section>
                 </MDBContainer>
 
-                <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                    &copy; 2020 Copyright:
-                    <a className='text-white' href='https://mdbootstrap.com/'>
-                        MDBootstrap.com
+                <div className='text-white text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                    Binayak Bishnu &nbsp;
+                    <a className='text-white' href='https://github.com/BinayakBishnu' target='_blank'>
+                        Know me
                     </a>
                 </div>
             </MDBFooter>
