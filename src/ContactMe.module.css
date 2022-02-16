@@ -1,0 +1,97 @@
+
+
+.contactParent {
+    width: fit-content;
+    height: fit-content;
+
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    margin: auto;
+
+    padding: 2%;
+    padding-right: 5%;
+}
+
+.contactSection {
+    /* background-color: purple; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contactHead {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ContactContentMainParent {
+    /* background-color: red; */
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ContactContentMainDiv {
+    /* background-color: green; */
+    margin: 2% 0%;
+}
+
+.contactIconsMain {
+    font-size: 1.2em !important;
+}
+
+.ContactContentMain {
+    margin-left: 8px;
+}
+
+.contactCloseDiv {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    background-color: rgba(255, 255, 255, 0);
+
+    font-weight: bold;
+
+    margin-top: -12px;
+    margin-right: -12px;
+
+    padding: 0%;
+}
+
+.contactClose {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+
+    font-weight: bold;
+
+    margin: 0%;
+}
