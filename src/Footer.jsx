@@ -77,7 +77,7 @@ export default function Footer() {
                         </p>
                     </section>
 
-                    <section className=''>
+                    {/* <section className=''>
                         <MDBRow>
                             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                                 <h5 className='text-uppercase'>Links</h5>
@@ -187,13 +187,13 @@ export default function Footer() {
                                 </ul>
                             </MDBCol>
                         </MDBRow>
-                    </section>
+                    </section> */}
                 </MDBContainer>
 
                 <div className='text-white text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                    Binayak Bishnu &nbsp;
-                    <a className='text-white' href='https://github.com/BinayakBishnu' target='_blank'>
-                        Know me
+                    {/* Binayak Bishnu &nbsp; */}
+                    <a className='text-white' href='#welcome'>
+                        Go up
                     </a>
                 </div>
             </MDBFooter>
