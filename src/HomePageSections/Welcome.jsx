@@ -22,14 +22,14 @@ function Welcome() {
                 {/* <video autoPlay muted loop className={`${welcomeStyles.vid}`} autoplay>
                     <source src={video} type="video/mp4" />
                 </video> */}
-                    <h1 className={`${welcomeStyles.mainHead}`}>
-                        Welcome,<br />
-                        I am<br />
-                        Binayak Bishnu<blink classname={`${welcomeStyles.blinker}`}>_</blink>
-                        {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
-                        {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
-                        {/* Binayak Bishnu<BlinkingText /> */}
-                    </h1>
+                <h1 className={`${welcomeStyles.mainHead}`}>
+                    Welcome,<br />
+                    I am<br />
+                    Binayak Bishnu<blink classname={`${welcomeStyles.blinker}`}>_</blink>
+                    {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
+                    {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
+                    {/* Binayak Bishnu<BlinkingText /> */}
+                </h1>
                 {/* <div>
                     <h1 className={`${welcomeStyles.mainHead}`}>
                         Welcome,
@@ -55,7 +55,7 @@ function Welcome() {
             <hr className={`${welcomeStyles.hLine}`} />
 
             <div className={`${welcomeStyles.scroll}`}>
-                &#xbb;
+                <a href="#aboutme">&#xbb;</a>
             </div>
         </section>
     )
