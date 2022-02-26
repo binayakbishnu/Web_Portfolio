@@ -60,7 +60,7 @@
 }
 
 .textParent {
-    height: 70vh;
+    height: 90%;
 
     /* background-color: purple; */
     background-color: rgba(255, 255, 255, 0.15);
@@ -84,7 +84,7 @@
     text-indent: 30px;
 
     /* font-size: 1.05em; */
-    line-height: 1.5em;
+    line-height: 1.6em;
 
 }
 
@@ -149,6 +149,29 @@
 }
 */
 
-@media only screen and (max-width: 768px){
-    
+@media only screen and (max-width: 768px) {
+    .aboutParent {
+        padding-top: 12%;
+    }
+
+    .about {
+        height: auto;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+        padding: 5%;
+        margin: 0% 2%;
+    }
+
+    .textParent {
+        width: auto;
+        padding: 3% 5%;
+    }
+
+    .progressDiv {
+        margin-top: 5%;
+    }
+
+    .illustration {
+        display: none;
+    }
 }

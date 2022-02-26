@@ -59,11 +59,11 @@ export default function Footer() {
                                 </div>
 
                                 <MDBCol md='5' start='12'>
-                                    <MDBInput contrast type='email' label='' className='mb-4' placeholder='Type here...' />
+                                    <MDBInput contrast type='email' label='' className={`${footerStyles.inputBox} mb-1 mb-md-4`} placeholder='Type here...' />
                                 </MDBCol>
 
                                 <div className='col-auto'>
-                                    <MDBBtn outline color='light' type='submit' className='mb-4'>
+                                    <MDBBtn outline color='light' type='submit' className='mb-2 mb-md-4'>
                                         Send
                                     </MDBBtn>
                                 </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                         </form>
                     </section>
 
-                    <section className='mb-4'>
+                    <section className='mb-2 mb-md-4'>
                         <p>
                             <strong>Peace!</strong>✌
                         </p>

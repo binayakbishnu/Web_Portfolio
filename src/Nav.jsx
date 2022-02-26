@@ -65,25 +65,25 @@ export default function Nav() {
                             </ReactBootstrap.Nav.Link>
                             <ReactBootstrap.Nav.Link href="https://www.linkedin.com/in/binayakbishnu"
                                 target="_blank"
-                                className={`${navStyles.socialLinks} ${navStyles.links} ms-1`}
+                                className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                             >
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </ReactBootstrap.Nav.Link>
                             <ReactBootstrap.Nav.Link href="https://www.behance.net/binayakbishnu"
                                 target="_blank"
-                                className={`${navStyles.socialLinks} ${navStyles.links} ms-1`}
+                                className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                             >
                                 <FontAwesomeIcon icon={faBehance} />
                             </ReactBootstrap.Nav.Link>
                             <ReactBootstrap.Nav.Link href="https://www.instagram.com/binayak_bishnu"
                                 target="_blank"
-                                className={`${navStyles.socialLinks} ${navStyles.links} ms-1`}
+                                className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                             >
                                 <FontAwesomeIcon icon={faInstagram} />
                             </ReactBootstrap.Nav.Link>
                             <ReactBootstrap.Nav.Link href=""
                                 target="_blank"
-                                className={`${navStyles.socialLinks} ${navStyles.links} ms-1`}
+                                className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                             >
                                 <FontAwesomeIcon icon={faContactCard} />
                             </ReactBootstrap.Nav.Link>

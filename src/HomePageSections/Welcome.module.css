@@ -152,3 +152,25 @@ blink {
     text-decoration: none;
     color: white;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .welcomeParent {
+        padding-top: 12%;
+    }
+
+    .welcome{
+        margin:0% 2%;
+        height:auto;
+
+        padding:5% 5% 0% 5%;
+    }
+
+    .mainHead{
+        font-size: 3em;
+    }
+
+    .figure {
+        display: none;
+    }
+}
