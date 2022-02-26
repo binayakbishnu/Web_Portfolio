@@ -1,13 +1,154 @@
-.aboutParent{
-    padding-top:6%;
+:root {
+    --progressBar_colour: rgb(64, 123, 255);
+}
+
+.aboutParent {
+    padding-top: 6%;
     /* background-color:red; */
 }
 
 .about {
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     height: 100vh;
 
     margin: 0% 1%;
     border-radius: 10px;
+
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* .aboutHeadDiv {
+    background-color: green;
+} */
+
+.aboutHead {
+    margin-left: 1%;
+    /* background-color: red; */
+}
+
+.hLine {
+    /* width: 99%; */
+    /* margin: 0% auto;
+    padding: 0%; */
+
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.aboutMainPart {
+    /* background-color: purple; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1;
+    /* fill space */
+}
+
+.illustration {
+    height: 70vh;
+}
+
+.textParent {
+    height: 70vh;
+
+    /* background-color: purple; */
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+
+    padding: 2%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    /* padding-bottom: 5%; */
+}
+
+.introDiv p {
+    /* word-wrap:break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap; */
+    text-align: justify;
+    text-indent: 30px;
+
+    /* font-size: 1.05em; */
+    line-height: 1.5em;
+
+}
+
+.introDiv p a {
+    text-decoration: none;
+}
+
+.progressHeaders {
+    /* background-color: blue; */
+    margin: 0%;
+    padding: 0% 2%;
+}
+
+.progressHeadersList {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.progressHeadersListMembers {
+    font-weight: bold;
+
+    font-size: 0.8em;
+}
+
+.progressBar {
+    width: 100%;
+    height: 20px;
+}
+
+.progressBar::-webkit-meter-optimum-value {
+    background: var(--progressBar_colour);
+}
+
+.progressBar::-moz-meter-bar {
+    background: var(--progressBar_colour);
+}
+
+/* putting bar lesser than text */
+/* 
+.progressDiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.progressHeaders {
+    padding: 0% 0%;
+}
+
+.progressBar {
+    width: 95%;
+    margin: auto;
+    height: 20px;
+}
+*/
+
+@media only screen and (max-width: 768px){
+    
 }

@@ -50,7 +50,7 @@ function Welcome() {
                     <img src={cube} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.cube}`} />
                     <img src={torus} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.torus}`} />
                 </div> */}
-                    <img alt="Illustration of Person with desk" src={figure} className={`${welcomeStyles.figure} ${welcomeStyles.torus}`} />
+                    <img alt="Illustration of Person with desk" src={figure} className={`${welcomeStyles.figure}`} />
                 </div>
 
                 <hr className={`${welcomeStyles.hLine}`} />
