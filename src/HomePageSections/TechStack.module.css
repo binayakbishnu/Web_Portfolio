@@ -1,0 +1,165 @@
+.techStackParent {
+    padding-top: 6%;
+    /* background-color:red; */
+}
+
+.techStack {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    height: 90vh;
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* .techStackHeadDiv {
+    background-color: green;
+} */
+
+.techStackHead {
+    margin-left: 1%;
+    /* background-color: red; */
+}
+
+.hLine {
+    /* width: 99%; */
+    /* margin: 0% auto;
+    padding: 0%; */
+
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.techStackMainPart {
+    /* background-color: purple; */
+
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    flex: 1;
+    /* fill space */
+}
+
+.mainTech {
+    /* background-color: red; */
+
+    display: grid;
+    min-height: 80%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    margin: 0% 5%;
+
+    flex: 1;
+}
+
+.mainTechMembers {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(30px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.techLogos {
+    margin: 0%;
+    width: 100%;
+}
+
+.pythonLogo {
+    width: 55%;
+}
+
+.reactjsLogo {
+    width: 65%;
+}
+
+.nodejsLogo {
+    width: 55%;
+}
+
+.hidden {
+    background-color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(0px);
+    display: hidden;
+}
+
+.uiuxLogo {
+    width: 120%;
+}
+
+.uiuxSubPart {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 65%;
+}
+
+.uiuxSubPartMembers {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(30px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.figmaLogo {
+    width: 40%;
+}
+
+.behanceLogo {
+    width: 80%;
+}
+
+.dribbbleLogo {
+    width: 55%;
+}
+
+@media only screen and (max-width: 768px) {
+    .techStackMainPart{
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+    }
+    .uiuxSubPart{
+        flex-direction: row;
+    }
+}

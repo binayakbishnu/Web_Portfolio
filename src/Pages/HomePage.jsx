@@ -5,6 +5,7 @@ import React from 'react'
 
 import AboutMe from '../HomePageSections/AboutMe'
 import Welcome from '../HomePageSections/Welcome'
+import TechStack from '../HomePageSections/TechStack'
 import ContactMe from '../ContactMe'
 
 import homePageStyles from './HomePage.module.css'
@@ -16,7 +17,10 @@ function HomePage() {
 
             <AboutMe />
 
+            <TechStack />
+
             <ContactMe />
+
         </div>
     )
 }

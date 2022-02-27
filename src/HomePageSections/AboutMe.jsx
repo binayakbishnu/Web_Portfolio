@@ -35,7 +35,7 @@ function AboutMe() {
                             <div className={`${aboutStyles.progressHeaders}`}>
                                 <ul className={`${aboutStyles.progressHeadersList}`}>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Excel</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>MySQL</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Tableau</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Python</li>
