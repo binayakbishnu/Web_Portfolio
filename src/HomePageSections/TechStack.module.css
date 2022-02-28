@@ -154,12 +154,44 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .techStackMainPart{
+    .techStack{
+        padding-bottom:8%;
+    }
+    .techStackMainPart {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: space-around;
+
+        padding-left:0%;
+        padding-right:0%;
     }
-    .uiuxSubPart{
+
+    .mainTech {
+        flex: default;
+        margin: 0%;
+        min-height: auto;
+
+        grid-row-gap: 0%;
+        grid-column-gap: 20%;
+    }
+
+    .uiuxSubPart {
         flex-direction: row;
+        width: 60%;
+
+        min-height: auto;
+    }
+
+    .figmaLogo {
+        width: 20px;
+    }
+    
+    .behanceLogo {
+        width: 45px;
+    }
+    
+    .dribbbleLogo {
+        width: 35px;
     }
 }

@@ -59,7 +59,7 @@ function TechStack() {
                         </div>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
                             <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
-                            {/* UI/UX */}
+                            UI/UX
                         </div>
                         {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}></div> */}
                     </div>
