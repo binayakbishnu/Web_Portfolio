@@ -19,7 +19,7 @@ function Welcome() {
     return (
         <section className={`${welcomeStyles.welcomeParent}`} id="welcome">
             <section className={`${welcomeStyles.welcome}`} id="welcome">
-                <div className={`${welcomeStyles.mainPart}`}>
+                <div className={`${welcomeStyles.welcomeMainPart}`}>
                     {/* <video autoPlay muted loop className={`${welcomeStyles.vid}`} autoplay>
                     <source src={video} type="video/mp4" />
                 </video> */}
