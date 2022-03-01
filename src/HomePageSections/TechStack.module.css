@@ -6,7 +6,7 @@
 .techStack {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
-    height: 90vh;
+    min-height: 90vh;
 
     margin: 0% 1%;
     border-radius: 10px;
@@ -63,15 +63,17 @@
     grid-template-rows: auto auto auto;
     justify-content: space-evenly;
     align-content: space-evenly;
+    grid-row-gap: 60px;
+    grid-column-gap: 30%;
 
-    margin: 0% 5%;
+    margin: 0% 15%;
 
-    flex: 1;
+    /* flex: 1; */
 }
 
 .mainTechMembers {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 
     background-color: rgba(255, 255, 255, 0.014);
@@ -89,15 +91,15 @@
 
 .techLogos {
     margin: 0%;
-    width: 100%;
-}
-
-.pythonLogo {
-    width: 55%;
+    width: 50%;
 }
 
 .reactjsLogo {
     width: 65%;
+}
+
+.gitLogo {
+    width: 60%;
 }
 
 .nodejsLogo {
@@ -111,16 +113,17 @@
 }
 
 .uiuxLogo {
-    width: 120%;
+    width: 60%;
 }
 
 .uiuxSubPart {
     /* background-color: red; */
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 65%;
+    min-height: 300px;
 }
 
 .uiuxSubPartMembers {
@@ -153,18 +156,56 @@
     width: 55%;
 }
 
+.editorsSubPart {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+}
+
+.editorsSubPartMembers {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(30px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.vscodeLogo {
+    width: 60%;
+}
+
+.jupyterLogo {
+    width: 60%;
+}
+
 @media only screen and (max-width: 768px) {
-    .techStack{
-        padding-bottom:8%;
+    .techStack {
+        padding-bottom: 8%;
     }
+
     .techStackMainPart {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: space-around;
 
-        padding-left:0%;
-        padding-right:0%;
+        padding-left: 0%;
+        padding-right: 0%;
+
+        padding-top:5%;
     }
 
     .mainTech {
@@ -172,8 +213,11 @@
         margin: 0%;
         min-height: auto;
 
-        grid-row-gap: 0%;
+        grid-row-gap: 30px;
         grid-column-gap: 20%;
+
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     .uiuxSubPart {
@@ -186,12 +230,27 @@
     .figmaLogo {
         width: 20px;
     }
-    
+
     .behanceLogo {
         width: 45px;
     }
-    
+
     .dribbbleLogo {
+        width: 35px;
+    }
+
+    .editorsSubPart {
+        flex-direction: row;
+        width: 60%;
+
+        min-height: auto;
+    }
+
+    .vscodeLogo {
+        width: 35px;
+    }
+
+    .jupyterLogo {
         width: 35px;
     }
 }
