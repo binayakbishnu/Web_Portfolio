@@ -21,14 +21,23 @@ function AboutMe() {
                             <h5>Hi</h5>
                             <p>
                                 I am a student pursuing my undergraduate in Information Technology.
-                                I am an aspiring <a rel="clickable" href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" style={{whiteSpace: "nowrap"}}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" style={{whiteSpace: "nowrap"}}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
+                                I am an aspiring <a rel="clickable" href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
                             </p>
                             <p>
                                 I have explored <kbd><code style={{ color: "white" }}>MS Excel</code></kbd> and <kbd><code style={{ color: "white" }}>MySQL</code></kbd> for data analysis, followed by <kbd>Tableau</kbd> for data visualization.
                             </p>
                             <p>
-                                I have complete a professional certification course <code style={{ color: "black" }}>Google Data Analytics Professional Certificate</code> along with <code style={{ color: "black" }}>Introduction to Data Analysis Using Excel</code> and <code style={{ color: "black" }}>Business Analytics with Excel</code>.
+                                I have complete a professional certification course <code style={{ color: "black", fontWeight: "bold" }}>Google Data Analytics Professional Certificate</code> along with <code style={{ color: "black", fontWeight: "bold" }}>Introduction to Data Analysis Using Excel</code> and <code style={{ color: "black", fontWeight: "bold" }}>Business Analytics with Excel</code>.
                             </p>
+                        </div>
+
+                        <div className={`${aboutStyles.resumeBtnsDiv}`}>
+                            <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" title="Resume Link">
+                                <input type="button" value="Download my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`} />
+                            </a>
+                            <a href="https://drive.google.com/file/d/1u8WDlzcz_IVROm8wqZvLzshtNTQLudil/view?usp=sharing" target="_blank" title="Resume Link">
+                                <input type="button" value="View my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.viewResume}`} />
+                            </a>
                         </div>
 
                         <div className={`${aboutStyles.progressDiv}`}>

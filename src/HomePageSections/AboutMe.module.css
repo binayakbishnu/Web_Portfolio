@@ -92,6 +92,26 @@
     text-decoration: none;
 }
 
+.resumeBtnsDiv {
+    /* background-color: green; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resumeBtn {
+    padding: 4% 6%;
+    font-size: 0.8em;
+    font-weight: 600;
+
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-radius: 5px;
+}
+
 .progressHeaders {
     /* background-color: blue; */
     margin: 0%;
