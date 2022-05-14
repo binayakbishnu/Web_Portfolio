@@ -15,7 +15,7 @@ function closeContactBox() {
 
 function ContactMe() {
     return (
-        <article className={`${contactStyles.contactParent}`}>
+        <article className={`${contactStyles.contactParent}`} id="contactMePopUp">
             <section className={`${contactStyles.contactSection}`}>
                 <h2 className={`${contactStyles.contactHead}`}>My Contact Details</h2>
 

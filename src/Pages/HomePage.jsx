@@ -19,7 +19,7 @@ function HomePage() {
 
             <TechStack />
 
-            {/* <ContactMe /> */}
+            <ContactMe />
 
         </div>
     )
