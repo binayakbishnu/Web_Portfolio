@@ -35,7 +35,7 @@ function AboutMe() {
                             <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" title="Resume Link">
                                 <input type="button" value="Download my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`} />
                             </a>
-                            <a href="https://drive.google.com/file/d/1u8WDlzcz_IVROm8wqZvLzshtNTQLudil/view?usp=sharing" target="_blank" title="Resume Link">
+                            <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" title="Resume Link">
                                 <input type="button" value="View my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.viewResume}`} />
                             </a>
                         </div>

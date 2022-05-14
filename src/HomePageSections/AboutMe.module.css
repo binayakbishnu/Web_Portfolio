@@ -60,7 +60,7 @@
 }
 
 .textParent {
-    height: 90%;
+    /* min-height: 90%; */
 
     /* background-color: purple; */
     background-color: rgba(255, 255, 255, 0.15);
@@ -76,6 +76,10 @@
     /* padding-bottom: 5%; */
 }
 
+.introDiv{
+    margin-bottom: 2%;
+}
+
 .introDiv p {
     /* word-wrap:break-word;
     white-space: -moz-pre-wrap;
@@ -85,7 +89,6 @@
 
     /* font-size: 1.05em; */
     line-height: 1.6em;
-
 }
 
 .introDiv p a {
@@ -99,6 +102,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
+    margin-bottom: 8%;
 }
 
 .resumeBtn {
