@@ -22,7 +22,7 @@ import navStyles from './Navbar.module.css'
 
 export class Nav extends Component {
     showContactPopUp() {
-        document.getElementById("welcome").scrollIntoView();
+        // document.getElementById("welcome").scrollIntoView();
 
         // document.getElementById("contactMePopUp").style.display = "block"
         if (document.getElementById("contactMePopUp").style.display === "none") {
