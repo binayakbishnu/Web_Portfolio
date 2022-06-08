@@ -21,7 +21,7 @@ function AboutMe() {
                             <h5>Hi</h5>
                             <p>
                                 I am a student pursuing my undergraduate in Information Technology.
-                                I am an aspiring <a rel="clickable" href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
+                                I am an aspiring <a href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" rel="clickable noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" rel="noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
                             </p>
                             <p>
                                 I have explored <kbd><code style={{ color: "white" }}>MS Excel</code></kbd> and <kbd><code style={{ color: "white" }}>MySQL</code></kbd> for data analysis, followed by <kbd>Tableau</kbd> for data visualization.
@@ -32,10 +32,10 @@ function AboutMe() {
                         </div>
 
                         <div className={`${aboutStyles.resumeBtnsDiv}`}>
-                            <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" title="Resume Link">
+                            <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 <input type="button" value="Download my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`} />
                             </a>
-                            <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" title="Resume Link">
+                            <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 <input type="button" value="View my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.viewResume}`} />
                             </a>
                         </div>

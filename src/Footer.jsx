@@ -33,19 +33,19 @@ export class Footer extends Component {
                 <MDBFooter className={`${footerStyles.MDBParent} text-center`} color='black'>
                     <MDBContainer className='p-4'>
                         <section className={`${footerStyles.socialIconSection} mb-4`}>
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 ms-0`} href='https://www.github.com/BinayakBishnu' role='button' target='_blank'>
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 ms-0`} href='https://www.github.com/BinayakBishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.linkedin.com/in/binayakbishnu' role='button' target='_blank'>
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.linkedin.com/in/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.behance.net/binayakbishnu' role='button' target='_blank'>
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.behance.net/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faBehance} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayak_bishnu' role='button' target='_blank'>
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayak_bishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
 
