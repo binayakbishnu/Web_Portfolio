@@ -4,9 +4,15 @@ import aboutStyles from './AboutMe.module.css'
 
 import aboutMeFig from '../assets/abc.svg'
 
+import { motion } from "framer-motion"
+
 function AboutMe() {
     return (
-        <section className={`${aboutStyles.aboutParent}`} id="aboutme">
+        <motion.section className={`${aboutStyles.aboutParent}`} id="aboutme"
+            initial={{ rotate: 0, scale: 0.8 }}
+            animate={{ rotate: 0, scale: 1.0 }}
+            transition={{ duration: 1, /* yoyo: 1 */ }}
+        >
             <section className={`${aboutStyles.about}`} id="aboutme">
                 <div className={`${aboutStyles.aboutHeadDiv}`}>
                     <h3 className={`${aboutStyles.aboutHead}`}>About Me</h3>
@@ -35,9 +41,9 @@ function AboutMe() {
                             <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 <input type="button" value="Download my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`} />
                             </a>
-                            <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
+                            {/* <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 <input type="button" value="View my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.viewResume}`} />
-                            </a>
+                            </a> */}
                         </div>
 
                         <div className={`${aboutStyles.progressDiv}`}>
@@ -59,7 +65,7 @@ function AboutMe() {
                     </div>
                 </div>
             </section>
-        </section >
+        </motion.section >
     )
 }
 
