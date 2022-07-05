@@ -7,7 +7,7 @@ import React from 'react'
 // import Blink from 'react-blink-text';
 
 import welcomeStyles from './Welcome.module.css'
-import BlinkingText from './BlinkingText'
+// import BlinkingText from './BlinkingText'
 
 // import ball from '../assets/Ball.png'
 // import ball2 from '../assets/Ball-2.png'
@@ -26,7 +26,7 @@ function Welcome() {
                     <h1 className={`${welcomeStyles.mainHead}`}>
                         Welcome,<br />
                         I am<br />
-                        Binayak Bishnu<blink classname={`${welcomeStyles.blinker}`}>_</blink>
+                        Binayak Bishnu<span className={`${welcomeStyles.blinkerText}`}>_</span>
                         {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
                         {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
                         {/* Binayak Bishnu<BlinkingText /> */}

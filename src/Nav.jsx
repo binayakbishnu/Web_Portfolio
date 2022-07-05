@@ -45,16 +45,16 @@ export class Nav extends Component {
 
                 <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="light" className={`${navStyles.bStrapParent}`}>
                     <ReactBootstrap.Container className={`${navStyles.bStrapContainer}`}>
-                        <ReactBootstrap.Navbar.Brand href="#home">
-                            <ReactBootstrap.NavLink
+                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink}`}>
+                            {/* <ReactBootstrap.NavLink
                                 className={`${navStyles.links} ${navStyles.brandLink}`}
-                                activeClassName="is-active"
+                                // activeClassName="is-active"
                                 to="/"
-                                exact
-                            >
+                                // exact
+                            > */}
                                 {/* <ReactBootstrap.Image src={logo} fluid /> */}
                                 Binayak
-                            </ReactBootstrap.NavLink>
+                            {/* </ReactBootstrap.NavLink> */}
                         </ReactBootstrap.Navbar.Brand>
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">

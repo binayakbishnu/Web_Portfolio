@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import {
     MDBFooter,
     MDBContainer,
-    MDBIcon,
+    // MDBIcon,
     MDBInput,
     MDBCol,
-    MDBRow,
+    // MDBRow,
     MDBBtn
 } from 'mdb-react-ui-kit';
 

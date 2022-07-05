@@ -47,7 +47,7 @@
 }
 
 
-blink {
+.blinkerText {
     -webkit-animation: 2s linear infinite condemned_blink_effect;
     animation: 1s linear infinite condemned_blink_effect;
 }
