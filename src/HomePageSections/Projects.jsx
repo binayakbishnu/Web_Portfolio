@@ -14,8 +14,11 @@ function Projects() {
             transition={{ duration: 1, /* yoyo: 1 */ }}
         >
             <section className={`${projectStyles.projects}`} id="projects">
-                <div className={`${projectStyles.projectsHeadDiv}`}>
-                    <h3 className={`${projectStyles.projectsHead}`}>Projects</h3>
+                <div>
+                    <div className={`${projectStyles.projectsHeadDiv}`}>
+                        <h3 className={`${projectStyles.projectsHead}`}>Projects</h3>
+                        <a href="/allprojects" style={{ "color": "black" }}>See all</a>
+                    </div>
                     <hr className={`${projectStyles.hLine}`} />
                 </div>
 

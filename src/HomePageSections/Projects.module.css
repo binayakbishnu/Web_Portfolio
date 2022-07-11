@@ -18,9 +18,12 @@
     padding: 2%;
 }
 
-/* .projectsHeadDiv {
-    background-color: green;
-} */
+.projectsHeadDiv {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+}
 
 .projectsHead {
     margin-left: 1%;
