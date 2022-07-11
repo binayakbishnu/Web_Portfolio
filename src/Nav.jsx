@@ -66,7 +66,7 @@ export class Nav extends Component {
                                     <ReactBootstrap.NavDropdown.Item href="#action/3.2">Project 2</ReactBootstrap.NavDropdown.Item>
                                     <ReactBootstrap.NavDropdown.Item href="#action/3.3">Project 3</ReactBootstrap.NavDropdown.Item>
                                     <ReactBootstrap.NavDropdown.Divider />
-                                    <ReactBootstrap.NavDropdown.Item href="#action/3.4">Other Projects</ReactBootstrap.NavDropdown.Item>
+                                    <ReactBootstrap.NavDropdown.Item href="/allprojects">All Projects</ReactBootstrap.NavDropdown.Item>
                                 </ReactBootstrap.NavDropdown>
                             </ReactBootstrap.Nav>
                             <ReactBootstrap.Nav className={`${navStyles.socialLinksParent} d-flex flex-row`}>
