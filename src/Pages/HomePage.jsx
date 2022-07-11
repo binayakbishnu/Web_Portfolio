@@ -10,10 +10,14 @@ import ContactMe from '../ContactMe'
 
 import homePageStyles from './HomePage.module.css'
 import Projects from '../HomePageSections/Projects'
+import Nav from '../Nav'
+import Footer from '../Footer'
 
 function HomePage() {
     return (
         <div className={`${homePageStyles.home}`}>
+            <Nav navDisplay="visible" />
+
             <Welcome />
 
             <AboutMe />
@@ -24,6 +28,7 @@ function HomePage() {
 
             <ContactMe />
 
+            <Footer goUpTarget="#welcome" />
         </div>
     )
 }

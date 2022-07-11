@@ -201,7 +201,7 @@ export class Footer extends Component {
 
                     <div className='text-white text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
                         {/* Binayak Bishnu &nbsp; */}
-                        <a className='text-white' href='#welcome'>
+                        <a className='text-white' href={this.props.goUpTarget}>
                             Go up
                         </a>
                     </div>

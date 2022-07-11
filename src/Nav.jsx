@@ -52,19 +52,19 @@ export class Nav extends Component {
                                 to="/"
                                 // exact
                             > */}
-                                {/* <ReactBootstrap.Image src={logo} fluid /> */}
-                                Binayak
+                            {/* <ReactBootstrap.Image src={logo} fluid /> */}
+                            Binayak
                             {/* </ReactBootstrap.NavLink> */}
                         </ReactBootstrap.Navbar.Brand>
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
-                            <ReactBootstrap.Nav className="me-auto">
+                            <ReactBootstrap.Nav className="me-auto" style={{ "visibility": `${this.props.navDisplay}` }}>
                                 <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`}>About Me</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`}>Tech Stack</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.NavDropdown title="Top Projects" id="collasible-nav-dropdown" className={`${navStyles.links} ${navStyles.leftLinks}`}>
-                                    <ReactBootstrap.NavDropdown.Item href="#action/3.1">Project 1</ReactBootstrap.NavDropdown.Item>
-                                    <ReactBootstrap.NavDropdown.Item href="#action/3.2">Project 2</ReactBootstrap.NavDropdown.Item>
-                                    <ReactBootstrap.NavDropdown.Item href="#action/3.3">Project 3</ReactBootstrap.NavDropdown.Item>
+                                <ReactBootstrap.NavDropdown title="Top Projects" menuVariant="dark" id="collasible-nav-dropdown" className={`${navStyles.links} ${navStyles.leftLinks}`}>
+                                    <ReactBootstrap.NavDropdown.Item href="/allprojects#project1">Project 1</ReactBootstrap.NavDropdown.Item>
+                                    <ReactBootstrap.NavDropdown.Item href="/allprojects#project2">Project 2</ReactBootstrap.NavDropdown.Item>
+                                    {/* <ReactBootstrap.NavDropdown.Item href="/allprojects#project3">Project 3</ReactBootstrap.NavDropdown.Item> */}
                                     <ReactBootstrap.NavDropdown.Divider />
                                     <ReactBootstrap.NavDropdown.Item href="/allprojects">All Projects</ReactBootstrap.NavDropdown.Item>
                                 </ReactBootstrap.NavDropdown>
