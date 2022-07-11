@@ -9,6 +9,7 @@ import TechStack from '../HomePageSections/TechStack'
 import ContactMe from '../ContactMe'
 
 import homePageStyles from './HomePage.module.css'
+import Projects from '../HomePageSections/Projects'
 
 function HomePage() {
     return (
@@ -18,6 +19,8 @@ function HomePage() {
             <AboutMe />
 
             <TechStack />
+
+            <Projects />
 
             <ContactMe />
 

@@ -15,7 +15,7 @@ function Project1() {
     };
 
     return (
-        <section className={`${project1Styles.projectParent}`}>
+        <section className={`${project1Styles.projectParent}`} id="project1">
             <section className={`${project1Styles.project}`}>
                 <div className={`${project1Styles.projectHeadDiv}`}>
                     <h3 className={`${project1Styles.projectHead}`}>MediServ</h3>

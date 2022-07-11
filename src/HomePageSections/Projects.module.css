@@ -1,0 +1,72 @@
+:root {
+    --progressBar_colour: rgb(64, 123, 255);
+}
+
+.projectsParent {
+    padding-top: 6%;
+    /* background-color:red; */
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    /* height: 100vh; */
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+}
+
+/* .projectsHeadDiv {
+    background-color: green;
+} */
+
+.projectsHead {
+    margin-left: 1%;
+    /* background-color: red; */
+}
+
+.hLine {
+    /* width: 99%; */
+    /* margin: 0% auto;
+    padding: 0%; */
+
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.projectsMainPart {
+    /* background-color: purple; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project {
+    width: 32.33%;
+    border-radius: 10px;
+}
+
+.projectImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .projectsParent {
+        padding-top: 12%;
+    }
+
+    .projects {
+        height: auto;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+        padding: 5%;
+        margin: 0% 2%;
+    }
+}
