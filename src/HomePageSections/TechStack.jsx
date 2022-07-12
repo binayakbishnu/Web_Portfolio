@@ -31,11 +31,9 @@ function TechStack() {
                     <div className={`${techStackStyles.editorsSubPart}`}>
                         <div className={`${techStackStyles.editorsSubPartMembers} ${techStackStyles.vscode}`}>
                             <img src={vscodeLogo} alt="VSCode" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.vscodeLogo}`} />
-                            VSCode
                         </div>
                         <div className={`${techStackStyles.editorsSubPartMembers} ${techStackStyles.jupyter}`}>
                             <img src={jupyterLogo} alt="Jupyter" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.jupyterLogo}`} />
-                            Jupyter
                         </div>
                     </div>
 
@@ -84,15 +82,12 @@ function TechStack() {
                     <div className={`${techStackStyles.uiuxSubPart}`}>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.figma}`}>
                             <img src={figmaLogo} alt="Figma" className={`${techStackStyles.techLogos} ${techStackStyles.figmaLogo}`} />
-                            Figma
                         </div>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.behance}`}>
                             <img src={behanceLogo} alt="Behance" className={`${techStackStyles.techLogos} ${techStackStyles.behanceLogo}`} />
-                            Behance
                         </div>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.dribble}`}>
                             <img src={dribbbleLogo} alt="Dribbble" className={`${techStackStyles.techLogos} ${techStackStyles.dribbbleLogo}`} />
-                            Dribbble
                         </div>
                     </div>
                 </div>

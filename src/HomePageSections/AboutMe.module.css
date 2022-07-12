@@ -76,7 +76,7 @@
     /* padding-bottom: 5%; */
 }
 
-.introDiv{
+.introDiv {
     margin-bottom: 2%;
 }
 
@@ -102,7 +102,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+
     margin-bottom: 8%;
 }
 
@@ -200,3 +200,5 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 414px) {}

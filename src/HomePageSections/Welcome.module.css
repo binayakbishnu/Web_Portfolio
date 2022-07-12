@@ -34,19 +34,6 @@
     font-size: 5em;
 }
 
-.text_glow {
-    /* text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit; */
-    text-shadow: 0 0 80px rgb(192 219 255 / 80%), 0 0 30px rgb(65 120 255 / 60%);
-}
-
-.text_gradient {
-    background: linear-gradient(to right, #30CFD0, #c43ad6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 .blinkerText {
     -webkit-animation: 2s linear infinite condemned_blink_effect;
     animation: 1s linear infinite condemned_blink_effect;
@@ -187,6 +174,18 @@
     }
 
     .figure {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .welcomeParent{
+        padding-top: 18%;
+    }
+    .mainHead{
+        font-size: 2em;
+    }
+    .figure{
         display: none;
     }
 }

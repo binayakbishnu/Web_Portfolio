@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import {
     MDBFooter,
     MDBContainer,
-    // MDBIcon,
     MDBInput,
     MDBCol,
-    // MDBRow,
     MDBBtn
 } from 'mdb-react-ui-kit';
 
@@ -52,13 +50,9 @@ export class Footer extends Component {
                             <button className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} onClick={this.showContactPopUp}>
                                 <FontAwesomeIcon icon={faContactCard} />
                             </button>
-
-                            {/* <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='github' />
-                        </a> */}
                         </section>
 
-                        <section className=''>
+                        <section className={`${footerStyles.sendMsg}`}>
                             <form action=''>
                                 <div className='row d-flex justify-content-center'>
                                     <div className='col-auto'>
@@ -67,9 +61,11 @@ export class Footer extends Component {
                                         </p>
                                     </div>
 
-                                    <MDBCol md='5' start='12'>
-                                        <MDBInput contrast type='email' label='' className={`${footerStyles.inputBox} mb-1 mb-md-4`} placeholder='Type here...' />
-                                    </MDBCol>
+                                    <div className="col-auto">
+                                        <MDBCol md='12' start='12'>
+                                            <MDBInput contrast type='email' label='' className={`${footerStyles.inputBox} mb-1 mb-md-4`} placeholder='Type here...' />
+                                        </MDBCol>
+                                    </div>
 
                                     <div className='col-auto'>
                                         <MDBBtn outline color='light' type='submit' className='mb-2 mb-md-4'>
@@ -85,118 +81,6 @@ export class Footer extends Component {
                                 <strong>Peace!</strong>✌
                             </p>
                         </section>
-
-                        {/* <section className=''>
-                        <MDBRow>
-                            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                                <h5 className='text-uppercase'>Links</h5>
-
-                                <ul className='list-unstyled mb-0'>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </MDBCol>
-
-                            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                                <h5 className='text-uppercase'>Links</h5>
-
-                                <ul className='list-unstyled mb-0'>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </MDBCol>
-
-                            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                                <h5 className='text-uppercase'>Links</h5>
-
-                                <ul className='list-unstyled mb-0'>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </MDBCol>
-
-                            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                                <h5 className='text-uppercase'>Links</h5>
-
-                                <ul className='list-unstyled mb-0'>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#!' className='text-white'>
-                                            Link 4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </MDBCol>
-                        </MDBRow>
-                    </section> */}
                     </MDBContainer>
 
                     <div className='text-white text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>

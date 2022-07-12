@@ -49,18 +49,16 @@ function AboutMe() {
                         <div className={`${aboutStyles.progressDiv}`}>
                             <div className={`${aboutStyles.progressHeaders}`}>
                                 <ul className={`${aboutStyles.progressHeadersList}`}>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Excel</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Tableau</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Excel</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Python</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Pd, Np</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li>
-                                    {/* <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li> */}
                                 </ul>
                             </div>
 
-                            <meter min="0" max="14" value="12" className={`${aboutStyles.progressBar}`} />
+                            <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
                         </div>
                     </div>
                 </div>

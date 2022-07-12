@@ -50,7 +50,7 @@
     align-items: flex-start;
 }
 
-.container{
+.container {
     position: relative;
 }
 
@@ -106,5 +106,23 @@
         padding-right: 5%; */
         padding: 5%;
         margin: 0% 2%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .projectsMainPart {
+        flex-direction: column;
+    }
+
+    .container:hover .overlay {
+        opacity: 0;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project2 {
+        margin: 4% 0%;
     }
 }

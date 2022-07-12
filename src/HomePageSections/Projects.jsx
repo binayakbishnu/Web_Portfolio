@@ -17,7 +17,7 @@ function Projects() {
                 <div>
                     <div className={`${projectStyles.projectsHeadDiv}`}>
                         <h3 className={`${projectStyles.projectsHead}`}>Projects</h3>
-                        <a href="/allprojects" style={{ "color": "black" }}>See all</a>
+                        <a href="/allprojects" style={{ "color": "white" }}>See all</a>
                     </div>
                     <hr className={`${projectStyles.hLine}`} />
                 </div>
@@ -36,7 +36,7 @@ function Projects() {
                             </a>
                         </div>
                     </div>
-                    <div className={`${projectStyles.project} ${projectStyles.project1}`}>
+                    <div className={`${projectStyles.project} ${projectStyles.project2}`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project2">
                                 <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`} />
@@ -49,7 +49,7 @@ function Projects() {
                             </a>
                         </div>
                     </div>
-                    <div className={`${projectStyles.project} ${projectStyles.project1}`}>
+                    <div className={`${projectStyles.project} ${projectStyles.project3}`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project3">
                                 <img src={projectPic3} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`} />

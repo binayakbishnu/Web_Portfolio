@@ -24,9 +24,9 @@ function Welcome() {
                     <source src={video} type="video/mp4" />
                 </video> */}
                     <h1 className={`${welcomeStyles.mainHead}`}>
-                        Welcome,<br />
+                        Hello,<br />
                         I am<br />
-                        Binayak Bishnu<span className={`${welcomeStyles.blinkerText}`}>_</span>
+                        Binayak Bishnu{/* <span className={`${welcomeStyles.blinkerText}`}>_</span> */}
                         {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
                         {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
                         {/* Binayak Bishnu<BlinkingText /> */}
