@@ -49,9 +49,9 @@ export class Footer extends Component {
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} href='#!' role='button' onClick={this.showContactPopUp} target="_self">
+                            <button className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} onClick={this.showContactPopUp}>
                                 <FontAwesomeIcon icon={faContactCard} />
-                            </a>
+                            </button>
 
                             {/* <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
                         <MDBIcon fab icon='github' />
