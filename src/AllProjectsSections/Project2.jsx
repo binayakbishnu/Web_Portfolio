@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import project1Styles from './Project.module.css'
+import project2Styles from './Project.module.css'
 
-import carouselPic1 from '../assets/projects/BookRev1.png'
+// import carouselPic1 from '../assets/projects/BookRev1.png'
 import carouselPic2 from '../assets/projects/BookRev2.png'
 import carouselPic3 from '../assets/projects/BookRev3.png'
 import carouselPic4 from '../assets/projects/BookRev4.png'
 import carouselPic5 from '../assets/projects/BookRev5.png'
 
-function Project1() {
+function Project2() {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
@@ -17,33 +17,26 @@ function Project1() {
     };
 
     return (
-        <section className={`${project1Styles.projectParent}`} id="project2">
-            <section className={`${project1Styles.project}`}>
-                <div className={`${project1Styles.projectHeadDiv}`}>
-                    <h3 className={`${project1Styles.projectHead}`}>BookRev</h3>
-                    <hr className={`${project1Styles.hLine}`} />
+        <section className={`${project2Styles.projectParent}`} id="project2">
+            <section className={`${project2Styles.project}`}>
+                <div className={`${project2Styles.projectHeadDiv}`}>
+                    <h3 className={`${project2Styles.projectHead}`}>BookRev</h3>
+                    <hr className={`${project2Styles.hLine}`} />
                 </div>
-                <div className={`${project1Styles.projectMainPart}`}>
-                    <div className={`${project1Styles.projectText}`}>
-                        <p>
-                            Website built on HTML, CSS, Javascript, NodeJs and MongoDB.
-                            It allows users to buy and sell books online.
-                        </p>
+                <div className={`${project2Styles.projectMainPart}`}>
+                    <div className={`${project2Styles.projectTextnBtn}`}>
+                        <div className={`${project2Styles.projectText}`}>
+                            <p>
+                                Website built on HTML, CSS, Javascript, NodeJs and MongoDB.
+                                It allows users to buy and sell books online.
+                            </p>
+                        </div>
+                        <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${project2Styles.projectBtnLink}`}>
+                            <input type="button" value="GitHub" className={`${project2Styles.projectBtn}`} />
+                        </a>
                     </div>
-                    <div className={`${project1Styles.projectSlideShow}`}>
+                    <div className={`${project2Styles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={carouselPic1}
-                                    alt="First slide"
-                                    style={{ "borderRadius": "10px" }}
-                                />
-                                {/* <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption> */}
-                            </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
@@ -77,6 +70,11 @@ function Project1() {
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
                                 />
+
+                                {/* <Carousel.Caption>
+                                    <h3>Third slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
@@ -85,6 +83,11 @@ function Project1() {
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
                                 />
+
+                                {/* <Carousel.Caption>
+                                    <h3>Third slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption> */}
                             </Carousel.Item>
                         </Carousel>
                     </div>
@@ -95,4 +98,4 @@ function Project1() {
     )
 }
 
-export default Project1
+export default Project2
