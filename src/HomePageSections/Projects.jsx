@@ -4,7 +4,6 @@ import projectStyles from './Projects.module.css'
 
 import projectPic1 from '../assets/projects/MediServ1.png'
 import projectPic2 from '../assets/projects/BookRev1.png'
-import projectPic3 from '../assets/projects/MediServ3.png'
 
 function Projects() {
     return (
@@ -45,16 +44,6 @@ function Projects() {
                                     <h5>BookRev</h5>
                                         <p>Online book sell/buy store</p>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={`${projectStyles.project} ${projectStyles.project3}`}>
-                        <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project3">
-                                <img src={projectPic3} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`} />
-                                <div className={`${projectStyles.overlay}`}>
-                                    <div className={`${projectStyles.text}`}>Hello World</div>
                                 </div>
                             </a>
                         </div>
