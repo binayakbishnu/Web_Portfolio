@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "binayakbishnu"
-  }
+    "default": "binayak-website-portfolio-22",
+    "final": "binayakbishnu"
+  },
+  "targets": {}
 }
