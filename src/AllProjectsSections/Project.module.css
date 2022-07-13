@@ -1,11 +1,10 @@
 .projectParent {
     padding-top: 6%;
-    /* background-color: purple; */
 }
 
 .project {
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
 
     margin: 0% 1%;
     border-radius: 10px;
@@ -21,14 +20,11 @@
 
 .projectHead {
     margin-left: 1%;
-    /* background-color: red; */
+
+    color: #ffffff;
 }
 
 .hLine {
-    /* width: 99%;
-    margin: 0% auto;
-    padding: 0%; */
-
     height: 2px;
     border-width: 0px;
     color: #ffffff;
@@ -38,24 +34,22 @@
 .projectMainPart {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .projectTextnBtn {
     flex: 1;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 
     margin-right: 1%;
-
 }
 
 .projectText {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(15px);
     border-radius: 10px;
 
@@ -63,7 +57,7 @@
 }
 
 .projectBtnLink {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     border: 0px;
@@ -88,7 +82,7 @@
         padding-top: 12%;
     }
 
-    .project{
+    .project {
         padding: 5%;
     }
 
@@ -99,12 +93,14 @@
     .projectSlideShow {
         width: 100%;
     }
-    .projectTextnBtn{
+
+    .projectTextnBtn {
         margin-right: 0%;
         margin-bottom: 2%;
         align-items: flex-end;
     }
-    .projectBtnLink{
+
+    .projectBtnLink {
         margin-top: 2%;
     }
 }

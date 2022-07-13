@@ -1,12 +1,10 @@
 .footerParent {
-    /* background-color:red; */
     padding-bottom: 1%;
 }
 
 .MDBParent {
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    /* height: 80vh; */
+    backdrop-filter: blur(15px);
 
     margin: 6% 1%;
     margin-bottom: 0%;
@@ -21,7 +19,6 @@
 .socialIcons {
     color: black !important;
     border: 1px solid black !important;
-    /* transition-duration: 0.5s; */
 }
 
 .socialIcons:hover {
@@ -36,7 +33,6 @@
     }
 
     .inputBox {
-        /* width: 50%; */
         margin: auto;
     }
 }

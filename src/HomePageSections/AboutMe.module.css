@@ -4,7 +4,6 @@
 
 .aboutParent {
     padding-top: 6%;
-    /* background-color:red; */
 }
 
 .about {
@@ -23,20 +22,13 @@
     align-items: stretch;
 }
 
-/* .aboutHeadDiv {
-    background-color: green;
-} */
-
 .aboutHead {
     margin-left: 1%;
-    /* background-color: red; */
+
+    color: #ffffff;
 }
 
 .hLine {
-    /* width: 99%; */
-    /* margin: 0% auto;
-    padding: 0%; */
-
     height: 2px;
     border-width: 0px;
     color: #ffffff;
@@ -44,15 +36,12 @@
 }
 
 .aboutMainPart {
-    /* background-color: purple; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     flex: 1;
-    /* fill space */
 }
 
 .illustration {
@@ -60,10 +49,7 @@
 }
 
 .textParent {
-    /* min-height: 90%; */
-
-    /* background-color: purple; */
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(15px);
     border-radius: 10px;
 
@@ -73,7 +59,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    /* padding-bottom: 5%; */
 }
 
 .introDiv {
@@ -81,13 +66,9 @@
 }
 
 .introDiv p {
-    /* word-wrap:break-word;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap; */
     text-align: justify;
     text-indent: 30px;
 
-    /* font-size: 1.05em; */
     line-height: 1.6em;
 }
 
@@ -96,8 +77,6 @@
 }
 
 .resumeBtnsDiv {
-    /* background-color: green; */
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -118,7 +97,6 @@
 }
 
 .progressHeaders {
-    /* background-color: blue; */
     margin: 0%;
     padding: 0% 2%;
 }
@@ -154,26 +132,6 @@
     background: var(--progressBar_colour);
 }
 
-/* putting bar lesser than text */
-/* 
-.progressDiv{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
-.progressHeaders {
-    padding: 0% 0%;
-}
-
-.progressBar {
-    width: 95%;
-    margin: auto;
-    height: 20px;
-}
-*/
-
 @media only screen and (max-width: 768px) {
     .aboutParent {
         padding-top: 12%;
@@ -181,8 +139,6 @@
 
     .about {
         height: auto;
-        /* padding-left: 5%;
-        padding-right: 5%; */
         padding: 5%;
         margin: 0% 2%;
     }
