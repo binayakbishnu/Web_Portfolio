@@ -4,3 +4,7 @@
 
     font-family: Lato;
 }
+
+body {
+    overflow-y: scroll;
+}

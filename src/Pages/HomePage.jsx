@@ -6,10 +6,11 @@ import React from 'react'
 import AboutMe from '../HomePageSections/AboutMe'
 import Welcome from '../HomePageSections/Welcome'
 import TechStack from '../HomePageSections/TechStack'
+import Projects from '../HomePageSections/Projects'
+import ResearchWorks from '../HomePageSections/ResearchWorks'
 import ContactMe from '../ContactMe'
 
 import homePageStyles from './HomePage.module.css'
-import Projects from '../HomePageSections/Projects'
 import Nav from '../Nav'
 import Footer from '../Footer'
 
@@ -25,6 +26,8 @@ function HomePage() {
             <TechStack />
 
             <Projects />
+
+            <ResearchWorks />
 
             <ContactMe />
 

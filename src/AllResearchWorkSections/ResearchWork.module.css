@@ -1,0 +1,142 @@
+.researchWorkParent {
+    padding-top: 6%;
+}
+
+.researchWork {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.researchWorkHead {
+    margin-left: 1%;
+
+    color: #ffffff;
+}
+
+.toggleCollapseBtn {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 0px;
+
+    padding: 1% 2%;
+
+    width:120px;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.researchWorkMainPart {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.researchWorkTextnBtn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-right: 1%;
+}
+
+.researchWorkText {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+
+    padding: 2%;
+}
+
+.researchWorkText>p {
+    text-indent: 1em;
+    text-align: justify;
+
+    padding: 1% 2%;
+}
+
+.researchWorkBtnLink {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 0px;
+
+    padding: 1% 2%;
+}
+
+.bottomBtnsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.bottomBtns {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+
+}
+
+.pptLink {
+    margin-left: 2%;
+}
+
+.researchWorkSlideShow {
+    width: 60%;
+
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .researchWorkParent {
+        padding-top: 12%;
+    }
+
+    .researchWork {
+        padding: 5%;
+    }
+
+    .researchWorkMainPart {
+        flex-direction: column;
+    }
+
+    .researchWorkSlideShow {
+        width: 100%;
+    }
+
+    .researchWorkTextnBtn {
+        margin-right: 0%;
+        margin-bottom: 2%;
+        align-items: flex-end;
+    }
+
+    .researchWorkBtnLink {
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .researchWorkParent {
+        padding-top: 18%;
+    }
+}

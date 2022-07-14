@@ -13,6 +13,7 @@ import appStyles from './App.module.css'
 
 import HomePage from './Pages/HomePage'
 import AllProjects from './Pages/AllProjects';
+import AllResearchWork from './Pages/AllResearchWork';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
 
           <Route path="/allprojects" element={<AllProjects />} />
+          <Route path="/allresearchWork" element={<AllResearchWork />} />
 
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,128 @@
+.researchWorksParent {
+    padding-top: 6%;
+}
+
+.researchWorks {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+}
+
+.researchWorksHeadDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.researchWorksHead {
+    margin-left: 1%;
+
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.researchWorksMainPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mobileHint {
+    display: none;
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: fit-content;
+}
+
+.researchWork {
+    width: 49%;
+    border-radius: 10px;
+}
+
+.researchWorkImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .researchWorksParent {
+        padding-top: 12%;
+    }
+
+    .researchWorks {
+        height: auto;
+        padding: 5%;
+        margin: 0% 2%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .researchWorksMainPart {
+        flex-direction: column;
+    }
+
+    .mobileHint {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: small;
+        color: #ffffff;
+    }
+
+    .container:hover .overlay {
+        opacity: 0%;
+    }
+
+    .researchWork {
+        width: 100%;
+    }
+
+    .researchWork2 {
+        margin: 4% 0%;
+    }
+}
