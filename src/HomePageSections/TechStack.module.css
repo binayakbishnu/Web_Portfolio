@@ -19,9 +19,10 @@
 }
 
 .techStackHead {
-    margin-left: 1%;
-
     color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
 }
 
 .hLine {
