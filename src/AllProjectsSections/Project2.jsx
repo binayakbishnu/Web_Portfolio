@@ -16,14 +16,26 @@ function Project2() {
         setIndex(selectedIndex);
     };
 
+    const toggleCollapse = () => {
+        document.getElementById("project2MainPart").style.display =
+            document.getElementById("project2MainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("hLine2").style.display =
+            document.getElementById("hLine2").style.display === "block" ? "none" : "block";
+        document.getElementById("toggleCollapseBtn2").value =
+            document.getElementById("toggleCollapseBtn2").value === "Collapse" ? "Expand" : "Collapse";
+    };
+
     return (
         <section className={`${project2Styles.projectParent}`} id="project2">
             <section className={`${project2Styles.project}`}>
                 <div className={`${project2Styles.projectHeadDiv}`}>
-                    <h3 className={`${project2Styles.projectHead}`}>BookRev</h3>
-                    <hr className={`${project2Styles.hLine}`} />
+                    <div className="d-flex flex-row justify-content-between align-items-center">
+                        <h3 className={`${project2Styles.projectHead}`}>BookRev</h3>
+                        <input type="button" id="toggleCollapseBtn2" value="Collapse" className={`${project2Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                    </div>
+                    <hr style={{ "display": "block" }} id="hLine2" className={`${project2Styles.hLine}`} />
                 </div>
-                <div className={`${project2Styles.projectMainPart}`}>
+                <div style={{ "display": "flex" }} id="project2MainPart" className={`${project2Styles.projectMainPart}`}>
                     <div className={`${project2Styles.projectTextnBtn}`}>
                         <div className={`${project2Styles.projectText}`}>
                             <p>
