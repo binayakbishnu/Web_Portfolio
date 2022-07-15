@@ -2,8 +2,8 @@ import React from 'react'
 
 import researchWorkStyles from './ResearchWorks.module.css'
 
-import researchWorksPic1 from '../assets/researchWorks/StockMarket1.png'
-import researchWorksPic2 from '../assets/researchWorks/StockMarket5.png'
+import researchWorksPic1 from '../assets/researchWorks/StockMarket1.webp'
+import researchWorksPic2 from '../assets/researchWorks/StockMarket5.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareFromSquare } from '@fortawesome/free-regular-svg-icons'

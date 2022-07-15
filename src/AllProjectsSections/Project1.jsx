@@ -3,9 +3,9 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import project1Styles from './Project.module.css'
 
-import carouselPic1 from '../assets/projects/MediServ1.png'
-import carouselPic2 from '../assets/projects/MediServ2.png'
-import carouselPic3 from '../assets/projects/MediServ3.png'
+import carouselPic1 from '../assets/projects/MediServ1.webp'
+import carouselPic2 from '../assets/projects/MediServ2.webp'
+import carouselPic3 from '../assets/projects/MediServ3.webp'
 
 function Project1() {
     const [index, setIndex] = useState(0);

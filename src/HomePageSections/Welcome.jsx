@@ -13,7 +13,7 @@ import welcomeStyles from './Welcome.module.css'
 // import ball2 from '../assets/Ball-2.png'
 // import cube from '../assets/Cube.png'
 // import torus from '../assets/Torus-2.png'
-import figure from '../assets/figure3.svg'
+import figure from '../assets/welcomeFigure.svg'
 
 function Welcome() {
     return (

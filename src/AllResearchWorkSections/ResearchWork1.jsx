@@ -3,11 +3,11 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import researchWork1Styles from './ResearchWork.module.css'
 
-import carouselPic1 from '../assets/researchWorks/StockMarket1.png'
-import carouselPic2 from '../assets/researchWorks/StockMarket4.png'
-import carouselPic3 from '../assets/researchWorks/StockMarket5.png'
-import carouselPic4 from '../assets/researchWorks/StockMarket6.png'
-import carouselPic5 from '../assets/researchWorks/StockMarket7.png'
+import carouselPic1 from '../assets/researchWorks/StockMarket1.webp'
+import carouselPic2 from '../assets/researchWorks/StockMarket4.webp'
+import carouselPic3 from '../assets/researchWorks/StockMarket5.webp'
+import carouselPic4 from '../assets/researchWorks/StockMarket6.webp'
+import carouselPic5 from '../assets/researchWorks/StockMarket7.webp'
 
 function ResearchWork1() {
     const [index, setIndex] = useState(0);

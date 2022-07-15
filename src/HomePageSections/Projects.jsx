@@ -2,8 +2,8 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
-import projectPic1 from '../assets/projects/MediServ1.png'
-import projectPic2 from '../assets/projects/BookRev1.png'
+import projectPic1 from '../assets/projects/MediServ1.webp'
+import projectPic2 from '../assets/projects/BookRev1.webp'
 
 function Projects() {
     return (
