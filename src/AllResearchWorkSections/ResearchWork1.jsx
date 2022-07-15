@@ -12,9 +12,16 @@ import carouselPic5 from '../assets/researchWorks/StockMarket7.webp'
 function ResearchWork1() {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
+    const [carouselTheme, setCarouselTheme] = useState("light");
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
+
+        if (selectedIndex === 2 || selectedIndex === 3 || selectedIndex === 4) {
+            setCarouselTheme("dark");
+        } else {
+            setCarouselTheme("light");
+        }
     };
 
     const toggleCollapse = () => {
@@ -67,7 +74,7 @@ function ResearchWork1() {
                         </div>
                     </div>
                     <div className={`${researchWork1Styles.researchWorkSlideShow}`}>
-                        <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
+                        <Carousel activeIndex={index} onSelect={handleSelect} fade variant={carouselTheme}>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
