@@ -2,19 +2,12 @@ import React from 'react'
 
 import researchWorkStyles from './ResearchWorks.module.css'
 
-import researchWorksPic1 from '../assets/researchWorks/StockMarket1.png'
-import researchWorksPic2 from '../assets/researchWorks/StockMarket5.png'
+import researchWorksPic1 from '../assets/researchWorks/StockMarket1.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShareFromSquare } from '@fortawesome/free-regular-svg-icons'
 
 function ResearchWorks() {
-    const changeonMouseOver1 = () => {
-        document.getElementById("researchWork1").src = `${researchWorksPic2}`;
-    }
-    const changeonMouseLeave1 = () => {
-        document.getElementById("researchWork1").src = `${researchWorksPic1}`;
-    }
     return (
         <section className={`${researchWorkStyles.researchWorksParent}`} id="researchWorks"
             initial={{ rotate: 0, scale: 0.8 }}
@@ -35,10 +28,12 @@ function ResearchWorks() {
                     <div className={`${researchWorkStyles.researchWork} ${researchWorkStyles.researchWork1}`}>
                         <div className={`${researchWorkStyles.container}`}>
                             <a href="/allresearchwork#researchWork1">
-                                <img id="researchWork1" src={researchWorksPic1} alt="researchWork1" className={`${researchWorkStyles.researchWorkImg} ${researchWorkStyles.researchWork1Img}`} />
-                                <div className={`${researchWorkStyles.overlay}`} onMouseEnter={changeonMouseOver1} onMouseLeave={changeonMouseLeave1}>
+                                <img id="researchWork1" src={researchWorksPic1} alt="researchWork1" className={`${researchWorkStyles.researchWorkImg} ${researchWorkStyles.researchWork1Img}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${researchWorkStyles.overlay}`}>
                                     <div className={`${researchWorkStyles.text}`}>
-                                        <p className="text-black">
+                                        <p className="text-white">
                                             <span className="font-weight-bold text-decoration-underline">Click to expand</span>&nbsp;<FontAwesomeIcon icon={faShareFromSquare} />
                                         </p>
                                     </div>

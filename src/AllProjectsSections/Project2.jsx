@@ -3,11 +3,11 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import project2Styles from './Project.module.css'
 
-// import carouselPic1 from '../assets/projects/BookRev1.png'
-import carouselPic2 from '../assets/projects/BookRev2.png'
-import carouselPic3 from '../assets/projects/BookRev3.png'
-import carouselPic4 from '../assets/projects/BookRev4.png'
-import carouselPic5 from '../assets/projects/BookRev5.png'
+// import carouselPic1 from '../assets/projects/BookRev1.webp'
+import carouselPic2 from '../assets/projects/BookRev2.webp'
+import carouselPic3 from '../assets/projects/BookRev3.webp'
+import carouselPic4 from '../assets/projects/BookRev4.webp'
+import carouselPic5 from '../assets/projects/BookRev5.webp'
 
 function Project2() {
     const [index, setIndex] = useState(0);
@@ -55,6 +55,8 @@ function Project2() {
                                     src={carouselPic2}
                                     alt="Second slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>
@@ -68,6 +70,8 @@ function Project2() {
                                     src={carouselPic3}
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>
@@ -81,6 +85,8 @@ function Project2() {
                                     src={carouselPic4}
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>
@@ -94,6 +100,8 @@ function Project2() {
                                     src={carouselPic5}
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>

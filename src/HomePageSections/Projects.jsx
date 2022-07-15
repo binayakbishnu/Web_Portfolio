@@ -2,8 +2,8 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
-import projectPic1 from '../assets/projects/MediServ1.png'
-import projectPic2 from '../assets/projects/BookRev1.png'
+import projectPic1 from '../assets/projects/MediServ1.webp'
+import projectPic2 from '../assets/projects/BookRev1.webp'
 
 function Projects() {
     return (
@@ -25,7 +25,9 @@ function Projects() {
                     <div className={`${projectStyles.project} ${projectStyles.project1}`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
-                                <img src={projectPic1} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`} />
+                                <img src={projectPic1} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                                    width="100%"
+                                    height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
                                     <div className={`${projectStyles.text}`}>
                                         <h5>MediServ</h5>
@@ -38,10 +40,12 @@ function Projects() {
                     <div className={`${projectStyles.project} ${projectStyles.project2}`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project2">
-                                <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`} />
+                                <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
+                                    width="100%"
+                                    height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
                                     <div className={`${projectStyles.text}`}>
-                                    <h5>BookRev</h5>
+                                        <h5>BookRev</h5>
                                         <p>Online book sell/buy store</p>
                                     </div>
                                 </div>

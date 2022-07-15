@@ -2,7 +2,7 @@ import React from 'react'
 
 import aboutStyles from './AboutMe.module.css'
 
-import aboutMeFig from '../assets/abc.svg'
+import aboutMeFig from '../assets/aboutMeFigure.svg'
 
 import { motion } from "framer-motion"
 
