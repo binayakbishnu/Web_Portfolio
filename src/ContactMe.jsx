@@ -3,10 +3,9 @@ import React, { Component } from "react";
 import contactStyles from './ContactMe.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+// import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faSearchLocation } from '@fortawesome/free-solid-svg-icons'
-// import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export class ContactMe extends Component {
     closeContactPopUp() {
@@ -15,15 +14,15 @@ export class ContactMe extends Component {
 
     render() {
         return (
-            <article className={`${contactStyles.contactParent}`} id="contactMePopUp" style={{ "display": "none" }}>
+            <article className={`${contactStyles.contactParent} text-black`} id="contactMePopUp" style={{ "display": "none" }}>
                 <section className={`${contactStyles.contactSection}`}>
                     <h2 className={`${contactStyles.contactHead}`}>My Contact Details</h2>
 
                     <div className={`${contactStyles.ContactContentMainParent}`}>
-                        <div className={`${contactStyles.ContactContentMainDiv}`}>
+                        {/* <div className={`${contactStyles.ContactContentMainDiv}`}>
                             <FontAwesomeIcon icon={faPhoneAlt} className={`${contactStyles.contactIconsMain}`} />
                             <span className={`${contactStyles.ContactContentMain}`}>+91-9836042209</span>
-                        </div>
+                        </div> */}
                         <div className={`${contactStyles.ContactContentMainDiv}`}>
                             <FontAwesomeIcon icon={faEnvelope} className={`${contactStyles.contactIconsMain}`} />
                             <span className={`${contactStyles.ContactContentMain}`}>bishnu.binayak12@gmail.com</span>
