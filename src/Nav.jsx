@@ -1,11 +1,3 @@
-/**
- * It creates a navbar with links to the home page, about page, and contact page. It also has a
- * dropdown menu with links to the projects page.
- * @returns The Navbar component is returning a Navbar element with a container element inside of it.
- * The Navbar element is a bootstrap element that is used to create a navbar. The container element is
- * a bootstrap element that is used to create a container for the navbar. The Navbar element is being
- * given
- */
 import React, { Component } from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,7 +8,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-// import { faContactCard } from '@fortawesome/free-regular-svg-icons'
 
 import navStyles from './Navbar.module.css'
 
@@ -37,30 +28,18 @@ export class Nav extends Component {
     render() {
         return (
             <nav className={`${navStyles.navParent}`}>
-                {/* <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul> */}
-
                 <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="light" className={`${navStyles.bStrapParent}`}>
                     <ReactBootstrap.Container className={`${navStyles.bStrapContainer}`}>
-                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink}`}>
-                            {/* <ReactBootstrap.NavLink
-                                className={`${navStyles.links} ${navStyles.brandLink}`}
-                                // activeClassName="is-active"
-                                to="/"
-                                // exact
-                            > */}
-                            {/* <ReactBootstrap.Image src={logo} fluid /> */}
+                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink} mb-1`}>
                             Binayak
-                            {/* </ReactBootstrap.NavLink> */}
                         </ReactBootstrap.Navbar.Brand>
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
-                            <ReactBootstrap.Nav className="me-auto" style={{ "visibility": `${this.props.navDisplay}` }}>
-                                <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`}>About Me</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`}>Tech Stack</ReactBootstrap.Nav.Link>
+                            <ReactBootstrap.Nav className="me-auto">
+                                <ReactBootstrap.Nav.Link href="/" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay === "none" ? "block" : "none"}` }}>Go back</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>About Me</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Tech Stack</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="/allresearchwork" className={`${navStyles.links} ${navStyles.leftLinks}`}>Research Work</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.NavDropdown title="Top Projects" menuVariant="dark" id="collasible-nav-dropdown" className={`${navStyles.links} ${navStyles.leftLinks}`}>
                                     <ReactBootstrap.NavDropdown.Item href="/allprojects#project1">Project 1</ReactBootstrap.NavDropdown.Item>
                                     <ReactBootstrap.NavDropdown.Item href="/allprojects#project2">Project 2</ReactBootstrap.NavDropdown.Item>

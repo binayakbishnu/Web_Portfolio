@@ -10,7 +10,7 @@ import allProjectsStyles from './AllProjects.module.css'
 function MoreProjects() {
     return (
         <div className={`${allProjectsStyles.allProjects}`}>
-            <Nav navDisplay="hidden" />
+            <Nav navDisplay="none" />
 
             <Project1 />
 
