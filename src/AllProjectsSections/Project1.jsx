@@ -53,6 +53,8 @@ function Project1() {
                                     src={carouselPic1}
                                     alt="First slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
                                 {/* <Carousel.Caption>
                                     <h3>First slide label</h3>
@@ -65,6 +67,8 @@ function Project1() {
                                     src={carouselPic2}
                                     alt="Second slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>
@@ -78,6 +82,8 @@ function Project1() {
                                     src={carouselPic3}
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                                 {/* <Carousel.Caption>

@@ -35,7 +35,9 @@ function ResearchWorks() {
                     <div className={`${researchWorkStyles.researchWork} ${researchWorkStyles.researchWork1}`}>
                         <div className={`${researchWorkStyles.container}`}>
                             <a href="/allresearchwork#researchWork1">
-                                <img id="researchWork1" src={researchWorksPic1} alt="researchWork1" className={`${researchWorkStyles.researchWorkImg} ${researchWorkStyles.researchWork1Img}`} />
+                                <img id="researchWork1" src={researchWorksPic1} alt="researchWork1" className={`${researchWorkStyles.researchWorkImg} ${researchWorkStyles.researchWork1Img}`}
+                                    width="100%"
+                                    height="100%" />
                                 <div className={`${researchWorkStyles.overlay}`} onMouseEnter={changeonMouseOver1} onMouseLeave={changeonMouseLeave1}>
                                     <div className={`${researchWorkStyles.text}`}>
                                         <p className="text-black">

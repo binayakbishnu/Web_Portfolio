@@ -73,6 +73,8 @@ function ResearchWork1() {
                                     src={carouselPic1}
                                     alt="First slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
@@ -81,6 +83,8 @@ function ResearchWork1() {
                                     src={carouselPic2}
                                     alt="Second slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                             </Carousel.Item>
@@ -90,6 +94,8 @@ function ResearchWork1() {
                                     src={carouselPic3}
                                     alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                             </Carousel.Item>
@@ -99,6 +105,8 @@ function ResearchWork1() {
                                     src={carouselPic4}
                                     alt="Fourth slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                             </Carousel.Item>
@@ -108,6 +116,8 @@ function ResearchWork1() {
                                     src={carouselPic5}
                                     alt="Fifth slide"
                                     style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
                                 />
 
                             </Carousel.Item>
