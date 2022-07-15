@@ -11,18 +11,19 @@ import carouselPic5 from '../assets/researchWorks/StockMarket7.webp'
 
 function ResearchWork1() {
     const [index, setIndex] = useState(0);
+    const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
 
     const toggleCollapse = () => {
-        document.getElementById("researchWorkMainPart").style.display =
-            document.getElementById("researchWorkMainPart").style.display === "flex" ? "none" : "flex";
+        toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
+
         document.getElementById("hLine").style.display =
             document.getElementById("hLine").style.display === "block" ? "none" : "block";
-        document.getElementById("toggleCollapseBtn").value =
-            document.getElementById("toggleCollapseBtn").value === "Collapse" ? "Expand" : "Collapse";
+        document.getElementById("researchWorkMainPart").style.display =
+            document.getElementById("researchWorkMainPart").style.display === "flex" ? "none" : "flex";
     };
 
     return (
@@ -31,7 +32,7 @@ function ResearchWork1() {
                 <div className={`${researchWork1Styles.researchWorkHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
                         <h3 className={`${researchWork1Styles.researchWorkHead}`}>Assessing the Stock Market for new investors</h3>
-                        <input type="button" id="toggleCollapseBtn" value="Collapse" className={`${researchWork1Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <input type="button" id="toggleCollapseBtn" value={toggleCollapseBtnValue} className={`${researchWork1Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
                     <hr style={{ "display": "block" }} id="hLine" className={`${researchWork1Styles.hLine}`} />
                 </div>
@@ -66,7 +67,7 @@ function ResearchWork1() {
                         </div>
                     </div>
                     <div className={`${researchWork1Styles.researchWorkSlideShow}`}>
-                        <Carousel activeIndex={index} onSelect={handleSelect} fade variant="light">
+                        <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"

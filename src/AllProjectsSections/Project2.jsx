@@ -11,18 +11,19 @@ import carouselPic5 from '../assets/projects/BookRev5.webp'
 
 function Project2() {
     const [index, setIndex] = useState(0);
+    const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
 
     const toggleCollapse = () => {
+        toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
+
         document.getElementById("project2MainPart").style.display =
             document.getElementById("project2MainPart").style.display === "flex" ? "none" : "flex";
         document.getElementById("hLine2").style.display =
             document.getElementById("hLine2").style.display === "block" ? "none" : "block";
-        document.getElementById("toggleCollapseBtn2").value =
-            document.getElementById("toggleCollapseBtn2").value === "Collapse" ? "Expand" : "Collapse";
     };
 
     return (
@@ -31,7 +32,7 @@ function Project2() {
                 <div className={`${project2Styles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
                         <h3 className={`${project2Styles.projectHead}`}>BookRev</h3>
-                        <input type="button" id="toggleCollapseBtn2" value="Collapse" className={`${project2Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <input type="button" id="toggleCollapseBtn2" value={toggleCollapseBtnValue} className={`${project2Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
                     <hr style={{ "display": "block" }} id="hLine2" className={`${project2Styles.hLine}`} />
                 </div>
