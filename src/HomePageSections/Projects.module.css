@@ -44,6 +44,10 @@
     align-items: flex-start;
 }
 
+.mobileHint {
+    display: none;
+}
+
 .container {
     position: relative;
 }
@@ -103,6 +107,14 @@
 @media only screen and (max-width: 414px) {
     .projectsMainPart {
         flex-direction: column;
+    }
+
+    .mobileHint {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: small;
+        color: #ffffff;
     }
 
     .container:hover .overlay {

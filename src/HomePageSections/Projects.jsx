@@ -22,6 +22,7 @@ function Projects() {
                 </div>
 
                 <div className={`${projectStyles.projectsMainPart}`}>
+                    <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
                     <div className={`${projectStyles.project} ${projectStyles.project1}`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
