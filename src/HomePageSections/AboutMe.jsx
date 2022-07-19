@@ -4,15 +4,9 @@ import aboutStyles from './AboutMe.module.css'
 
 import aboutMeFig from '../assets/aboutMeFigure.svg'
 
-import { motion } from "framer-motion"
-
 function AboutMe() {
     return (
-        <motion.section className={`${aboutStyles.aboutParent}`} id="aboutme"
-            initial={{ rotate: 0, scale: 0.8 }}
-            animate={{ rotate: 0, scale: 1.0 }}
-            transition={{ duration: 1, /* yoyo: 1 */ }}
-        >
+        <section className={`${aboutStyles.aboutParent}`} id="aboutme">
             <section className={`${aboutStyles.about}`} id="aboutme">
                 <div className={`${aboutStyles.aboutHeadDiv}`}>
                     <h3 className={`${aboutStyles.aboutHead}`}>About Me</h3>
@@ -63,7 +57,7 @@ function AboutMe() {
                     </div>
                 </div>
             </section>
-        </motion.section >
+        </section >
     )
 }
 

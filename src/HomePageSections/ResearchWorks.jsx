@@ -9,11 +9,7 @@ import { faShareFromSquare } from '@fortawesome/free-regular-svg-icons'
 
 function ResearchWorks() {
     return (
-        <section className={`${researchWorkStyles.researchWorksParent}`} id="researchWorks"
-            initial={{ rotate: 0, scale: 0.8 }}
-            animate={{ rotate: 0, scale: 1.0 }}
-            transition={{ duration: 1, /* yoyo: 1 */ }}
-        >
+        <section className={`${researchWorkStyles.researchWorksParent}`} id="researchWorks">
             <section className={`${researchWorkStyles.researchWorks}`} id="researchWorks">
                 <div>
                     <div className={`${researchWorkStyles.researchWorksHeadDiv}`}>
