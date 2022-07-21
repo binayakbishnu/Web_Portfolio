@@ -24,10 +24,10 @@ function AboutMe() {
                                 I am an aspiring <a href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" rel="clickable noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" rel="noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
                             </p>
                             <p>
-                                I have explored <kbd><code style={{ color: "white" }}>MS Excel</code></kbd> and <kbd><code style={{ color: "white" }}>MySQL</code></kbd> for data analysis, followed by <kbd>Tableau</kbd> for data visualization.
+                                I have experience working with <kbd><code style={{ color: "white" }}>SQL</code></kbd> and <kbd><code style={{ color: "white" }}>Excel</code></kbd> for data analysis, followed by <kbd>Tableau</kbd> for data visualization.
                             </p>
                             <p>
-                                I have complete a professional certification course <code style={{ color: "black", fontWeight: "bold" }}>Google Data Analytics Professional Certificate</code> along with <code style={{ color: "black", fontWeight: "bold" }}>Introduction to Data Analysis Using Excel</code> and <code style={{ color: "black", fontWeight: "bold" }}>Business Analytics with Excel</code>.
+                                I also have proficiency in data analysis using <kbd><code style={{ color: "white" }}>Python</code></kbd> and web development using <kbd><code style={{ color: "white" }}>ReactJs</code></kbd>, <kbd><code style={{ color: "white" }}>NodeJs</code></kbd> and <kbd><code style={{ color: "white" }}>Express</code></kbd>. I have made full stack projects using the same along with SQL and MongoDB as databases.
                             </p>
                         </div>
 
