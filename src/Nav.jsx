@@ -39,8 +39,8 @@ export class Nav extends Component {
                                 <ReactBootstrap.Nav.Link href="/" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay === "none" ? "block" : "none"}` }}>Go back</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>About Me</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Tech Stack</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#projects" className={`${navStyles.links} ${navStyles.leftLinks}`}>Projects</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#researchWorks" className={`${navStyles.links} ${navStyles.leftLinks}`}>Research Work</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="#projects" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Projects</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="#researchWorks" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Research Work</ReactBootstrap.Nav.Link>
                             </ReactBootstrap.Nav>
                             <ReactBootstrap.Nav className={`${navStyles.socialLinksParent} d-flex flex-row`}>
                                 <ReactBootstrap.Nav.Link href="https://www.github.com/BinayakBishnu"

@@ -3,8 +3,11 @@
 }
 
 .project {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 
     margin: 0% 1%;
     border-radius: 10px;
@@ -60,8 +63,11 @@
 }
 
 .projectText {
-    background-color: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
 
     padding: 2%;
@@ -73,6 +79,8 @@
 
     padding: 1% 2%;
     margin: 0%;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .projectBtnLink {
@@ -82,27 +90,17 @@
     border: 0px;
 
     padding: 1% 2%;
-}
 
-.bottomBtnsDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    width: 100%;
-}
-
-.bottomBtns {
-    background-color: rgba(255, 255, 255, 0);
-    border: 0px;
-
+    color: #ffffff !important;
 }
 
 .projectBtn {
     background-color: rgba(255, 255, 255, 0);
     border: 0px;
+    color: white;
+    letter-spacing: 1px;
 
+    margin-top: 1%;
 }
 
 .projectSlideShow {
