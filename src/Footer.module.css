@@ -3,8 +3,12 @@
 }
 
 .MDBParent {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
 
     margin: 6% 1%;
     margin-bottom: 0%;
@@ -24,6 +28,11 @@
 .socialIcons:hover {
     color: white !important;
     background-color: black !important;
+}
+
+.sendMsg>form>div>div>p{
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 
 @media only screen and (max-width: 768px) {

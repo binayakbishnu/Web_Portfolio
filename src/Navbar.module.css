@@ -1,6 +1,10 @@
 .bStrapParent {
-    background-color: rgba(255, 255, 255, 0.35) !important;
-    backdrop-filter: blur(15px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) !important;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
 
     width: 99%;
     margin: auto;
@@ -12,11 +16,15 @@
 .brandLink {
     padding: 0%;
 
-    color: #000000;
+    color: #ffffff !important;
+}
+
+.leftLinks {
+    color: #ffffff !important;
 }
 
 .socialLinks {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-size: 1em;
 }
 

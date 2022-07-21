@@ -56,7 +56,7 @@ export class Footer extends Component {
                             <form action=''>
                                 <div className='row d-flex justify-content-center'>
                                     <div className='col-auto'>
-                                        <p className='pt-2'>
+                                        <p className='pt-2 text-white'>
                                             <strong>Send me a message!!</strong>
                                         </p>
                                     </div>
@@ -77,7 +77,7 @@ export class Footer extends Component {
                         </section>
 
                         <section className='mb-2 mb-md-4'>
-                            <p>
+                            <p className='text-white'>
                                 <strong>Peace!</strong>✌
                             </p>
                         </section>
