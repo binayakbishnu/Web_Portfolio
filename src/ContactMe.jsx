@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import contactStyles from './ContactMe.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faSearchLocation } from '@fortawesome/free-solid-svg-icons'
 
@@ -16,13 +15,9 @@ export class ContactMe extends Component {
         return (
             <article className={`${contactStyles.contactParent} text-black`} id="contactMePopUp" style={{ "display": "none" }}>
                 <section className={`${contactStyles.contactSection}`}>
-                    <h2 className={`${contactStyles.contactHead}`}>My Contact Details</h2>
+                    <h3 className={`${contactStyles.contactHead}`}>My Contact Details</h3>
 
                     <div className={`${contactStyles.ContactContentMainParent}`}>
-                        {/* <div className={`${contactStyles.ContactContentMainDiv}`}>
-                            <FontAwesomeIcon icon={faPhoneAlt} className={`${contactStyles.contactIconsMain}`} />
-                            <span className={`${contactStyles.ContactContentMain}`}>+91-9836042209</span>
-                        </div> */}
                         <div className={`${contactStyles.ContactContentMainDiv}`}>
                             <FontAwesomeIcon icon={faEnvelope} className={`${contactStyles.contactIconsMain}`} />
                             <span className={`${contactStyles.ContactContentMain}`}>bishnu.binayak12@gmail.com</span>
