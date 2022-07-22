@@ -28,7 +28,7 @@ export class Nav extends Component {
     render() {
         return (
             <nav className={`${navStyles.navParent}`}>
-                <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="light" className={`${navStyles.bStrapParent}`}>
+                <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className={`${navStyles.bStrapParent}`}>
                     <ReactBootstrap.Container className={`${navStyles.bStrapContainer}`}>
                         <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink} mb-1`}>
                             Binayak

@@ -35,6 +35,7 @@
     font-size: 5em;
 
     color: #ffffff;
+    margin-left: 1%;
 }
 
 .blinkerText {
@@ -151,6 +152,7 @@
 
     .mainHead {
         font-size: 2em;
+        margin-left: 0%;
     }
 
     .figure {
