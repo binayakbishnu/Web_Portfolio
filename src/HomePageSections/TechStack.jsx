@@ -27,7 +27,6 @@ function TechStack() {
                 </div>
 
                 <div className={`${techStackStyles.techStackMainPart}`}>
-                    {/* <img src={techStackFig} alt="About me illustration" className={`${techStackStyles.illustration}`} /> */}
                     <div className={`${techStackStyles.editorsSubPart}`}>
                         <div className={`${techStackStyles.editorsSubPartMembers} ${techStackStyles.vscode}`}>
                             <img src={vscodeLogo} alt="VSCode" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.vscodeLogo}`} />
@@ -38,10 +37,6 @@ function TechStack() {
                     </div>
 
                     <div className={`${techStackStyles.mainTech}`}>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}>
-                            <img src={excelLogo} alt="Excel" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.excelLogo}`} />
-                            Excel
-                        </div>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.sql}`}>
                             <img src={sqlLogo} alt="SQL" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.sqlLogo}`} />
                             SQL
@@ -50,17 +45,9 @@ function TechStack() {
                             <img src={tableauLogo} alt="Tableau" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.tableauLogo}`} />
                             Tableau
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.python}`}>
-                            <img src={pythonLogo} alt="Python" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.pythonLogo}`} />
-                            Python
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git}`}>
-                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
-                            Git
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.mongodb}`}>
-                            <img src={mongodbLogo} alt="MongoDB" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.mongodbLogo}`} />
-                            MongoDB
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}>
+                            <img src={excelLogo} alt="Excel" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.excelLogo}`} />
+                            Excel
                         </div>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
                             <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
@@ -69,6 +56,18 @@ function TechStack() {
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.nodejs}`}>
                             <img src={nodejsLogo} alt="NodeJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.nodejsLogo}`} />
                             NodeJs
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.mongodb}`}>
+                            <img src={mongodbLogo} alt="MongoDB" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.mongodbLogo}`} />
+                            MongoDB
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git}`}>
+                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
+                            Git/Github
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.python}`}>
+                            <img src={pythonLogo} alt="Python" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.pythonLogo}`} />
+                            Python
                         </div>
                         {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.hidden}`}>
                         </div> */}

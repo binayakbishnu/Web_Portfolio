@@ -10,7 +10,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 32px;
 
-    min-height: 90vh;
+    min-height: 80vh;
 
     margin: 0% 1%;
     border-radius: 10px;
@@ -19,8 +19,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
 }
 
 .techStackHead {
@@ -43,28 +41,24 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 
     flex: 1;
 }
 
 .mainTech {
     display: grid;
-    min-height: 80%;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    grid-row-gap: 60px;
-    grid-column-gap: 30%;
-
-    margin: 0% 15%;
+    place-items: center;
+    padding: 0%;
+    margin: 0%;
 }
 
 .mainTechMembers {
-    width: 100px;
-    height: 100px;
+    max-width: 30%;
+    aspect-ratio: 1/1;
     border-radius: 50%;
 
     background-color: rgba(255, 255, 255, 0.10);
@@ -74,28 +68,19 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 10%;
 
     font-size: 0.8em;
-    font-weight: bold;
 
     color: #ffffff;
+    padding: 4% 2%;
 }
 
 .techLogos {
     margin: 0%;
-    width: 50%;
+    width: 40%;
 }
 
 .reactjsLogo {
-    width: 65%;
-}
-
-.gitLogo {
-    width: 60%;
-}
-
-.nodejsLogo {
     width: 55%;
 }
 
@@ -106,7 +91,7 @@
 }
 
 .uiuxLogo {
-    width: 60%;
+    width: 55%;
 }
 
 .uiuxSubPart {
@@ -114,7 +99,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 300px;
+
+    padding: 2% 0%;
 }
 
 .uiuxSubPartMembers {
@@ -152,7 +138,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 200px;
+
+    padding: 5% 0%;
 }
 
 .editorsSubPartMembers {
@@ -183,9 +170,6 @@
 
 @media only screen and (max-width: 768px) {
     .techStack {
-        padding: 5%;
-        padding-bottom: 8%;
-
         margin: 0% 2%;
     }
 
@@ -195,103 +179,59 @@
         justify-content: center;
         align-items: space-around;
 
-        padding-left: 0%;
-        padding-right: 0%;
-
-        padding-top: 5%;
+        padding: 0%;
     }
 
     .mainTech {
-        flex: default;
-        margin: 0%;
-        min-height: auto;
-
-        row-gap: 30px;
-        column-gap: 20%;
-
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
-    .uiuxSubPart {
-        flex-direction: row;
-        width: 60%;
-
-        min-height: auto;
-    }
-
-    .figmaLogo {
-        width: 20px;
-    }
-
-    .behanceLogo {
-        width: 45px;
-    }
-
-    .dribbbleLogo {
-        width: 35px;
-    }
-
-    .editorsSubPart {
-        flex-direction: row;
-        width: 60%;
-
-        min-height: auto;
-    }
-
-    .vscodeLogo {
-        width: 35px;
-    }
-
-    .jupyterLogo {
-        width: 35px;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 }
 
 @media only screen and (max-width: 414px) {
     .techStackParent {
-        padding-top: 12%;
+        padding-top: 18%;
     }
 
     .techStack {
-        min-height: 75vh;
+        padding: 5%;
+        min-height: 60vh;
     }
 
     .techStackMainPart {
         padding-top: 0%;
+        flex-direction: column;
     }
 
     .mainTech {
-        column-gap: 10%;
+        flex: 1;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        min-width: 100%;
     }
 
     .mainTechMembers {
-        width: 80px;
-        height: 80px;
+        aspect-ratio: unset;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: auto;
+        min-width: 85%;
+        height: 50%;
+        border-radius: 10px;
+
+        margin: 0%;
+        padding: 8%;
     }
 
-    .uiuxSubPart {
-        width: 80%;
+    .uiux {
+        display: none;
     }
 
-    .editorsSubPartMembers, .uiuxSubPartMembers {
-        width: 60px;
-        height: 60px;
-    }
-
-    .vscodeLogo {
-        width: 35px;
-    }
-
-    .jupyterLogo {
-        width: 35px;
-    }
-
-    .figmaLogo {
+    .mainTechLogos {
         width: 25px;
     }
 
-    .behanceLogo {
-        width: 45px;
+    .editorsSubPart, .uiuxSubPart {
+        display: none;
     }
 }
