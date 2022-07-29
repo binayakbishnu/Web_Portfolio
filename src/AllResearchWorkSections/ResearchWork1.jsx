@@ -66,7 +66,7 @@ function ResearchWork1() {
                         </div>
                         <div className={`${researchWork1Styles.bottomBtnsDiv}`}>
                             <a href="https://drive.google.com/drive/folders/1Ofw8XjHtl0pBNXa9DhhxGiHufiq5UX98?usp=sharing" target="_blank" rel="noopener noreferrer" className={`${researchWork1Styles.researchWorkBtnLink}`}>
-                                <input disabled type="button" value="Paper" className={`${researchWork1Styles.bottomBtns}`} />
+                                <input title="Disabled" disabled type="button" value="Paper" className={`${researchWork1Styles.bottomBtns} ${researchWork1Styles.paperBtn}`} />
                             </a>
                             <a href="https://www.canva.com/design/DAE-DNLHPvs/ywFWkaq_3AEj0C1R5nZygQ/view?utm_content=DAE-DNLHPvs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer" className={`${researchWork1Styles.researchWorkBtnLink} ${researchWork1Styles.pptLink}`}>
                                 <input type="button" value="Presentation" className={`${researchWork1Styles.bottomBtns}`} />
