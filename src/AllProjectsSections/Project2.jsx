@@ -44,9 +44,11 @@ function Project2() {
                                 It allows users to buy and sell books online.
                             </p>
                         </div>
-                        <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${project2Styles.projectBtnLink}`}>
-                            <input type="button" value="GitHub" className={`${project2Styles.projectBtn}`} />
-                        </a>
+                        <div className={`${project2Styles.bottomBtnsDiv}`}>
+                            <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${project2Styles.projectBtnLink}`}>
+                                <input type="button" value="GitHub" className={`${project2Styles.projectBtn}`} />
+                            </a>
+                        </div>
                     </div>
                     <div className={`${project2Styles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">

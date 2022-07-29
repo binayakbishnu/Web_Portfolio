@@ -83,6 +83,16 @@
     letter-spacing: 1px;
 }
 
+.bottomBtnsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    margin-top: 4%;
+}
+
 .projectBtnLink {
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(15px);
@@ -99,8 +109,6 @@
     border: 0px;
     color: white;
     letter-spacing: 1px;
-
-    margin-top: 1%;
 }
 
 .projectSlideShow {

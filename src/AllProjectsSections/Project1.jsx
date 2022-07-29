@@ -42,9 +42,11 @@ function Project1() {
                                 It allows users to order medicine and consult doctors online.
                             </p>
                         </div>
-                        <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
-                            <input type="button" value="GitHub" className={`${project1Styles.projectBtn}`} />
-                        </a>
+                        <div className={`${project1Styles.bottomBtnsDiv}`}>
+                            <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
+                                <input type="button" value="GitHub" className={`${project1Styles.projectBtn}`} />
+                            </a>
+                        </div>
                     </div>
                     <div className={`${project1Styles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
