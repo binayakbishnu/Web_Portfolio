@@ -38,7 +38,7 @@ function Projects() {
             transition={{ duration: 1, /* yoyo: 1 */ }}
         >
             <section className={`${projectStyles.projects}`} id="projects">
-                <div>
+                <div id="headWithLine">
                     <div className={`${projectStyles.projectsHeadDiv}`}>
                         <h3 className={`${projectStyles.projectsHead}`}>Projects</h3>
                         <ul className={`${projectStyles.projectFilters}`}>
@@ -73,6 +73,38 @@ function Projects() {
 
                 <div className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
+                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} fullStack SQL`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#project1">
+                                <img src={projectPic1} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>MediServ</h5>
+                                        <p>Online consultation/medical store</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
+                    </div>
+                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} fullStack MongoDB others`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#project2">
+                                <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>BookRev</h5>
+                                        <p>Online book sell/buy store</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;MongoDB</p>
+                    </div>
                     <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} fullStack SQL`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
