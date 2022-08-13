@@ -8,7 +8,8 @@ import projectPic2 from '../assets/projects/BookRev1.webp'
 function Projects() {
     const projectFilter = (event) => {
         var flag = 0;
-        for (var i = 1; i <= 2; i++) {
+        var childrenCount = document.getElementById('projectsMainPart').childElementCount;
+        for (var i = 1; i <= childrenCount - 1; i++) {
             var element = document.getElementById(`project${i}`);
             if (element.classList.contains(event.target.id)) {
                 // alert(event.target.id + '\n' + element.classList);
@@ -71,7 +72,7 @@ function Projects() {
                     </button>
                 </div>
 
-                <div className={`${projectStyles.projectsMainPart}`}>
+                <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
                     <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} fullStack SQL`}>
                         <div className={`${projectStyles.container}`}>
@@ -105,7 +106,7 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;MongoDB</p>
                     </div>
-                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} fullStack SQL`}>
+                    <div id="project3" className={`${projectStyles.project} ${projectStyles.project3} fullStack SQL`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
                                 <img src={projectPic1} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
@@ -121,7 +122,7 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
                     </div>
-                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} fullStack MongoDB others`}>
+                    <div id="project4" className={`${projectStyles.project} ${projectStyles.project4} fullStack MongoDB others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project2">
                                 <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
