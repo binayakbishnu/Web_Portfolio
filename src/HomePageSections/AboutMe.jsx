@@ -46,13 +46,59 @@ function AboutMe() {
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Tableau</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Excel</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Python</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li>
                                 </ul>
                             </div>
 
                             <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`${aboutStyles.aboutMeExtended}`}>
+                    <div className={`${aboutStyles.education}`}>
+                        <h5 className={`${aboutStyles.subHeadEducation}`}>Education</h5>
+                        <hr className={`${aboutStyles.hLine}`} />
+                        <div className={`${aboutStyles.educationList} ${aboutStyles.educationList1}`}>
+                            <p className={`${aboutStyles.educationListHead}`}>B.Tech. | Vellore Institute of Technology | 2020-24</p>
+                            <ul className={`${aboutStyles.educationListBody}`}>
+                                <li>CGPA (till 4th sem): 8.22; Latest GPA: 8.67</li>
+                                <li>Chairperson at a chapter, ISA-VIT.</li>
+                                <li>Senior core member in a club, TEC.</li>
+                                <li>Volunteered as a student coordinator of the placement cell.</li>
+                            </ul>
+                        </div>
+                        <div className={`${aboutStyles.educationList} ${aboutStyles.educationList2}`}>
+                            <p className={`${aboutStyles.educationListHead}`}>Class 12 | Delhi Public School, Ruby Park, Kolkata | 2018-20</p>
+                            <ul className={`${aboutStyles.educationListBody}`}>
+                                <li>AISSCE: 95.2%</li>
+                            </ul>
+                        </div>
+                        <div className={`${aboutStyles.educationList} ${aboutStyles.educationList3}`}>
+                            <p className={`${aboutStyles.educationListHead}`}>Class 10 | Delhi Public School, Ruby Park, Kolkata | 2008-18</p>
+                            <ul className={`${aboutStyles.educationListBody}`}>
+                                <li>AISSE: 94.2%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={`${aboutStyles.otherSkills}`}>
+                        <h5 className={`${aboutStyles.subHeadOtherSkills}`}>Other skills</h5>
+                        <hr className={`${aboutStyles.hLine}`} />
+                        <div className={`${aboutStyles.otherSkillsList} ${aboutStyles.otherSkillsList1}`}>
+                            <p className={`${aboutStyles.otherSkillsListHead}`}>Tech</p>
+                            <ul className={`${aboutStyles.otherSkillsListBody}`}>
+                                {/* <li>Dashboarding</li> */}
+                                <li>Open Source collaboration using Git/Github</li>
+                            </ul>
+                        </div>
+                        <div className={`${aboutStyles.otherSkillsList} ${aboutStyles.otherSkillsList2}`}>
+                            <p className={`${aboutStyles.otherSkillsListHead}`}>Non-tech</p>
+                            <ul className={`${aboutStyles.otherSkillsListBody}`}>
+                                <li>Team Management</li>
+                                <li>Oral Communication</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
