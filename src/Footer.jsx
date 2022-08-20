@@ -14,6 +14,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faContactCard } from '@fortawesome/free-regular-svg-icons'
 
 export class Footer extends Component {
@@ -43,8 +44,12 @@ export class Footer extends Component {
                                 <FontAwesomeIcon icon={faBehance} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayak_bishnu' role='button' target='_blank' rel="noopener noreferrer">
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://twitter.com/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faTwitter} />
                             </a>
 
                             <button className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 me-0`} onClick={this.showContactPopUp}>

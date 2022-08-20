@@ -8,6 +8,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import navStyles from './Navbar.module.css'
 
@@ -43,7 +44,7 @@ export class Nav extends Component {
                                 <ReactBootstrap.Nav.Link href="#researchWorks" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Research Work</ReactBootstrap.Nav.Link>
                             </ReactBootstrap.Nav>
                             <ReactBootstrap.Nav className={`${navStyles.socialLinksParent} d-flex flex-row`}>
-                                <ReactBootstrap.Nav.Link href="https://www.github.com/BinayakBishnu"
+                                <ReactBootstrap.Nav.Link href="https://www.github.com/binayakbishnu"
                                     target="_blank"
                                     className={`${navStyles.socialLinks} ${navStyles.links}`}
                                 >
@@ -61,11 +62,17 @@ export class Nav extends Component {
                                 >
                                     <FontAwesomeIcon icon={faBehance} />
                                 </ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="https://www.instagram.com/binayak_bishnu"
+                                <ReactBootstrap.Nav.Link href="https://www.instagram.com/binayakbishnu"
                                     target="_blank"
                                     className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                                 >
                                     <FontAwesomeIcon icon={faInstagram} />
+                                </ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href="https://twitter.com/binayakbishnu"
+                                    target="_blank"
+                                    className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
+                                >
+                                    <FontAwesomeIcon icon={faTwitter} />
                                 </ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link
                                     onClick={this.showContactPopUp}
