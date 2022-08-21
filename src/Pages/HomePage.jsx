@@ -13,6 +13,7 @@ import ContactMe from '../ContactMe'
 import homePageStyles from './HomePage.module.css'
 import Nav from '../Nav'
 import Footer from '../Footer'
+import CoCurricular from '../HomePageSections/CoCurricular'
 
 function HomePage() {
     return (
@@ -28,6 +29,8 @@ function HomePage() {
             <Projects />
 
             <ResearchWorks />
+
+            <CoCurricular />
 
             <ContactMe />
 
