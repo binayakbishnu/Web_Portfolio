@@ -184,6 +184,17 @@
     font-weight: bold;
 }
 
+.toggleCollapseBtn {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    border: 0px;
+
+    padding: 1% 2%;
+
+    width: 120px;
+}
+
 .otherSkills {
     color: white;
 
@@ -224,9 +235,11 @@
         width: 100%;
         padding: 3% 5%;
     }
-    .resumeBtnsDiv{
-        margin-bottom:3%;
+
+    .resumeBtnsDiv {
+        margin-bottom: 3%;
     }
+
     .progressDiv {
         margin-top: 0%;
     }
@@ -257,13 +270,11 @@
         margin-right: 0%;
         margin-bottom: 1%;
         padding: 5%;
-        padding-bottom: 0%;
     }
 
     .otherSkills {
         width: 100%;
         padding: 5%;
-        padding-bottom: 0%;
     }
 
 
