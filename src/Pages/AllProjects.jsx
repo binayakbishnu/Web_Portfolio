@@ -10,7 +10,7 @@ import allProjectsStyles from './AllProjects.module.css'
 function MoreProjects() {
     return (
         <div className={`${allProjectsStyles.allProjects}`}>
-            <Nav navDisplay="none" />
+            <Nav goBackLink="/#projects" navDisplay="none" />
 
             <Project1 />
 

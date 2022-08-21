@@ -37,7 +37,7 @@ export class Nav extends Component {
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
                             <ReactBootstrap.Nav className="me-auto">
-                                <ReactBootstrap.Nav.Link href="/" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay === "none" ? "block" : "none"}` }}>Go back</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.goBackLink} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay === "none" ? "block" : "none"}` }}>Go back</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>About Me</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Tech Stack</ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="#projects" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Projects</ReactBootstrap.Nav.Link>

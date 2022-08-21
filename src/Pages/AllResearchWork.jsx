@@ -9,7 +9,7 @@ import allResearchWorkStyles from './AllResearchWork.module.css'
 function AllResearchWork() {
     return (
         <div className={`${allResearchWorkStyles.AllResearchWorks}`}>
-            <Nav navDisplay="none" />
+            <Nav goBackLink="/#researchWorks" navDisplay="none" />
 
             <ResearchWork1 />
 
