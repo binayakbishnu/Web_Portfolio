@@ -5,8 +5,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+    font-family: Diranista;
+    src: local("Diranista"), url("./assets/fonts/Diranista/Diranista-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+
 h1, h3 {
     font-family: 'Playfair Display', serif;
+    /* font-family: 'Diranista'; */
 }
 
 body {

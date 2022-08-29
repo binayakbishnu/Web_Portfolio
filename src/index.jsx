@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import '@fortawesome/react-fontawesome';
+import './assets/fonts/Diranista/Diranista-Regular.otf'
 
 import './index.module.css'
 
