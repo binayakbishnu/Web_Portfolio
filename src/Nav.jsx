@@ -9,6 +9,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 import navStyles from './Navbar.module.css'
 
@@ -31,8 +32,8 @@ export class Nav extends Component {
             <nav className={`${navStyles.navParent}`}>
                 <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className={`${navStyles.bStrapParent}`}>
                     <ReactBootstrap.Container className={`${navStyles.bStrapContainer}`}>
-                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink} mb-1`}>
-                            Binayak
+                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink} mb-0`}>
+                            <FontAwesomeIcon icon={faHome} />
                         </ReactBootstrap.Navbar.Brand>
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">

@@ -13,14 +13,22 @@
     margin-top: 1%;
 }
 
+.bStrapContainer{
+    display: flex !important;
+    align-items: baseline !important;
+}
+
 .brandLink {
     padding: 0%;
+    margin-right: 2%;
 
     color: #ffffff !important;
+    font-size: 1.0em;
 }
 
 .leftLinks {
     color: #ffffff !important;
+    font-size: 1.0em;
 }
 
 .socialLinks {
