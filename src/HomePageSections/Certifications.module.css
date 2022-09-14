@@ -1,0 +1,77 @@
+.certificationsParent {
+    padding-top: 6%;
+}
+
+.certifications {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+}
+
+.certificationsHead {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.certificationsMainPart {
+    color: white;
+}
+
+.certificationsSection>ul>li{
+    text-align: justify;
+}
+
+.expandBtn {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-size: small;
+}
+
+.expandBtnSub {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .certificationsMainPart {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .certificationsMainPart>h5{
+        font-size: 1em;
+    }
+    
+    .certificationsSection>ul>li{
+        text-align: left;
+    }
+
+    .certificationsParent {
+        padding-top: 12%;
+    }
+
+    .certifications {
+        padding: 5%;
+        margin: 0% 2%;
+    }
+}

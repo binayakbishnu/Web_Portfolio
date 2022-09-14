@@ -14,6 +14,7 @@ import homePageStyles from './HomePage.module.css'
 import Nav from '../Nav'
 import Footer from '../Footer'
 import CoCurricular from '../HomePageSections/CoCurricular'
+import Certifications from '../HomePageSections/Certifications'
 
 function HomePage() {
     return (
@@ -33,6 +34,8 @@ function HomePage() {
             <CoCurricular />
 
             <ContactMe />
+
+            <Certifications />
 
             <Footer goUpTarget="#welcome" />
         </div>
