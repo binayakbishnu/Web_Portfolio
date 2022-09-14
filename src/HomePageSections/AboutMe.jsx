@@ -80,7 +80,7 @@ function AboutMe() {
                 <div className={`${aboutStyles.aboutMeExtended}`}>
                     <div className={`${aboutStyles.education}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
-                            <h5 className={`${aboutStyles.subHeadEducation}`}>Education</h5>
+                            <h5 className={`${aboutStyles.subHeadEducation}`} onClick={toggleEducationExpand}>Education</h5>
                             <input type="button" value={toggleCollapseBtnValueEducation} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleEducationExpand} />
                         </div>
                         <hr style={{ "display": "none" }} id="educationhLine" className={`${aboutStyles.hLine}`} />
@@ -110,7 +110,7 @@ function AboutMe() {
                     </div>
                     <div className={`${aboutStyles.otherSkills}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
-                            <h5 className={`${aboutStyles.subHeadOtherSkills}`}>Other skills</h5>
+                            <h5 className={`${aboutStyles.subHeadOtherSkills}`} onClick={toggleOtherSkillsExpand}>Other skills</h5>
                             <input type="button" value={toggleCollapseBtnValueOtherSkills} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleOtherSkillsExpand} />
                         </div>
                         <hr style={{ "display": "none" }} id="otherSkillshLine" className={`${aboutStyles.hLine}`} />
@@ -129,6 +129,8 @@ function AboutMe() {
                                     <li>Oral Communication</li>
                                 </ul>
                             </div>
+
+                            <a href="/#coCurricular" style={{ "color": "white", "fontWeight": "", "textDecoration": "underline", "cursor": "pointer" }}>Co-Curricular/Volunteer work</a>
                         </div>
                     </div>
                 </div>
