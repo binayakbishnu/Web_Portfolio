@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 
 import aboutStyles from './AboutMe.module.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
+
 import aboutMeFig from '../assets/aboutMeFigure.svg'
 
 function AboutMe() {
@@ -53,7 +56,8 @@ function AboutMe() {
 
                         <div className={`${aboutStyles.resumeBtnsDiv}`}>
                             <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
-                                <input type="button" value="Download my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`} />
+                                <button className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`}>Download my Resume&nbsp;&nbsp;<FontAwesomeIcon icon={faGoogleDrive} />
+                                </button>
                             </a>
                             {/* <a href="https://drive.google.com/file/d/1_OlKrOklOIRyuidzQszGGgqeJ3SYyklU/view?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 <input type="button" value="View my Resume" className={`${aboutStyles.resumeBtn} ${aboutStyles.viewResume}`} />
