@@ -9,6 +9,7 @@ import TechStack from '../HomePageSections/TechStack'
 import Projects from '../HomePageSections/Projects'
 import ResearchWorks from '../HomePageSections/ResearchWorks'
 import ContactMe from '../ContactMe'
+import SwitchProfile from '../SwitchProfile'
 
 import homePageStyles from './HomePage.module.css'
 import Nav from '../Nav'
@@ -34,6 +35,7 @@ function HomePage() {
             <CoCurricular />
 
             <ContactMe />
+            <SwitchProfile />
 
             <Certifications />
 
