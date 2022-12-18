@@ -44,10 +44,7 @@ function AboutMe() {
                             <h5>Hi</h5>
                             <p>
                                 I am a student pursuing my undergraduate in Information Technology.
-                                I am an aspiring <a href="https://www.coursera.org/articles/what-is-data-analysis-with-examples" target="_blank" rel="clickable noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Analyst</code></kbd></a> with a long-term goal in <a href="https://www.oracle.com/in/data-science/what-is-data-science/" target="_blank" rel="noopener noreferrer" style={{ whiteSpace: "nowrap" }}><kbd><code style={{ color: "white" }}>Data Science</code></kbd></a>.
-                            </p>
-                            <p>
-                                I have experience working with <kbd><code style={{ color: "white" }}>SQL</code></kbd> and <kbd><code style={{ color: "white" }}>Excel</code></kbd> for data analysis, followed by <kbd>Tableau</kbd> for data visualization.
+                                I am a project-oriented learner who goes the extra mile for a task and volunteers to take charge. I have operational skills in <kbd>SQL</kbd> (queries, nested queries, joins, triggers, and PL/SQL), <kbd>Excel</kbd> (functions, visualisation) and <kbd>Tableau</kbd>, along with <kbd>Python</kbd>.
                             </p>
                             <p>
                                 I also have proficiency in data analysis using <kbd><code style={{ color: "white" }}>Python</code></kbd> and web development using <kbd><code style={{ color: "white" }}>ReactJs</code></kbd>, <kbd><code style={{ color: "white" }}>NodeJs</code></kbd> and <kbd><code style={{ color: "white" }}>Express</code></kbd>. I have made full stack projects using the same along with SQL and MongoDB as databases.
@@ -73,6 +70,20 @@ function AboutMe() {
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Python</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li>
+                                </ul>
+                            </div>
+
+                            <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
+                        </div>
+                        <div className={`${aboutStyles.progressDiv}`}>
+                            <div className={`${aboutStyles.progressHeaders}`}>
+                                <ul className={`${aboutStyles.progressHeadersList}`}>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>HTML/CSS</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>CSS</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Js</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>ReactJs</li>
+                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>NodeJs</li>
+                                    {/* <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li> */}
                                 </ul>
                             </div>
 
