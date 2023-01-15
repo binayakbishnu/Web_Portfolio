@@ -1,0 +1,131 @@
+:root {
+    --PopInValue: -16%;
+    --PopOutValue: 0%;
+}
+
+@keyframes PopOut {
+    from {
+        right: var(--PopInValue);
+    }
+
+    to {
+        right: var(--PopOutValue);
+    }
+}
+
+@keyframes PopIn {
+    from {
+        right: var(--PopOutValue);
+    }
+
+    to {
+        right: var(--PopInValue);
+    }
+}
+
+.switchProfileParentOuter {
+    width: 18%;
+    position: fixed;
+    top: 75%;
+    right: var(--PopInValue);
+    /* right: var(--PopOutValue); */
+
+    z-index: 99;
+
+    padding-right: 2%;
+
+    animation: PopIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+}
+
+.switchProfileParentOuter:hover {
+    animation: PopOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+
+    right: var(--PopOutValue);
+}
+
+.switchProfileParent {
+    height: fit-content;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+
+    padding: 8%;
+    padding-left: 12%;
+}
+
+.switchProfileParent>p {
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+
+    position: absolute;
+    top: 0;
+    left: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+    height: 100%;
+    text-align: center;
+}
+
+.switchProfileParent>h3 {
+    color: white;
+}
+
+.switchProfileParent>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.switchProfileParent>div>input {
+    margin-left: 2%;
+}
+
+.switchProfileMinDiv {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0);
+
+    font-weight: bold;
+
+    margin-top: -0px;
+    margin-right: -0px;
+
+    padding: 0%;
+}
+
+.switchProfileMin {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0% 10px 0% 10px;
+
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+}
