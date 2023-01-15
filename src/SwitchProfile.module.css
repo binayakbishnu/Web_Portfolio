@@ -1,5 +1,55 @@
+:root {
+    --PopInValue: -16%;
+    --PopOutValue: 0%;
+}
+
+@keyframes PopOut {
+    from {
+        right: var(--PopInValue);
+    }
+
+    to {
+        right: var(--PopOutValue);
+    }
+}
+
+@keyframes PopIn {
+    from {
+        right: var(--PopOutValue);
+    }
+
+    to {
+        right: var(--PopInValue);
+    }
+}
+
+.switchProfileParentOuter {
+    width: 18%;
+    position: fixed;
+    top: 75%;
+    right: var(--PopInValue);
+    /* right: var(--PopOutValue); */
+
+    z-index: 99;
+
+    padding-right: 2%;
+
+    animation: PopIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+}
+
+.switchProfileParentOuter:hover {
+    animation: PopOut;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+
+    right: var(--PopOutValue);
+}
+
 .switchProfileParent {
-    width: 25%;
     height: fit-content;
 
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -9,31 +59,44 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
 
-    position: fixed;
-    /* made fixed so that it is relative to viewport */
-    top: 15%;
-    right: 2%;
-
-    margin: auto;
-
-    padding: 2%;
-    padding-right: 5%;
-
-    z-index: 99;
+    padding: 8%;
+    padding-left: 12%;
 }
 
-.switchProfileParent>h3{
-    color: black;
+.switchProfileParent>p {
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+
+    position: absolute;
+    top: 0;
+    left: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+    height: 100%;
+    text-align: center;
+}
+
+.switchProfileParent>h3 {
+    color: white;
 }
 
 .switchProfileParent>div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-.switchProfileMinDiv{
+.switchProfileParent>div>input {
+    margin-left: 2%;
+}
+
+.switchProfileMinDiv {
     position: absolute;
     top: 0%;
     right: 0%;
@@ -50,7 +113,7 @@
     padding: 0%;
 }
 
-.switchProfileMin{
+.switchProfileMin {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0));
