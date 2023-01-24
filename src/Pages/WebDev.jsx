@@ -1,15 +1,25 @@
 import React from 'react'
 import Nav from '../Nav'
+import Footer from '../Footer'
 import WebdevWelcome from '../WebdevSections/WebdevWelcome'
+import AboutMeWebDev from '../WebdevSections/AboutMeWebDev'
 import SwitchProfile from '../SwitchProfile'
+import Welcome from '../HomePageSections/Welcome.jsx'
+import TechStackWebDev from '../WebdevSections/TechStackWebDev'
 
 function WebDev() {
     return (
         <section>
-            <Nav goBackLink="/" navDisplay="none" />
-            <WebdevWelcome />
+            <Nav rootLink="webdevHome" scrollLinks="webdev" />
+            <Welcome />
 
-            <SwitchProfile defaultValue="Web Development" />
+            <AboutMeWebDev />
+
+            <TechStackWebDev />
+
+            <SwitchProfile />
+
+            <Footer goUpTarget="#welcome" />
         </section>
     )
 }

@@ -1,0 +1,237 @@
+.techStackParent {
+    padding-top: 6%;
+}
+
+.techStack {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+
+    min-height: 80vh;
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.techStackHead {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.techStackMainPart {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    flex: 1;
+}
+
+.mainTech {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.mainTechMembers {
+    max-width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(0px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 0.8em;
+
+    color: #ffffff;
+    padding: 4% 2%;
+}
+
+.techLogos {
+    margin: 0%;
+    width: 40%;
+}
+
+.reactjsLogo {
+    width: 55%;
+}
+
+.hidden {
+    background-color: rgba(0, 0, 0, 0.0);
+    backdrop-filter: blur(0px);
+    display: hidden;
+}
+
+.uiuxLogo {
+    width: 55%;
+}
+
+.uiuxSubPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2% 0%;
+}
+
+.uiuxSubPartMembers {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(0px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.figmaLogo {
+    width: 40%;
+}
+
+.behanceLogo {
+    width: 80%;
+}
+
+.dribbbleLogo {
+    width: 55%;
+}
+
+.editorsSubPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5% 0%;
+}
+
+.editorsSubPartMembers {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(0px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.vscodeLogo {
+    width: 60%;
+}
+
+.jupyterLogo {
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    .techStack {
+        margin: 0% 2%;
+    }
+
+    .techStackMainPart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+
+        padding: 0%;
+    }
+
+    .mainTech {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .techStackParent {
+        padding-top: 18%;
+    }
+
+    .techStack {
+        padding: 5%;
+        min-height: 60vh;
+    }
+
+    .techStackMainPart {
+        padding-top: 0%;
+        flex-direction: column;
+    }
+
+    .mainTech {
+        flex: 1;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        min-width: 100%;
+    }
+
+    .mainTechMembers {
+        aspect-ratio: unset;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: auto;
+        min-width: 85%;
+        height: 50%;
+        border-radius: 10px;
+
+        margin: 0%;
+        padding: 8%;
+    }
+
+    .uiux {
+        display: none;
+    }
+
+    .mainTechLogos {
+        width: 25px;
+    }
+
+    .editorsSubPart, .uiuxSubPart {
+        display: none;
+    }
+}

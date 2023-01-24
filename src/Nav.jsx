@@ -32,18 +32,18 @@ export class Nav extends Component {
             <nav className={`${navStyles.navParent}`}>
                 <ReactBootstrap.Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className={`${navStyles.bStrapParent}`}>
                     <ReactBootstrap.Container className={`${navStyles.bStrapContainer}`}>
-                        <ReactBootstrap.Navbar.Brand href="/" className={`${navStyles.links} ${navStyles.brandLink} mb-0`}>
+                        <ReactBootstrap.Navbar.Brand href={this.props.rootLink === "webdevHome" ? "/webdev" : "/"} className={`${navStyles.links} ${navStyles.brandLink} mb-0`}>
                             <FontAwesomeIcon icon={faHome} />
                         </ReactBootstrap.Navbar.Brand>
                         <ReactBootstrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
                             <ReactBootstrap.Nav className="me-auto">
                                 <ReactBootstrap.Nav.Link href={this.props.goBackLink} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay === "none" ? "block" : "none"}` }}>Go back</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#aboutme" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>About Me</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#techStack" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Tech Stack</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#projects" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Projects</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#researchWorks" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Research Work</ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="#coCurricular" className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Others</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#aboutmewebdev" : "#aboutme"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>About Me</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#techStackwebdev" : "#techStack"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Tech Stack</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#projectswebdev" : "#projects"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Projects</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#researchWorkswebdev" : "#researchWorks"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Research Work</ReactBootstrap.Nav.Link>
+                                <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#coCurricularwebdev" : "#coCurricular"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Others</ReactBootstrap.Nav.Link>
                             </ReactBootstrap.Nav>
                             <ReactBootstrap.Nav className={`${navStyles.socialLinksParent} d-flex flex-row`}>
                                 <ReactBootstrap.Nav.Link href="https://www.github.com/binayakbishnu"

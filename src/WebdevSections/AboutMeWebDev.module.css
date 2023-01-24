@@ -1,0 +1,283 @@
+:root {
+    --progressBar_colour: rgb(64, 123, 255);
+}
+
+.aboutParent {
+    padding-top: 6%;
+}
+
+.about {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+    padding-bottom: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.aboutHead {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.aboutMainPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1;
+}
+
+.illustration {
+    height: 70vh;
+}
+
+.textParent {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 10px;
+
+    padding: 2%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.introDiv {
+    margin-bottom: 2%;
+}
+
+.introDiv h5 {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.introDiv p {
+    text-align: justify;
+    text-indent: 30px;
+
+    line-height: 1.6em;
+    color: white;
+    letter-spacing: 1.1px;
+}
+
+.introDiv p a {
+    text-decoration: none;
+}
+
+.resumeBtnsDiv {
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.resumeBtn {
+    padding: 2% 3%;
+    font-size: 0.8em;
+    font-weight: 600;
+
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-radius: 5px;
+}
+
+.progressHeaders {
+    margin: 0%;
+    padding: 0% 2%;
+}
+
+.progressHeadersList {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.progressHeadersListMembers {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: #ffffff
+}
+
+.progressBar {
+    width: 100%;
+    height: 20px;
+}
+
+.progressBar::-webkit-meter-optimum-value {
+    background: var(--progressBar_colour);
+}
+
+.progressBar::-moz-meter-bar {
+    background: var(--progressBar_colour);
+}
+
+.aboutMeExtended {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.education {
+    color: white;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 10px;
+
+    padding: 2%;
+    flex: 1;
+    margin-right: 1%;
+}
+
+.subHeadEducation {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+
+    cursor: pointer;
+}
+
+.educationListHead {
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+.toggleCollapseBtn {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    border: 0px;
+
+    padding: 1% 2%;
+
+    width: 120px;
+}
+
+.otherSkills {
+    color: white;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 10px;
+
+    padding: 2%;
+    width: 45%;
+}
+
+.subHeadOtherSkills {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+
+    cursor: pointer;
+}
+
+.otherSkillsListHead {
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+    .about {
+        height: auto;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .textParent {
+        width: 100%;
+        padding: 3% 5%;
+    }
+
+    .resumeBtnsDiv {
+        margin-bottom: 3%;
+    }
+
+    .progressDiv {
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutParent {
+        padding-top: 12%;
+    }
+
+    .about {
+        height: auto;
+        padding: 5%;
+        margin: 0% 2%;
+    }
+
+    .progressDiv {
+        margin-top: 5%;
+    }
+
+    .aboutMeExtended {
+        flex-direction: column;
+    }
+
+    .education {
+        flex: auto;
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 1%;
+        padding: 5%;
+    }
+
+    .otherSkills {
+        width: 100%;
+        padding: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {}
