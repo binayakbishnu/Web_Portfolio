@@ -1,18 +1,20 @@
-.webWelcomeParent {
+.welcomeParent {
     padding-top: 6%;
 }
 
-.webWelcome {
+.welcome {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+
+    height: 80vh;
 
     margin: 0% 1%;
     border-radius: 10px;
-
-    padding: 2%;
+    margin-bottom: 0%;
 
     display: flex;
     flex-direction: column;
@@ -20,16 +22,149 @@
     align-items: stretch;
 }
 
-.webWelcomeHead {
+.welcomeMainPart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0% 2%;
+}
+
+.mainHead {
+    font-size: 5em;
+
     color: #ffffff;
-    padding: 0%;
-    margin: 0%;
     margin-left: 1%;
 }
 
+.blinkerText {
+    -webkit-animation: 2s linear infinite condemned_blink_effect;
+    animation: 1s linear infinite condemned_blink_effect;
+}
+
+@-webkit-keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+.blink_me {
+    animation: blinker 0.8s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.figure {
+    height: 60vh;
+}
+
 .hLine {
+    width: 99%;
+    margin: 0% auto;
+    padding: 0%;
+
     height: 2px;
     border-width: 0px;
     color: #ffffff;
     background-color: #ffffff;
+}
+
+.scroll {
+    margin: 0% auto;
+    margin-top: auto;
+    padding: 0%;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    font-size: 2em;
+    transform: rotate(90deg);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scroll a {
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .figure {
+        display: none;
+    }
+
+    .welcome {
+        height: auto;
+    }
+
+    .mainHead {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .welcomeParent {
+        padding-top: 12%;
+    }
+
+    .welcome {
+        margin: 0% 2%;
+
+        padding: 5% 5% 0% 5%;
+    }
+
+    .mainHead {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .welcomeParent {
+        padding-top: 18%;
+    }
+
+    .mainHead {
+        font-size: 2em;
+        margin-left: 0%;
+    }
+
+    .figure {
+        display: none;
+    }
 }
