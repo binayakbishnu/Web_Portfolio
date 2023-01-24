@@ -19,7 +19,8 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 1.0);
+    background: rgb(56, 56, 56);
+    /* background-image: url("./assets/bg5.jpg"); */
 }
 
 /* Handle */
