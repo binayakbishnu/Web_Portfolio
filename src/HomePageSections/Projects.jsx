@@ -50,12 +50,12 @@ function Projects() {
                             <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersSQL" id="SQL" onClick={(e) => projectFilter(e)}>SQL</button>
                             </li>
-                            <li className={`${projectStyles.projectFiltersCategory}`}>
+                            {/* <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersTableau" id="Tableau" onClick={(e) => projectFilter(e)}>Tableau</button>
-                            </li>
-                            <li className={`${projectStyles.projectFiltersCategory}`}>
+                            </li> */}
+                            {/* <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersEDA" id="EDA" onClick={(e) => projectFilter(e)}>EDA</button>
-                            </li>
+                            </li> */}
                             <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersOthers" id="others" onClick={(e) => projectFilter(e)}>Others</button>
                             </li>
