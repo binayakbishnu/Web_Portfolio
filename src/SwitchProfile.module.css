@@ -1,5 +1,5 @@
 :root {
-    --PopInValue: -16%;
+    --PopInValue: -22%;
     --PopOutValue: 0%;
 }
 
@@ -24,11 +24,10 @@
 }
 
 .switchProfileParentOuter {
-    width: 18%;
+    width: 25%;
     position: fixed;
     top: 75%;
     right: var(--PopInValue);
-    /* right: var(--PopOutValue); */
 
     z-index: 99;
 
@@ -40,13 +39,15 @@
     animation-delay: 0;
 }
 
-.switchProfileParentOuter:hover {
-    animation: PopOut;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-delay: 0;
+@media only screen and (min-width: 414px) {
+    .switchProfileParentOuter:hover {
+        animation: PopOut;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-delay: 0;
 
-    right: var(--PopOutValue);
+        right: var(--PopOutValue);
+    }
 }
 
 .switchProfileParent {
@@ -61,6 +62,7 @@
 
     padding: 10% 8%;
     padding-left: 14%;
+    width: 100%;
 }
 
 .switchProfileParent>p {
@@ -92,11 +94,38 @@
     align-content: center;
 }
 
-.switchProfileParent>div>input {
-    margin-left: 2%;
+.selectMenu {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
 }
 
-.switchProfileMinDiv {
+.selectMenu option{
+    color: black !important;
+}
+
+/* .switchProfileParent>div>input {
+    margin-left: 2%;
+} */
+
+.closeButton {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding: 2% 4%;
+
+    display: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0 10px 0 10px;
+}
+
+/* .switchProfileMinDiv {
     position: absolute;
     top: 0%;
     right: 0%;
@@ -111,9 +140,9 @@
     margin-right: -0px;
 
     padding: 0%;
-}
+} */
 
-.switchProfileMin {
+/*  .switchProfileMin {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.0));
@@ -128,4 +157,21 @@
     font-weight: bold;
     color: white;
     margin: 0%;
+} */
+
+@media only screen and (max-width: 480px) {
+    .switchProfileParentOuter {
+        width: 60%;
+        right: -52%;
+
+        animation: none;
+    }
+
+    .switchProfileParent:hover {
+        animation: none;
+    }
+
+    .closeButton {
+        display: block;
+    }
 }
