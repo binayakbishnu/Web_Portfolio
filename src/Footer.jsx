@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import {
     MDBFooter,
     MDBContainer,
-    MDBInput,
-    MDBCol,
-    MDBBtn
+    // MDBInput,
+    // MDBCol,
+    // MDBBtn,
 } from 'mdb-react-ui-kit';
 
 import footerStyles from './Footer.module.css'
@@ -57,7 +57,7 @@ export class Footer extends Component {
                             </button>
                         </section>
 
-                        <section className={`${footerStyles.sendMsg}`}>
+                        {/* <section className={`${footerStyles.sendMsg}`}>
                             <form action=''>
                                 <div className='row d-flex justify-content-center'>
                                     <div className='col-auto'>
@@ -79,7 +79,7 @@ export class Footer extends Component {
                                     </div>
                                 </div>
                             </form>
-                        </section>
+                        </section> */}
 
                         <section className='mb-2 mb-md-4'>
                             <p className='text-white'>
