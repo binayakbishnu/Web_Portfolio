@@ -15,15 +15,11 @@ function Certifications() {
                 </div>
 
                 <div className={`${certificationsStyles.certificationsMainPart}`}>
-                    <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/verify/QMFN2QEPAAL8">Share Data Through the Art of Visualization | Google | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
-                    {/* <ul name="subLists" className={`${certificationsStyles.subLists}`}>
-                        <li>A technical chapter and a student section under the non-profit technical society, ISA.</li>
-                        <li>Presided over all activities in the chapter, including but not limiting meetings and events. Worked with domain leads to motivate core members to learn and contribute via training sessions and projects.</li>
-                        <li>Keep the Faculty Coordinator updated and work as one of the representatives to the Student Welfare Office.</li>
-                        <li>Maintain logistics and documentation of aforementioned activities.</li>
-                    </ul> */}
+                    <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata_WiohnHHDcRxHXArwb_1673251021658_completion_certificate.pdf">TATA Data Visualisation: Empowering Business with Effective Insights | TATA | Forage&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
+                    <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/KJGjQRHZ6eGquTKfF_Accenture%20Nordics_WiohnHHDcRxHXArwb_1672855983646_completion_certificate.pdf">Accenture Consultant Virtual Experience Program | Accenture | Forage&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
                     <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/verify/L5C7CNMPDDRS">Introduction to Data Analysis using Excel | Rice University | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
-                    <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://verify.skilljar.com/c/ehva5ydbh82h">Get started with Tableau | Tableau&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
+                    <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/verify/QMFN2QEPAAL8">Share Data Through the Art of Visualization | Google | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
+                    {/* <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://verify.skilljar.com/c/ehva5ydbh82h">Get started with Tableau | Tableau&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5> */}
                     <h5><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://freecodecamp.org/certification/binayakbishnu/data-analysis-with-python-v7">Data Analysis using Python | freeCodeCamp&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></h5>
                 </div>
             </section>
