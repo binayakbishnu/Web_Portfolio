@@ -10,9 +10,14 @@
     src: local("Diranista"), url("./assets/fonts/Diranista/Diranista-Regular.otf") format("opentype");
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Playfair';
+    src: local("Playfair"), url("./assets/fonts/Playfair/PlayfairDisplay-Regular.ttf") format("opentype");
+    font-weight: normal;
+}
 
 h1, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair', serif;
     /* font-family: 'Diranista'; */
 }
 
