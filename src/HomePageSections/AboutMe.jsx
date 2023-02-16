@@ -43,11 +43,19 @@ function AboutMe() {
                         <div className={`${aboutStyles.introDiv}`}>
                             <h5>Hi</h5>
                             <p>
-                                I am a student pursuing my undergraduate in Information Technology.
-                                I am a project-oriented learner who goes the extra mile for a task and volunteers to take charge. I have operational skills in <kbd>SQL</kbd> (queries, nested queries, joins, triggers, and PL/SQL), <kbd>Excel</kbd> (functions, visualisation) and <kbd>Tableau</kbd>, along with <kbd>Python</kbd>.
+                                I am an undergraduate student pursuing BTech in IT, currently looking for internship roles to improve my skills and gain industry experience.
                             </p>
                             <p>
-                                I also have proficiency in data analysis using <kbd><code style={{ color: "white" }}>Python</code></kbd> and web development using <kbd><code style={{ color: "white" }}>ReactJs</code></kbd>, <kbd><code style={{ color: "white" }}>NodeJs</code></kbd> and <kbd><code style={{ color: "white" }}>Express</code></kbd>. I have made full stack projects using the same along with SQL and MongoDB as databases.
+                                I have operational knowledge of MS Excel and SQL for Data Mining and Exploration, Power Bi for Visualisation, and Data Analytics using Python and MS PowerPoint for data presentation.
+                            </p>
+                            <p>
+                                I have skills relevant to frontend web development, HTML, CSS, JS, ReactJs, NodeJs, and JSON having developed 2 full stack websites and 1 portfolio website. I have also worked with 2 startups to build their websites.
+                            </p>
+                            <p>
+                                I have completed courses and specialisations in these domains from Coursera along with Virtual Experience Programs under Accenture and TATA via Forage. I learned about setting project priorities, outcome analysis, communication with stakeholders, framing business cases, and providing insights.
+                            </p>
+                            <p>
+                                I have a principle of experiment-observation in common day-to-day activities which helps me understand and analyse them better. I have also explored UI/UX which taught me to understand user perspective and how to tailor products and interfaces accordingly.
                             </p>
                         </div>
 
@@ -61,7 +69,7 @@ function AboutMe() {
                             </a> */}
                         </div>
 
-                        <div className={`${aboutStyles.progressDiv}`}>
+                        {/* <div className={`${aboutStyles.progressDiv}`}>
                             <div className={`${aboutStyles.progressHeaders}`}>
                                 <ul className={`${aboutStyles.progressHeadersList}`}>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li>
@@ -83,12 +91,11 @@ function AboutMe() {
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>Js</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>ReactJs</li>
                                     <li className={`${aboutStyles.progressHeadersListMembers}`}>NodeJs</li>
-                                    {/* <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li> */}
                                 </ul>
                             </div>
 
                             <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

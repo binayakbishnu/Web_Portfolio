@@ -81,7 +81,7 @@
 
 .introDiv p {
     text-align: justify;
-    text-indent: 30px;
+    /* text-indent: 30px; */
 
     line-height: 1.6em;
     color: white;
@@ -94,21 +94,23 @@
 
 .resumeBtnsDiv {
     text-align: center;
-    margin-bottom: 8%;
+    /* margin-bottom: 8%; */
 }
 
 .resumeBtn {
     padding: 2% 3%;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1.0px;
 
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.589);
     backdrop-filter: blur(15px);
     border: none;
     border-radius: 5px;
 }
 
-.progressHeaders {
+/* .progressHeaders {
     margin: 0%;
     padding: 0% 2%;
 }
@@ -142,7 +144,7 @@
 
 .progressBar::-moz-meter-bar {
     background: var(--progressBar_colour);
-}
+} */
 
 .aboutMeExtended {
     margin-top: 1%;
@@ -240,9 +242,9 @@
         margin-bottom: 3%;
     }
 
-    .progressDiv {
+    /* .progressDiv {
         margin-top: 0%;
-    }
+    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -256,9 +258,9 @@
         margin: 0% 2%;
     }
 
-    .progressDiv {
+    /* .progressDiv {
         margin-top: 5%;
-    }
+    } */
 
     .aboutMeExtended {
         flex-direction: column;
