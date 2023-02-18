@@ -77,14 +77,14 @@
     font-size: 0.8em;
 
     color: #ffffff;
-    padding: 0% 8%;
+    padding: 4% 4%;
 }
 
-.mobileOnlyShow{
+.mobileOnlyShow {
     display: none;
 }
 
-.mobileOnlyHide{
+.mobileHide {
     display: grid;
 }
 
@@ -93,7 +93,7 @@
     width: 30px;
 }
 
-.sqlLogo{
+.sqlLogo {
     width: 25px;
 }
 
@@ -188,6 +188,7 @@
         margin-bottom: 0%;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .techStack {
         margin: 0% 2%;
@@ -209,15 +210,8 @@
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         min-width: 100%;
-        row-gap: 0px;
-    }
 
-    .mobileOnlyShow{
-        display: flex;
-    }
-    
-    .mobileOnlyHide{
-        display: none;
+        row-gap: 0px;
     }
 
     .mainTechMembers {
@@ -233,11 +227,20 @@
         margin: 0%;
         padding: 8%;
     }
-    
+
+    .mobileOnlyShow {
+        display: flex;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
     .mainTechLogos {
         width: 25px;
     }
-    .sqlLogo{
+
+    .sqlLogo {
         width: 20px;
     }
 

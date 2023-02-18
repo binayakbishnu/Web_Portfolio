@@ -59,15 +59,14 @@ function TechStack() {
                             <img src={mongodbLogo} alt="MongoDB" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.mongodbLogo}`} />
                             MongoDB
                         </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.r}`}>
+                            <img src={rLogo} alt="R" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.rLogo}`} />
+                            R
+                        </div>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.cpp}`}>
                             <img src={cppLogo} alt="Cpp" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.cppLogo}`} />
                             C++
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.r}`}>
-                            <img src={rLogo} alt="Cpp" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.rLogo}`} />
-                            R
-                        </div>
-                        {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}></div> */}
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs} ${techStackStyles.mobileOnlyShow}`}>
                             <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
                             ReactJs
@@ -85,7 +84,7 @@ function TechStack() {
                             UI/UX
                         </div>
                     </div>
-                    <div className={`${techStackStyles.mainTech} ${techStackStyles.mobileOnlyHide}`}>
+                    <div className={`${techStackStyles.mainTech} ${techStackStyles.mobileHide}`}>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
                             <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
                             ReactJs
