@@ -7,7 +7,7 @@ import AboutMe from '../HomePageSections/AboutMe'
 import Welcome from '../HomePageSections/Welcome'
 import TechStack from '../HomePageSections/TechStack'
 import Projects from '../HomePageSections/Projects'
-import ResearchWorks from '../HomePageSections/ResearchWorks'
+// import ResearchWorks from '../HomePageSections/ResearchWorks'
 import ContactMe from '../ContactMe'
 import SwitchProfile from '../SwitchProfile'
 
@@ -30,7 +30,7 @@ function HomePage() {
 
             <Projects />
 
-            <ResearchWorks />
+            {/* <ResearchWorks /> */}
 
             <CoCurricular />
 
