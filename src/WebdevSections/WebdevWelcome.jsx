@@ -6,7 +6,7 @@
 import React from 'react'
 // import Blink from 'react-blink-text';
 
-import welcomeStyles from './WebDevWelcome.module.css'
+import welcomeStyles from './WebdevWelcome.module.css'
 // import BlinkingText from './BlinkingText'
 
 // import ball from '../assets/Ball.png'
@@ -15,7 +15,7 @@ import welcomeStyles from './WebDevWelcome.module.css'
 // import torus from '../assets/Torus-2.png'
 import figure from '../assets/webdevwelcomepic.svg'
 
-function WebDevWelcome() {
+function WebdevWelcome() {
     return (
         <section className={`${welcomeStyles.welcomeParent}`} id="welcome">
             <section className={`${welcomeStyles.welcome}`} id="welcome">
@@ -63,4 +63,4 @@ function WebDevWelcome() {
     )
 }
 
-export default WebDevWelcome
+export default WebdevWelcome
