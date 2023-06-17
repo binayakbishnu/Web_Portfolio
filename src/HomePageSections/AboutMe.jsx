@@ -110,7 +110,7 @@ function AboutMe() {
                             <div className={`${aboutStyles.educationList} ${aboutStyles.educationList1}`}>
                                 <p className={`${aboutStyles.educationListHead}`}>B.Tech. | Vellore Institute of Technology | 2020-24</p>
                                 <ul className={`${aboutStyles.educationListBody}`}>
-                                    <li>CGPA (till 4th sem): 8.22; Latest GPA: 8.67</li>
+                                    <li>CGPA (till 4th sem): 8.48; Latest GPA: 8.96</li>
                                     <li>Chairperson at a chapter, ISA-VIT.</li>
                                     <li>Senior core member in a club, TEC.</li>
                                     <li>Volunteered as a student coordinator of the placement cell.</li>
