@@ -32,12 +32,12 @@ function HomePage() {
 
             {/* <ResearchWorks /> */}
 
+            <Certifications />
+
             <CoCurricular />
 
             <ContactMe />
             <SwitchProfile />
-
-            <Certifications />
 
             <Footer goUpTarget="#welcome" />
         </div>
