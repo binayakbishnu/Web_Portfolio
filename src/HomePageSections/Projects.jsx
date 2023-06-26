@@ -2,8 +2,9 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
-import projectPic1 from '../assets/projects/MediServ1.webp'
-import projectPic2 from '../assets/projects/BookRev1.webp'
+import project1Thumbnail from '../assets/projects/RainfallAnalysis1.png'
+import project2Thumbnail from '../assets/projects/BookRev1.webp'
+import project3Thumbnail from '../assets/projects/MediServ1.webp'
 
 function Projects() {
     const projectFilter = (event) => {
@@ -43,9 +44,18 @@ function Projects() {
                     <div className={`${projectStyles.projectsHeadDiv}`}>
                         <h3 className={`${projectStyles.projectsHead}`}>Projects</h3>
                         <ul className={`${projectStyles.projectFilters}`}>
-                            <li className={`${projectStyles.filterHeading}`}>Filters: </li>
+                            {/* <li className={`${projectStyles.filterHeading}`}>Filters: </li> */}
+                            <li className={`${projectStyles.projectFiltersCategory}`}>
+                                <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersAnalytics" id="analytics" onClick={(e) => projectFilter(e)}>Analytics</button>
+                            </li>
+                            <li className={`${projectStyles.projectFiltersCategory}`}>
+                                <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersDashboards" id="dashboards" onClick={(e) => projectFilter(e)}>Dashboards</button>
+                            </li>
                             <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersFullStack" id="fullStack" onClick={(e) => projectFilter(e)}>Full Stack</button>
+                            </li>
+                            <li className={`${projectStyles.projectFiltersCategory}`}>
+                                <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersExcel" id="Excel" onClick={(e) => projectFilter(e)}>Excel</button>
                             </li>
                             <li className={`${projectStyles.projectFiltersCategory}`}>
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersSQL" id="SQL" onClick={(e) => projectFilter(e)}>SQL</button>
@@ -74,10 +84,26 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
-                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} fullStack SQL`}>
+                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
-                                <img src={projectPic1} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                                <img src={project1Thumbnail} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Rainfall Analysis</h5>
+                                        <p>Visualising rainfall patterns</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
+                    </div>
+                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} fullStack SQL`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#project2">
+                                <img src={project2Thumbnail} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -90,10 +116,10 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
                     </div>
-                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} fullStack MongoDB others`}>
+                    <div id="project3" className={`${projectStyles.project} ${projectStyles.project3} fullStack MongoDB others`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project2">
-                                <img src={projectPic2} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
+                            <a href="/allprojects#project3">
+                                <img src={project3Thumbnail} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>

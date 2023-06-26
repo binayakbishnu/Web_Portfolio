@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import project1Styles from './Project.module.css'
+import project3Styles from './Project.module.css'
 
-import carouselPic1 from '../assets/projects/RainfallAnalysis1.png'
-import carouselPic2 from '../assets/projects/RainfallAnalysis2.png'
-import carouselPic3 from '../assets/projects/RainfallAnalysis3.png'
-import carouselPic4 from '../assets/projects/RainfallAnalysis4.png'
+// import carouselPic1 from '../assets/projects/BookRev1.webp'
+import carouselPic2 from '../assets/projects/BookRev2.webp'
+import carouselPic3 from '../assets/projects/BookRev3.webp'
+import carouselPic4 from '../assets/projects/BookRev4.webp'
+import carouselPic5 from '../assets/projects/BookRev5.webp'
 
-function Project1() {
+function Project3() {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -19,52 +20,38 @@ function Project1() {
     const toggleCollapse = () => {
         toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
 
-        document.getElementById("hLine1").style.display =
-            document.getElementById("hLine1").style.display === "block" ? "none" : "block";
-        document.getElementById("project1MainPart").style.display =
-            document.getElementById("project1MainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("project3MainPart").style.display =
+            document.getElementById("project3MainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("hLine3").style.display =
+            document.getElementById("hLine3").style.display === "block" ? "none" : "block";
     };
 
     return (
-        <section className={`${project1Styles.projectParent}`} id="project1">
-            <section className={`${project1Styles.project}`}>
-                <div className={`${project1Styles.projectHeadDiv}`}>
+        <section className={`${project3Styles.projectParent}`} id="project3">
+            <section className={`${project3Styles.project}`}>
+                <div className={`${project3Styles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
-                        <h3 className={`${project1Styles.projectHead}`}>Rainfall Analysis</h3>
-                        <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${project1Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <h3 className={`${project3Styles.projectHead}`}>BookRev</h3>
+                        <input type="button" id="toggleCollapseBtn2" value={toggleCollapseBtnValue} className={`${project3Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
-                    <hr style={{ "display": "block" }} id="hLine1" className={`${project1Styles.hLine}`} />
+                    <hr style={{ "display": "block" }} id="hLine3" className={`${project3Styles.hLine}`} />
                 </div>
-                <div style={{ "display": "flex" }} id="project1MainPart" className={`${project1Styles.projectMainPart}`}>
-                    <div className={`${project1Styles.projectTextnBtn}`}>
-                        <div className={`${project1Styles.projectText}`}>
+                <div style={{ "display": "flex" }} id="project3MainPart" className={`${project3Styles.projectMainPart}`}>
+                    <div className={`${project3Styles.projectTextnBtn}`}>
+                        <div className={`${project3Styles.projectText}`}>
                             <p>
-                                Analysis of rainfall pattern in India, monthwise and statewise.
-                                Used Power Query to clean and transform data, and Power Query to create visualisations and filters.
+                                Website built on HTML, CSS, Javascript, NodeJs and MongoDB.
+                                It allows users to buy and sell books online.
                             </p>
                         </div>
-                        {/* <div className={`${project1Styles.bottomBtnsDiv}`}>
-                            <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
-                                <input type="button" value="GitHub" className={`${project1Styles.projectBtn}`} />
+                        <div className={`${project3Styles.bottomBtnsDiv}`}>
+                            <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${project3Styles.projectBtnLink}`}>
+                                <input type="button" value="GitHub" className={`${project3Styles.projectBtn}`} />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
-                    <div className={`${project1Styles.projectSlideShow}`}>
+                    <div className={`${project3Styles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={carouselPic1}
-                                    alt="First slide"
-                                    style={{ "borderRadius": "10px" }}
-                                    width="100%"
-                                    height="100%"
-                                />
-                                {/* <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption> */}
-                            </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100"
@@ -99,14 +86,29 @@ function Project1() {
                                 <img
                                     className="d-block w-100"
                                     src={carouselPic4}
-                                    alt="Fourth slide"
+                                    alt="Third slide"
                                     style={{ "borderRadius": "10px" }}
                                     width="100%"
                                     height="100%"
                                 />
 
                                 {/* <Carousel.Caption>
-                                    <h3>Fourth slide label</h3>
+                                    <h3>Third slide label</h3>
+                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                </Carousel.Caption> */}
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block w-100"
+                                    src={carouselPic5}
+                                    alt="Third slide"
+                                    style={{ "borderRadius": "10px" }}
+                                    width="100%"
+                                    height="100%"
+                                />
+
+                                {/* <Carousel.Caption>
+                                    <h3>Third slide label</h3>
                                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                 </Carousel.Caption> */}
                             </Carousel.Item>
@@ -119,4 +121,4 @@ function Project1() {
     )
 }
 
-export default Project1
+export default Project3
