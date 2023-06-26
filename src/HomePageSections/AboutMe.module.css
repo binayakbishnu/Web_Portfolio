@@ -54,16 +54,15 @@
 }
 
 .textParent {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px; */
 
-    border-radius: 10px;
-
-    padding: 2%;
-    width: 45%;
+    padding-right: 2%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,6 +78,18 @@
     letter-spacing: 1px;
 }
 
+.introDiv .subHeadings {
+    /* font-weight: bold; */
+    color: white;
+    letter-spacing: 1.1px;
+    margin-left: 2%;
+}
+
+.hiddenSubHeading {
+    /* visibility: hidden; */
+    display: none;
+}
+
 .introDiv p {
     text-align: justify;
     /* text-indent: 30px; */
@@ -86,6 +97,14 @@
     line-height: 1.6em;
     color: white;
     letter-spacing: 1.1px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    padding: 2%;
 }
 
 .introDiv p a {
@@ -235,7 +254,20 @@
 
     .textParent {
         width: 100%;
+        /* padding: 3% 5%; */
+    }
+
+    .introDiv p {
         padding: 3% 5%;
+    }
+
+    .introDiv .subHeadings {
+        margin-left: 4%;
+        font-size: 0.8rem;
+    }
+
+    .introDiv .subHeadings a {
+        font-size: 0.6rem !important;
     }
 
     .resumeBtnsDiv {

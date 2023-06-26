@@ -45,18 +45,38 @@ function AboutMe() {
                             <p>
                                 I am an undergraduate student pursuing BTech in IT, currently looking for internship roles to improve my skills and gain industry experience.
                             </p>
-                            <p>
-                                I have operational knowledge of MS Excel and SQL for Data Mining and Exploration, Power Bi for Visualisation, and Data Analytics using Python and MS PowerPoint for data presentation.
-                            </p>
-                            <p>
-                                I have skills relevant to frontend web development, HTML, CSS, JS, ReactJs, NodeJs, and JSON having developed 2 full stack websites and 1 portfolio website. I have also worked with 2 startups to build their websites.
-                            </p>
-                            <p>
-                                I have completed courses and specialisations in these domains from Coursera along with Virtual Experience Programs under Accenture and TATA via Forage. I learned about setting project priorities, outcome analysis, communication with stakeholders, framing business cases, and providing insights.
-                            </p>
+                            <span className={`${aboutStyles.subHeadings} ${aboutStyles.hiddenSubHeading}`}>My motto</span>
                             <p>
                                 I have a principle of experiment-observation in common day-to-day activities which helps me understand and analyse them better. I have also explored UI/UX which taught me to understand user perspective and how to tailor products and interfaces accordingly.
                             </p>
+                            <span className={`${aboutStyles.subHeadings}`}>Data Analytics and BI&nbsp;
+                                <a href="/#projects" style={{
+                                    "color": "white", "fontWeight": "",
+                                    "textDecoration": "underline", "cursor": "pointer",
+                                    "fontSize": "0.8rem",
+                                }}>Projects</a></span>
+                            <p>
+                                I have operational knowledge of MS Excel and SQL for Data Mining and Exploration, Power Bi for Visualisation, Data Analytics using Python, and MS PowerPoint for data presentation.
+                            </p>
+                            <span className={`${aboutStyles.subHeadings}`}>Web Development&nbsp;
+                                <a href="/#projects" style={{
+                                    "color": "white", "fontWeight": "",
+                                    "textDecoration": "underline", "cursor": "pointer",
+                                    "fontSize": "0.8rem",
+                                }}>Projects</a></span>
+                            <p>
+                                I have skills relevant to frontend web development, HTML, CSS, JS, ReactJs, NodeJs, and JSON having developed 2 full stack websites and 1 portfolio website. I have also worked with 2 startups to build their websites.
+                            </p>
+                            <span className={`${aboutStyles.subHeadings}`}>Certifications&nbsp;
+                                <a href="/#certifications" style={{
+                                    "color": "white", "fontWeight": "",
+                                    "textDecoration": "underline", "cursor": "pointer",
+                                    "fontSize": "0.8rem",
+                                }}>See all</a></span>
+                            <p>
+                                I have completed courses and specialisations in these domains from Coursera along with Virtual Experience Programs under Accenture and TATA via Forage. I learned about setting project priorities, outcome analysis, communication with stakeholders, framing business cases, and providing insights.
+                            </p>
+
                         </div>
 
                         <div className={`${aboutStyles.resumeBtnsDiv}`}>
