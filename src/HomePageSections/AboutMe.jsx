@@ -161,6 +161,7 @@ function AboutMe() {
                                 <p className={`${aboutStyles.otherSkillsListHead}`}>Tech</p>
                                 <ul className={`${aboutStyles.otherSkillsListBody}`}>
                                     {/* <li>Dashboarding</li> */}
+                                    <li>C++, Java, R</li>
                                     <li>Open Source collaboration using Git/Github</li>
                                 </ul>
                             </div>
@@ -169,6 +170,7 @@ function AboutMe() {
                                 <ul className={`${aboutStyles.otherSkillsListBody}`}>
                                     <li>Team Management</li>
                                     <li>Oral Communication</li>
+                                    <li>Event Management</li>
                                 </ul>
                             </div>
 
