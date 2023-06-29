@@ -48,8 +48,15 @@ function CoCurricular() {
                         </ul>
                     </div>
                     <div className={`${coCurricularStyles.coCurricularSection} ${coCurricularStyles.coCurricularSection2}`}>
-                        <h5>Volunteer work</h5>
-                        Placement Coodinator | VIT
+                        <div>
+                            <h5>Volunteer work</h5>
+                            Placement Coodinator | VIT
+                        </div>
+                        <div>
+                            <h5>Co-curricular</h5>
+                            Electronic Keyboard Grade-8 | London College of Music
+                            <br />Oral Communication Grade-7 | London College of Music
+                        </div>
                     </div>
                 </div>
             </section>
