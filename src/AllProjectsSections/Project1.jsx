@@ -3,10 +3,9 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import project1Styles from './Project.module.css'
 
-import carouselPic1 from '../assets/projects/RainfallAnalysis1.png'
-import carouselPic2 from '../assets/projects/RainfallAnalysis2.png'
-import carouselPic3 from '../assets/projects/RainfallAnalysis3.png'
-import carouselPic4 from '../assets/projects/RainfallAnalysis4.png'
+import carouselPic1 from '../assets/projects/LinkedInScrape1.png'
+import carouselPic2 from '../assets/projects/LinkedInScrape2.png'
+import carouselPic3 from '../assets/projects/LinkedInScrape3.png'
 
 function Project1() {
     const [index, setIndex] = useState(0);
@@ -30,7 +29,7 @@ function Project1() {
             <section className={`${project1Styles.project}`}>
                 <div className={`${project1Styles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
-                        <h3 className={`${project1Styles.projectHead}`}>Rainfall Analysis</h3>
+                        <h3 className={`${project1Styles.projectHead}`}>LinkedIn Job Webscrapper</h3>
                         <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${project1Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
                     <hr style={{ "display": "block" }} id="hLine1" className={`${project1Styles.hLine}`} />
@@ -39,15 +38,16 @@ function Project1() {
                     <div className={`${project1Styles.projectTextnBtn}`}>
                         <div className={`${project1Styles.projectText}`}>
                             <p>
-                                Analysis of rainfall pattern in India, monthwise and statewise.
-                                Used Power Query to clean and transform data, and Power Query to create visualisations and filters.
+                                Displaying job posts based on role.
+                                A simple web scrapping project built with Beautiful Soup in Python to pull data from LInkedIN job page based on a query for the role.
+                                Data is display on an HTML file using Flask.
                             </p>
                         </div>
-                        {/* <div className={`${project1Styles.bottomBtnsDiv}`}>
-                            <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
-                                <input type="button" value="GitHub" className={`${project1Styles.projectBtn}`} />
+                        <div className={`${project1Styles.bottomBtnsDiv}`}>
+                            <a href="https://www.linkedin.com/posts/binayakbishnu_a-simple-web-scrapping-project-using-python-activity-7079692402214469632-hNTG" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
+                                <input type="button" value="Demo" className={`${project1Styles.projectBtn}`} />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                     <div className={`${project1Styles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
@@ -92,21 +92,6 @@ function Project1() {
 
                                 {/* <Carousel.Caption>
                                     <h3>Third slide label</h3>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption> */}
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={carouselPic4}
-                                    alt="Fourth slide"
-                                    style={{ "borderRadius": "10px" }}
-                                    width="100%"
-                                    height="100%"
-                                />
-
-                                {/* <Carousel.Caption>
-                                    <h3>Fourth slide label</h3>
                                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                 </Carousel.Caption> */}
                             </Carousel.Item>

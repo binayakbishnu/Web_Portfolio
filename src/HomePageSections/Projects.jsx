@@ -2,9 +2,10 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
-import project1Thumbnail from '../assets/projects/RainfallAnalysis1.png'
-import project2Thumbnail from '../assets/projects/BookRev1.webp'
-import project3Thumbnail from '../assets/projects/MediServ1.webp'
+import project1Thumbnail from '../assets/projects/LinkedInScrape1.png'
+import project2Thumbnail from '../assets/projects/RainfallAnalysis1.png'
+import project3Thumbnail from '../assets/projects/BookRev1.webp'
+import project4Thumbnail from '../assets/projects/MediServ1.webp'
 
 function Projects() {
     const projectFilter = (event) => {
@@ -67,7 +68,7 @@ function Projects() {
                                 <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersEDA" id="EDA" onClick={(e) => projectFilter(e)}>EDA</button>
                             </li> */}
                             <li className={`${projectStyles.projectFiltersCategory}`}>
-                                <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersOthers" id="others" onClick={(e) => projectFilter(e)}>Others</button>
+                                <button className={`${projectStyles.projectFiltersButton}`} name="projectFiltersOthers" id="Others" onClick={(e) => projectFilter(e)}>Others</button>
                             </li>
                         </ul>
                         <a href="/allprojects" style={{ "color": "white" }}>See all</a>
@@ -84,10 +85,27 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
-                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} analytics dashboards Excel`}>
+                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} webscrapping Python Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project1">
                                 <img src={project1Thumbnail} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>LinkedIn Job Webscrapper</h5>
+                                        <p>Displaying job posts based on role</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Webscrapping&nbsp;|&nbsp;Python</p>
+                    </div>
+
+                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} analytics dashboards Excel`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#project2">
+                                <img src={project2Thumbnail} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -100,10 +118,10 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
                     </div>
-                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} fullStack SQL`}>
+                    <div id="project3" className={`${projectStyles.project} ${projectStyles.project3} fullStack SQL`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project2">
-                                <img src={project2Thumbnail} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
+                            <a href="/allprojects#project3">
+                                <img src={project3Thumbnail} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -116,10 +134,10 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
                     </div>
-                    <div id="project3" className={`${projectStyles.project} ${projectStyles.project3} fullStack MongoDB others`}>
+                    <div id="project4" className={`${projectStyles.project} ${projectStyles.project4} fullStack MongoDB Others`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project3">
-                                <img src={project3Thumbnail} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`}
+                            <a href="/allprojects#project4">
+                                <img src={project4Thumbnail} alt="project4" className={`${projectStyles.projectImg} ${projectStyles.project4Img}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
