@@ -103,12 +103,14 @@
 }
 
 .projectsMainPart {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: unset;
+    /* do not set template columns and rows */
+    grid-template-rows: unset;
 
-    flex-wrap: nowrap;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 48%;
     overflow-x: scroll;
 }
 
@@ -151,19 +153,11 @@
 }
 
 .project {
-    min-width: 48%;
+    min-width: 48% !important;
     border-radius: 10px;
-    margin: 1%;
+    margin: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
-}
-
-.projectsMainPart div:nth-child(2) {
-    margin-left: 0%;
-}
-
-.projectsMainPart div:last-child {
-    margin-right: 0%;
 }
 
 .projectImg {
@@ -226,7 +220,10 @@
 
 @media only screen and (max-width: 414px) {
     .projectsMainPart {
-        flex-direction: column;
+        gap: 0px;
+        grid-auto-flow: row;
+        grid-auto-columns: 100%;
+        overflow-x: hidden;
     }
 
     .mobileHint {
@@ -243,9 +240,5 @@
 
     .project {
         width: 100%;
-    }
-
-    .project3 {
-        margin: 4% 0%;
     }
 }

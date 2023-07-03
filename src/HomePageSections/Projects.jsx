@@ -101,7 +101,6 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Webscrapping&nbsp;|&nbsp;Python</p>
                     </div>
-
                     <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#project2">
