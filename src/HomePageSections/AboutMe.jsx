@@ -5,7 +5,7 @@ import aboutStyles from './AboutMe.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
 
-import aboutMeFig from '../assets/aboutMeFigure.svg'
+// import aboutMeFig from '../assets/aboutMeFigure.svg'
 
 function AboutMe() {
     const [toggleCollapseBtnValueEducation, setToggleCollapseBtnValueEducation] = useState("Expand");
