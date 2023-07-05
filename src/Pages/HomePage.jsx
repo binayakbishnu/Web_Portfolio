@@ -16,6 +16,7 @@ import Nav from '../Nav'
 import Footer from '../Footer'
 import CoCurricular from '../HomePageSections/CoCurricular'
 import Certifications from '../HomePageSections/Certifications'
+import Experience from '../HomePageSections/Experience'
 
 function HomePage() {
     return (
@@ -29,6 +30,8 @@ function HomePage() {
             <TechStack />
 
             <Projects />
+
+            <Experience />
 
             {/* <ResearchWorks /> */}
 
