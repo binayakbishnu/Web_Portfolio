@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import project2Styles from './Project.module.css'
+import mediServStyles from './Project.module.css'
 
-import carouselPic1 from '../assets/projects/RainfallAnalysis1.png'
-import carouselPic2 from '../assets/projects/RainfallAnalysis2.png'
-import carouselPic3 from '../assets/projects/RainfallAnalysis3.png'
-import carouselPic4 from '../assets/projects/RainfallAnalysis4.png'
+import carouselPic1 from '../assets/projects/MediServ1.webp'
+import carouselPic2 from '../assets/projects/MediServ2.webp'
+import carouselPic3 from '../assets/projects/MediServ3.webp'
 
-function Project2() {
+function MediServ() {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -19,37 +18,37 @@ function Project2() {
     const toggleCollapse = () => {
         toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
 
-        document.getElementById("hLine2").style.display =
-            document.getElementById("hLine2").style.display === "block" ? "none" : "block";
-        document.getElementById("project2MainPart").style.display =
-            document.getElementById("project2MainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("mediServhLine").style.display =
+            document.getElementById("mediServhLine").style.display === "block" ? "none" : "block";
+        document.getElementById("mediServMainPart").style.display =
+            document.getElementById("mediServMainPart").style.display === "flex" ? "none" : "flex";
     };
 
     return (
-        <section className={`${project2Styles.projectParent}`} id="project2">
-            <section className={`${project2Styles.project}`}>
-                <div className={`${project2Styles.projectHeadDiv}`}>
+        <section className={`${mediServStyles.projectParent}`} id="mediServ">
+            <section className={`${mediServStyles.project}`}>
+                <div className={`${mediServStyles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
-                        <h3 className={`${project2Styles.projectHead}`}>Rainfall Analysis</h3>
-                        <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${project2Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <h3 className={`${mediServStyles.projectHead}`}>MediServ</h3>
+                        <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${mediServStyles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
-                    <hr style={{ "display": "block" }} id="hLine2" className={`${project2Styles.hLine}`} />
+                    <hr style={{ "display": "block" }} id="mediServhLine" className={`${mediServStyles.hLine}`} />
                 </div>
-                <div style={{ "display": "flex" }} id="project2MainPart" className={`${project2Styles.projectMainPart}`}>
-                    <div className={`${project2Styles.projectTextnBtn}`}>
-                        <div className={`${project2Styles.projectText}`}>
+                <div style={{ "display": "flex" }} id="mediServMainPart" className={`${mediServStyles.projectMainPart}`}>
+                    <div className={`${mediServStyles.projectTextnBtn}`}>
+                        <div className={`${mediServStyles.projectText}`}>
                             <p>
-                                Analysis of rainfall pattern in India, monthwise and statewise.
-                                Used Power Query to clean and transform data, and Power Query to create visualisations and filters.
+                                Website built on ReactJs, NodeJs/ExpressJs and SQL.
+                                It allows users to order medicine and consult doctors online.
                             </p>
                         </div>
-                        {/* <div className={`${project2Styles.bottomBtnsDiv}`}>
-                            <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${project2Styles.projectBtnLink}`}>
-                                <input type="button" value="GitHub" className={`${project2Styles.projectBtn}`} />
+                        <div className={`${mediServStyles.bottomBtnsDiv}`}>
+                            <a href="https://github.com/binayakbishnu/MediServ_website" target="_blank" rel="noopener noreferrer" className={`${mediServStyles.projectBtnLink}`}>
+                                <input type="button" value="GitHub" className={`${mediServStyles.projectBtn}`} />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
-                    <div className={`${project2Styles.projectSlideShow}`}>
+                    <div className={`${mediServStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
                                 <img
@@ -95,21 +94,6 @@ function Project2() {
                                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                 </Carousel.Caption> */}
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src={carouselPic4}
-                                    alt="Fourth slide"
-                                    style={{ "borderRadius": "10px" }}
-                                    width="100%"
-                                    height="100%"
-                                />
-
-                                {/* <Carousel.Caption>
-                                    <h3>Fourth slide label</h3>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption> */}
-                            </Carousel.Item>
                         </Carousel>
                     </div>
                 </div>
@@ -119,4 +103,4 @@ function Project2() {
     )
 }
 
-export default Project2
+export default MediServ

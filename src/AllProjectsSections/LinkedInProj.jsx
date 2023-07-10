@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import project1Styles from './Project.module.css'
+import linkedInProjStyles from './Project.module.css'
 
 import carouselPic1 from '../assets/projects/LinkedInScrape1.png'
 import carouselPic2 from '../assets/projects/LinkedInScrape2.png'
 import carouselPic3 from '../assets/projects/LinkedInScrape3.png'
 
-function Project1() {
+function LinkedInProj() {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -18,38 +18,38 @@ function Project1() {
     const toggleCollapse = () => {
         toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
 
-        document.getElementById("hLine1").style.display =
-            document.getElementById("hLine1").style.display === "block" ? "none" : "block";
-        document.getElementById("project1MainPart").style.display =
-            document.getElementById("project1MainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("linkedInProjhLine").style.display =
+            document.getElementById("linkedInProjhLine").style.display === "block" ? "none" : "block";
+        document.getElementById("linkedInProjMainPart").style.display =
+            document.getElementById("linkedInProjMainPart").style.display === "flex" ? "none" : "flex";
     };
 
     return (
-        <section className={`${project1Styles.projectParent}`} id="project1">
-            <section className={`${project1Styles.project}`}>
-                <div className={`${project1Styles.projectHeadDiv}`}>
+        <section className={`${linkedInProjStyles.projectParent}`} id="linkedInProj">
+            <section className={`${linkedInProjStyles.project}`}>
+                <div className={`${linkedInProjStyles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
-                        <h3 className={`${project1Styles.projectHead}`}>LinkedIn Job Webscrapper</h3>
-                        <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${project1Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <h3 className={`${linkedInProjStyles.projectHead}`}>LinkedIn Job Webscrapper</h3>
+                        <input type="button" id="toggleCollapseBtn1" value={toggleCollapseBtnValue} className={`${linkedInProjStyles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
-                    <hr style={{ "display": "block" }} id="hLine1" className={`${project1Styles.hLine}`} />
+                    <hr style={{ "display": "block" }} id="linkedInProjhLine" className={`${linkedInProjStyles.hLine}`} />
                 </div>
-                <div style={{ "display": "flex" }} id="project1MainPart" className={`${project1Styles.projectMainPart}`}>
-                    <div className={`${project1Styles.projectTextnBtn}`}>
-                        <div className={`${project1Styles.projectText}`}>
+                <div style={{ "display": "flex" }} id="linkedInProjMainPart" className={`${linkedInProjStyles.projectMainPart}`}>
+                    <div className={`${linkedInProjStyles.projectTextnBtn}`}>
+                        <div className={`${linkedInProjStyles.projectText}`}>
                             <p>
                                 Displaying job posts based on role.
                                 A simple web scrapping project built with Beautiful Soup in Python to pull data from LInkedIN job page based on a query for the role.
                                 Data is display on an HTML file using Flask.
                             </p>
                         </div>
-                        <div className={`${project1Styles.bottomBtnsDiv}`}>
-                            <a href="https://www.linkedin.com/posts/binayakbishnu_a-simple-web-scrapping-project-using-python-activity-7079692402214469632-hNTG" target="_blank" rel="noopener noreferrer" className={`${project1Styles.projectBtnLink}`}>
-                                <input type="button" value="Demo" className={`${project1Styles.projectBtn}`} />
+                        <div className={`${linkedInProjStyles.bottomBtnsDiv}`}>
+                            <a href="https://www.linkedin.com/posts/binayakbishnu_a-simple-web-scrapping-project-using-python-activity-7079692402214469632-hNTG" target="_blank" rel="noopener noreferrer" className={`${linkedInProjStyles.projectBtnLink}`}>
+                                <input type="button" value="Demo" className={`${linkedInProjStyles.projectBtn}`} />
                             </a>
                         </div>
                     </div>
-                    <div className={`${project1Styles.projectSlideShow}`}>
+                    <div className={`${linkedInProjStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
                                 <img
@@ -104,4 +104,4 @@ function Project1() {
     )
 }
 
-export default Project1
+export default LinkedInProj
