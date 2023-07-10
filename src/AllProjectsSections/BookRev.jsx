@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import project4Styles from './Project.module.css'
+import bookRevStyles from './Project.module.css'
 
 // import carouselPic1 from '../assets/projects/BookRev1.webp'
 import carouselPic2 from '../assets/projects/BookRev2.webp'
@@ -9,7 +9,7 @@ import carouselPic3 from '../assets/projects/BookRev3.webp'
 import carouselPic4 from '../assets/projects/BookRev4.webp'
 import carouselPic5 from '../assets/projects/BookRev5.webp'
 
-function Project4() {
+function BookRev() {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -20,37 +20,37 @@ function Project4() {
     const toggleCollapse = () => {
         toggleCollapseBtnValue === "Collapse" ? setToggleCollapseBtnValue("Expand") : setToggleCollapseBtnValue("Collapse");
 
-        document.getElementById("project4MainPart").style.display =
-            document.getElementById("project4MainPart").style.display === "flex" ? "none" : "flex";
-        document.getElementById("hLine4").style.display =
-            document.getElementById("hLine4").style.display === "block" ? "none" : "block";
+        document.getElementById("bookRevMainPart").style.display =
+            document.getElementById("bookRevMainPart").style.display === "flex" ? "none" : "flex";
+        document.getElementById("bookRevhLine").style.display =
+            document.getElementById("bookRevhLine").style.display === "block" ? "none" : "block";
     };
 
     return (
-        <section className={`${project4Styles.projectParent}`} id="project4">
-            <section className={`${project4Styles.project}`}>
-                <div className={`${project4Styles.projectHeadDiv}`}>
+        <section className={`${bookRevStyles.projectParent}`} id="bookRev">
+            <section className={`${bookRevStyles.project}`}>
+                <div className={`${bookRevStyles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">
-                        <h3 className={`${project4Styles.projectHead}`}>BookRev</h3>
-                        <input type="button" id="toggleCollapseBtn2" value={toggleCollapseBtnValue} className={`${project4Styles.toggleCollapseBtn}`} onClick={toggleCollapse} />
+                        <h3 className={`${bookRevStyles.projectHead}`}>BookRev</h3>
+                        <input type="button" id="toggleCollapseBtn2" value={toggleCollapseBtnValue} className={`${bookRevStyles.toggleCollapseBtn}`} onClick={toggleCollapse} />
                     </div>
-                    <hr style={{ "display": "block" }} id="hLine4" className={`${project4Styles.hLine}`} />
+                    <hr style={{ "display": "block" }} id="bookRevhLine" className={`${bookRevStyles.hLine}`} />
                 </div>
-                <div style={{ "display": "flex" }} id="project4MainPart" className={`${project4Styles.projectMainPart}`}>
-                    <div className={`${project4Styles.projectTextnBtn}`}>
-                        <div className={`${project4Styles.projectText}`}>
+                <div style={{ "display": "flex" }} id="bookRevMainPart" className={`${bookRevStyles.projectMainPart}`}>
+                    <div className={`${bookRevStyles.projectTextnBtn}`}>
+                        <div className={`${bookRevStyles.projectText}`}>
                             <p>
                                 Website built on HTML, CSS, Javascript, NodeJs and MongoDB.
                                 It allows users to buy and sell books online.
                             </p>
                         </div>
-                        <div className={`${project4Styles.bottomBtnsDiv}`}>
-                            <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${project4Styles.projectBtnLink}`}>
-                                <input type="button" value="GitHub" className={`${project4Styles.projectBtn}`} />
+                        <div className={`${bookRevStyles.bottomBtnsDiv}`}>
+                            <a href="https://github.com/chetan-0/BookRev" target="_blank" rel="noopener noreferrer" className={`${bookRevStyles.projectBtnLink}`}>
+                                <input type="button" value="GitHub" className={`${bookRevStyles.projectBtn}`} />
                             </a>
                         </div>
                     </div>
-                    <div className={`${project4Styles.projectSlideShow}`}>
+                    <div className={`${bookRevStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
                                 <img
@@ -121,4 +121,4 @@ function Project4() {
     )
 }
 
-export default Project4
+export default BookRev

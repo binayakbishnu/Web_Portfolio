@@ -2,35 +2,48 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
-import project1Thumbnail from '../assets/projects/LinkedInScrape1.png'
-import project2Thumbnail from '../assets/projects/RainfallAnalysis1.png'
-import project3Thumbnail from '../assets/projects/BookRev1.webp'
-import project4Thumbnail from '../assets/projects/MediServ1.webp'
+import linkedInProjThumbnail from '../assets/projects/LinkedInScrape1.png'
+import rainFallProjThumbnail from '../assets/projects/RainfallAnalysis1.png'
+import mediServThumbnail from '../assets/projects/MediServ1.webp'
+import bookRevThumbnail from '../assets/projects/BookRev1.webp'
 
 function Projects() {
     const projectFilter = (event) => {
         var flag = 0;
         var childrenCount = document.getElementById('projectsMainPart').childElementCount;
-        for (var i = 1; i <= childrenCount - 1; i++) {
-            var element = document.getElementById(`project${i}`);
-            if (element.classList.contains(event.target.id)) {
-                // alert(event.target.id + '\n' + element.classList);
-                element.style.display = 'block';
+        var children = document.getElementById('projectsMainPart').childNodes;
+        var childrenArray = [...children];
+        for (var i = 1; i < childrenCount; i++) {
+            if (childrenArray[i].classList.contains(event.target.id)) {
+                childrenArray[i].style.display = 'block';
                 flag += 1;
-            } else {
-                // alert('Removing: ' + element.id);
-                element.style.display = 'none';
+            }
+            else {
+                childrenArray[i].style.display = 'none';
             }
         }
+        // for (var i = 1; i <= childrenCount - 1; i++) {
+        //     var element = document.getElementById(`project${i}`);
+        //     if (element.classList.contains(event.target.id)) {
+        //         // alert(event.target.id + '\n' + element.classList);
+        //         element.style.display = 'block';
+        //         flag += 1;
+        //     } else {
+        //         // alert('Removing: ' + element.id);
+        //         element.style.display = 'none';
+        //     }
+        // }
         document.getElementById("filterResultDiv").style.display = "flex";
         flag === 0 ? document.getElementById("countFiltersMatched").innerHTML = "None matched &nbsp;" : document.getElementById("countFiltersMatched").innerHTML = `${flag} matched &nbsp;`;
     }
 
     const removeFilters = () => {
         document.getElementById("filterResultDiv").style.display = "none";
-        for (var i = 1; i <= 2; i++) {
-            var element = document.getElementById(`project${i}`);
-            element.style.display = 'block';
+        var childrenCount = document.getElementById('projectsMainPart').childElementCount;
+        var children = document.getElementById('projectsMainPart').childNodes;
+        var childrenArray = [...children];
+        for (var i = 1; i < childrenCount; i++) {
+            childrenArray[i].style.display = 'block';
         }
     }
 
@@ -85,10 +98,10 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
-                    <div id="project1" className={`${projectStyles.project} ${projectStyles.project1} webscrapping Python Others`}>
+                    <div id="linkedInProj" className={`${projectStyles.project} ${projectStyles.linkedInProj} webscrapping Python Others`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project1">
-                                <img src={project1Thumbnail} alt="project1" className={`${projectStyles.projectImg} ${projectStyles.project1Img}`}
+                            <a href="/allprojects#linkedInProj">
+                                <img src={linkedInProjThumbnail} alt="linkedInProj" className={`${projectStyles.projectImg} ${projectStyles.linkedInProjImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -101,10 +114,10 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Webscrapping&nbsp;|&nbsp;Python</p>
                     </div>
-                    <div id="project2" className={`${projectStyles.project} ${projectStyles.project2} analytics dashboards Excel`}>
+                    <div id="rainFallProj" className={`${projectStyles.project} ${projectStyles.rainFallProj} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project2">
-                                <img src={project2Thumbnail} alt="project2" className={`${projectStyles.projectImg} ${projectStyles.project2Img}`}
+                            <a href="/allprojects#rainFallProj">
+                                <img src={rainFallProjThumbnail} alt="rainFallProj" className={`${projectStyles.projectImg} ${projectStyles.rainFallProjImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -117,26 +130,10 @@ function Projects() {
                         </div>
                         <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
                     </div>
-                    <div id="project3" className={`${projectStyles.project} ${projectStyles.project3} fullStack SQL`}>
+                    <div id="mediServ" className={`${projectStyles.project} ${projectStyles.mediServ} fullStack MongoDB Others`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project3">
-                                <img src={project3Thumbnail} alt="project3" className={`${projectStyles.projectImg} ${projectStyles.project3Img}`}
-                                    width="100%"
-                                    height="100%" />
-                                <div className={`${projectStyles.overlay}`}>
-                                    <div className={`${projectStyles.text}`}>
-                                        <h5>MediServ</h5>
-                                        <p>Online consultation/medical store</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
-                    </div>
-                    <div id="project4" className={`${projectStyles.project} ${projectStyles.project4} fullStack MongoDB Others`}>
-                        <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#project4">
-                                <img src={project4Thumbnail} alt="project4" className={`${projectStyles.projectImg} ${projectStyles.project4Img}`}
+                            <a href="/allprojects#mediServ">
+                                <img src={mediServThumbnail} alt="mediServ" className={`${projectStyles.projectImg} ${projectStyles.mediServImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -148,6 +145,22 @@ function Projects() {
                             </a>
                         </div>
                         <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;MongoDB</p>
+                    </div>
+                    <div id="bookRev" className={`${projectStyles.project} ${projectStyles.bookRev} fullStack SQL`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#bookRev">
+                                <img src={bookRevThumbnail} alt="bookRev" className={`${projectStyles.projectImg} ${projectStyles.bookRevImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>MediServ</h5>
+                                        <p>Online consultation/medical store</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;SQL</p>
                     </div>
                 </div>
             </section>
