@@ -29,9 +29,9 @@ function HomePage() {
 
             <TechStack />
 
-            <Projects />
-
             <Experience />
+
+            <Projects />
 
             {/* <ResearchWorks /> */}
 
