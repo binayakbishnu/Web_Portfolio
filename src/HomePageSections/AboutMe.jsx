@@ -8,9 +8,18 @@ import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
 // import aboutMeFig from '../assets/aboutMeFigure.svg'
 
 function AboutMe() {
+    const [toggleCollapseBtnValueSkills, setToggleCollapseBtnValueSkills] = useState("Expand");
     const [toggleCollapseBtnValueEducation, setToggleCollapseBtnValueEducation] = useState("Expand");
     const [toggleCollapseBtnValueOtherSkills, setToggleCollapseBtnValueOtherSkills] = useState("Expand");
 
+    const toggleSkillsExpand = () => {
+        toggleCollapseBtnValueSkills === "Collapse" ? setToggleCollapseBtnValueSkills("Expand") : setToggleCollapseBtnValueSkills("Collapse");
+
+        document.getElementById("skillsTogglehLine").style.display =
+            document.getElementById("skillsTogglehLine").style.display === "block" ? "none" : "block";
+        document.getElementById("skillsToggleLists").style.display =
+            document.getElementById("skillsToggleLists").style.display === "block" ? "none" : "block";
+    }
     const toggleEducationExpand = () => {
         toggleCollapseBtnValueEducation === "Collapse" ? setToggleCollapseBtnValueEducation("Expand") : setToggleCollapseBtnValueEducation("Collapse");
 
@@ -46,7 +55,12 @@ function AboutMe() {
                                 <p>
                                     I am an undergraduate student pursuing BTech in IT, currently looking for internship roles to improve my skills and gain industry experience.
                                 </p>
-                                <span className={`${aboutStyles.subHeadings} ${aboutStyles.hiddenSubHeading}`}>My motto</span>
+                                <span className={`${aboutStyles.subHeadings} ${aboutStyles.hiddenSubHeading}`}>My motto&nbsp;
+                                    <a href="/#projects" style={{
+                                        "color": "white", "fontWeight": "",
+                                        "textDecoration": "underline", "cursor": "pointer",
+                                        "fontSize": "0.8rem",
+                                    }}>Projects</a></span>
                                 <p>
                                     I have a principle of experiment-observation in common day-to-day activities which helps me understand and analyse them better. I have also explored UI/UX which taught me to understand user perspective and how to tailor products and interfaces accordingly.
                                 </p>
@@ -57,7 +71,7 @@ function AboutMe() {
                                     </a> */}
                                 </div>
                             </div>
-                            <div>
+                            <div className={`${aboutStyles.skillsSection}`}>
                                 <span className={`${aboutStyles.subHeadings}`}>Data Analytics and BI&nbsp;
                                     <a href="/#projects" style={{
                                         "color": "white", "fontWeight": "",
@@ -76,7 +90,7 @@ function AboutMe() {
                                 <p>
                                     I have skills relevant to frontend web development, HTML, CSS, JS, ReactJs, NodeJs, and JSON having developed 2 full stack websites and 1 portfolio website. I have also worked with 2 startups to build their websites.
                                 </p>
-                                <span className={`${aboutStyles.subHeadings}`}>Certifications&nbsp;
+                                {/* <span className={`${aboutStyles.subHeadings}`}>Certifications&nbsp;
                                     <a href="/#certifications" style={{
                                         "color": "white", "fontWeight": "",
                                         "textDecoration": "underline", "cursor": "pointer",
@@ -84,7 +98,7 @@ function AboutMe() {
                                     }}>See all</a></span>
                                 <p>
                                     I have completed courses and specialisations in these domains from Coursera along with Virtual Experience Programs under Accenture and TATA via Forage. I learned about setting project priorities, outcome analysis, communication with stakeholders, framing business cases, and providing insights.
-                                </p>
+                                </p> */}
                             </div>
                         </div>
 
@@ -126,6 +140,45 @@ function AboutMe() {
                 </div>
 
                 <div className={`${aboutStyles.aboutMeExtended}`}>
+                    <div className={`${aboutStyles.skillsToggle}`}>
+                        <div className="d-flex flex-row justify-content-between align-items-center">
+                            <h5 className={`${aboutStyles.subHeadSkillsToggle}`} onClick={toggleSkillsExpand}>Skills</h5>
+                            <input type="button" value={toggleCollapseBtnValueSkills} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleSkillsExpand} />
+                        </div>
+                        <hr style={{ "display": "none" }} id="skillsTogglehLine" className={`${aboutStyles.hLine}`} />
+                        <div style={{ "display": "none" }} id="skillsToggleLists">
+                            {/* Programming: C++, Java, Python, ReactJs, NodeJs, R
+                                Technical Skills: Excel, SQL, Power Bi, MongoDB
+                                Soft Skills: Leadership, Team management, Event management 
+                            */}
+                            <div className={`${aboutStyles.skillsToggleList} ${aboutStyles.skillsToggleList1}`}>
+                                <p className={`${aboutStyles.skillsToggleListHead}`}>Programming</p>
+                                <ul className={`${aboutStyles.skillsToggleListBody}`}>
+                                    {/* <li>Dashboarding</li> */}
+                                    <li>C++, Java, Python</li>
+                                    <li>ReactJs, NodeJs, R</li>
+                                </ul>
+                            </div>
+                            <div className={`${aboutStyles.skillsToggleList} ${aboutStyles.skillsToggleList2}`}>
+                                <p className={`${aboutStyles.skillsToggleListHead}`}>Technical</p>
+                                <ul className={`${aboutStyles.skillsToggleListBody}`}>
+                                    <li>Excel, SQL, Power Bi, MongoDB</li>
+                                    <li>Open Source collaboration using Git/Github</li>
+                                </ul>
+                            </div>
+                            <div className={`${aboutStyles.skillsToggleList} ${aboutStyles.skillsToggleList3}`}>
+                                <p className={`${aboutStyles.skillsToggleListHead}`}>Soft Skills</p>
+                                <ul className={`${aboutStyles.skillsToggleListBody}`}>
+                                    <li>Team Management</li>
+                                    <li>Oral Communication</li>
+                                    <li>Event Management</li>
+                                </ul>
+                            </div>
+
+                            <a href="/#coCurricular" style={{ "color": "white", "fontWeight": "", "textDecoration": "underline", "cursor": "pointer" }}>Co-Curricular/Volunteer work</a>
+                        </div>
+                    </div>
+
                     <div className={`${aboutStyles.education}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <h5 className={`${aboutStyles.subHeadEducation}`} onClick={toggleEducationExpand}>Education</h5>
@@ -156,6 +209,7 @@ function AboutMe() {
                             </div>
                         </div>
                     </div>
+
                     <div className={`${aboutStyles.otherSkills}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <h5 className={`${aboutStyles.subHeadOtherSkills}`} onClick={toggleOtherSkillsExpand}>Other skills</h5>

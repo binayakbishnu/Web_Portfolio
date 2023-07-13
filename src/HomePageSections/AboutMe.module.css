@@ -96,8 +96,8 @@
 }
 
 .hiddenSubHeading {
-    /* visibility: hidden; */
-    display: none;
+    visibility: hidden;
+    /* display: none; */
 }
 
 .introDiv p {
@@ -215,7 +215,7 @@
 
 .educationListHead {
     margin-bottom: 0%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .toggleCollapseBtn {
@@ -227,6 +227,24 @@
     padding: 1% 2%;
 
     width: 120px;
+}
+
+.skillsToggle {
+    color: white;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 10px;
+
+    padding: 2%;
+    max-width: 48%;
+    min-width: 48%;
+
+    display: none;
 }
 
 .otherSkills {
@@ -245,6 +263,15 @@
     min-width: 48%;
 }
 
+.subHeadSkillsToggle {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+
+    cursor: pointer;
+}
+
 .subHeadOtherSkills {
     color: #ffffff;
     padding: 0%;
@@ -254,9 +281,14 @@
     cursor: pointer;
 }
 
+.skillsToggleListHead {
+    margin-bottom: 0%;
+    /* font-weight: bold; */
+}
+
 .otherSkillsListHead {
     margin-bottom: 0%;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 @media only screen and (max-width: 990px) {
@@ -285,11 +317,23 @@
 
     .introDiv p {
         padding: 3% 5%;
+
+        letter-spacing: 1px;
+        /* font-size: 0.8rem; */
+    }
+
+    .hiddenSubHeading {
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    .skillsSection {
+        display: none;
     }
 
     .introDiv .subHeadings {
         margin-left: 4%;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .introDiv .subHeadings a {
@@ -328,9 +372,18 @@
         margin-bottom: 1%;
     }
 
+    .skillsToggle {
+        display: block !important;
+        max-width: 100%;
+        min-width: 100%;
+        margin-bottom: 1%;
+    }
+
     .otherSkills {
         max-width: 100%;
         min-width: 100%;
+
+        display: none;
     }
 }
 
@@ -345,16 +398,30 @@
         margin: 0% 2%;
     }
 
+    .introDiv p {
+        padding: 3% 5%;
+
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+    }
+
     /* .progressDiv {
         margin-top: 5%;
     } */
 
     .education {
         padding: 5%;
+        font-size: 0.9rem;
+    }
+
+    .skillsToggle {
+        padding: 5%;
+        font-size: 0.9rem;
     }
 
     .otherSkills {
         padding: 5%;
+        font-size: 0.9;
     }
 }
 
