@@ -67,24 +67,6 @@ function TechStack() {
                             <img src={cppLogo} alt="Cpp" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.cppLogo}`} />
                             C++
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs} ${techStackStyles.mobileOnlyShow}`}>
-                            <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
-                            ReactJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.nodejs} ${techStackStyles.mobileOnlyShow}`}>
-                            <img src={nodejsLogo} alt="NodeJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.nodejsLogo}`} />
-                            NodeJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git} ${techStackStyles.mobileOnlyShow}`}>
-                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
-                            Git/Github
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux} ${techStackStyles.mobileOnlyShow}`}>
-                            <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
-                            UI/UX
-                        </div>
-                    </div>
-                    <div className={`${techStackStyles.mainTech} ${techStackStyles.mobileHide}`}>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
                             <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
                             ReactJs
@@ -102,6 +84,24 @@ function TechStack() {
                             UI/UX
                         </div>
                     </div>
+                    {/* <div className={`${techStackStyles.mainTech} ${techStackStyles.mobileHide}`}>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
+                            <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
+                            ReactJs
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.nodejs}`}>
+                            <img src={nodejsLogo} alt="NodeJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.nodejsLogo}`} />
+                            NodeJs
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git}`}>
+                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
+                            Git/Github
+                        </div>
+                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
+                            <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
+                            UI/UX
+                        </div>
+                    </div> */}
 
                     {/* <div className={`${techStackStyles.uiuxSubPart}`}>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.figma}`}>
