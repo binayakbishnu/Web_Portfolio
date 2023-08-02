@@ -40,7 +40,7 @@ function HomePage() {
             <CoCurricular />
 
             <ContactMe />
-            <SwitchProfile />
+            {/* <SwitchProfile /> */}
 
             <Footer goUpTarget="#welcome" />
         </div>
