@@ -2,6 +2,7 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
+import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import linkedInProjThumbnail from '../assets/projects/LinkedInScrape1.png'
 import rainFallProjThumbnail from '../assets/projects/RainfallAnalysis1.png'
 import mediServThumbnail from '../assets/projects/MediServ1.webp'
@@ -98,6 +99,22 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
+                    <div id="cyclistVisu" className={`${projectStyles.project} ${projectStyles.cyclistVisu} analytics dashboards PowerBi Others`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#cyclistVisu">
+                                <img src={cyclistVisuThumbnail} alt="cyclistVisu" className={`${projectStyles.projectImg} ${projectStyles.cyclistVisuImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Case Study: Bike-sharing</h5>
+                                        <p>Analysing the trends in usage for a bike-sharing company.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Power Bi</p>
+                    </div>
                     <div id="linkedInProj" className={`${projectStyles.project} ${projectStyles.linkedInProj} webscrapping Python Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#linkedInProj">

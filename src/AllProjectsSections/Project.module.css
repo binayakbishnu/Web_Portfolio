@@ -89,8 +89,10 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+    
     width: 100%;
     margin-top: 4%;
+    gap: 5% !important;
 }
 
 .projectBtnLink {

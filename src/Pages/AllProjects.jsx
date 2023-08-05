@@ -8,9 +8,11 @@ import LinkedInProj from '../AllProjectsSections/LinkedInProj'
 import RainFallProj from '../AllProjectsSections/RainFallProj'
 import MediServ from '../AllProjectsSections/MediServ'
 import BookRev from '../AllProjectsSections/BookRev'
+import CyclistVisu from '../AllProjectsSections/CyclistVisu'
 
 function MoreProjects() {
     const projects = [
+        <CyclistVisu />,
         <LinkedInProj />,
         <RainFallProj />,
         <MediServ />,
