@@ -89,7 +89,7 @@
     justify-content: flex-start;
     align-items: flex-start;
 
-    
+
     width: 100%;
     margin-top: 4%;
     gap: 5% !important;
@@ -147,7 +147,24 @@
     }
 }
 
+
+@media only screen and (max-width: 600px) {
+    #projectParentTopProj {
+        padding-top: 25%;
+    }
+    .projectParentTopProj {
+        padding-top: 25%;
+    }
+}
+
 @media only screen and (max-width: 414px) {
+    #projectParentTopProj {
+        padding-top: 40% !important;
+    }
+    .projectParentTopProj {
+        padding-top: 40% !important;
+    }
+
     .projectParent {
         padding-top: 18%;
     }

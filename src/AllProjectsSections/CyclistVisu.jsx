@@ -8,7 +8,7 @@ import carouselPic2 from '../assets/projects/CyclistVisu2.svg'
 import carouselPic3 from '../assets/projects/CyclistVisu3.svg'
 // import carouselPic4 from '../assets/projects/RainfallAnalysis4.png'
 
-function CyclistVisu() {
+function CyclistVisu({topProject}) {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -25,8 +25,10 @@ function CyclistVisu() {
             document.getElementById("cyclistVisuMainPart").style.display === "flex" ? "none" : "flex";
     };
 
+    // const completedClass = topProject ? CyclistVisuStyles. : '';
+
     return (
-        <section className={`${CyclistVisuStyles.projectParent}`} id="cyclistVisu">
+        <section className={`${topProject === true ? CyclistVisuStyles.projectParentTopProj : ""} ${CyclistVisuStyles.projectParent}`} id={`cyclistVisu`}>
             <section className={`${CyclistVisuStyles.project}`}>
                 <div className={`${CyclistVisuStyles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">

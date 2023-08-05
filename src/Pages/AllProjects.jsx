@@ -12,15 +12,20 @@ import CyclistVisu from '../AllProjectsSections/CyclistVisu'
 
 function MoreProjects() {
     const projects = [
-        <CyclistVisu />,
-        <LinkedInProj />,
-        <RainFallProj />,
-        <MediServ />,
-        <BookRev />,
+        <CyclistVisu topProject={true} />,
+        <LinkedInProj topProject={false} />,
+        <RainFallProj topProject={false} />,
+        <MediServ topProject={false} />,
+        <BookRev topProject={false} />,
     ]
     return (
         <div className={`${allProjectsStyles.allProjects}`}>
             <Nav goBackLink="/#projects" navDisplay="none" />
+            {
+                projects.map((data, index) => (
+                    <div key={index}>{data}</div>
+                ))
+            }
             <section className={`${allProjectsStyles.dataProjLinkParent}`}>
                 <div className={`${allProjectsStyles.dataProjLink}`}>
                     <p><a href="/dataprojects" style={{ "color": "white" }}>Check out my data analytics projects here</a></p>
@@ -29,11 +34,6 @@ function MoreProjects() {
                     </button> */}
                 </div>
             </section>
-            {
-                projects.map((data, index) => (
-                    <div key={index}>{data}</div>
-                ))
-            }
 
             {/* <Project1 />
 

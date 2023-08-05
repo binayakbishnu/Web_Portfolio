@@ -7,7 +7,7 @@ import carouselPic1 from '../assets/projects/LinkedInScrape1.png'
 import carouselPic2 from '../assets/projects/LinkedInScrape2.png'
 import carouselPic3 from '../assets/projects/LinkedInScrape3.png'
 
-function LinkedInProj() {
+function LinkedInProj({topProject}) {
     const [index, setIndex] = useState(0);
     const [toggleCollapseBtnValue, setToggleCollapseBtnValue] = useState("Collapse");
 
@@ -25,7 +25,7 @@ function LinkedInProj() {
     };
 
     return (
-        <section className={`${linkedInProjStyles.projectParent}`} id="linkedInProj">
+        <section className={`${topProject === true ? linkedInProjStyles.projectParentTopProj : ""} ${linkedInProjStyles.projectParent}`} id="linkedInProj">
             <section className={`${linkedInProjStyles.project}`}>
                 <div className={`${linkedInProjStyles.projectHeadDiv}`}>
                     <div className="d-flex flex-row justify-content-between align-items-center">

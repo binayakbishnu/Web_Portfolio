@@ -13,6 +13,14 @@
 
 .dataProjLinkParent {
     padding-top: 6%;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+
+    width: 40%;
+    margin: auto;
 }
 
 .dataProjLink {
@@ -29,7 +37,7 @@
 
     display: flex;
     flex-direction: row;
-    /* justify-content: stretch; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -52,13 +60,26 @@
     margin-left: 5%;
 }
 
+@media only screen and (max-width:1000px) {
+    .dataProjLinkParent{
+        width: 50%;
+    }    
+}
+
 @media only screen and (max-width: 768px) {
     .dataProjLinkParent{
-        padding-top: 12%;
+        padding-top: 9%;
+        width: 60%;
     }
     .dataProjLink{
         padding: 5%;
-        justify-content: center;
+        margin: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dataProjLinkParent{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 414px) {
