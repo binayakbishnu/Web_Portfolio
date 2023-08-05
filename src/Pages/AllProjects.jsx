@@ -19,11 +19,20 @@ function MoreProjects() {
     return (
         <div className={`${allProjectsStyles.allProjects}`}>
             <Nav goBackLink="/#projects" navDisplay="none" />
+            <section className={`${allProjectsStyles.dataProjLinkParent}`}>
+                <div className={`${allProjectsStyles.dataProjLink}`}>
+                    <p><a href="/dataprojects" style={{ "color": "white" }}>Check out my data analytics projects here</a></p>
+                    {/* <button>
+                        <a href="/dataprojects" style={{ "color": "white" }}>Check here</a>
+                    </button> */}
+                </div>
+            </section>
             {
-                projects.map((data) => (
-                    <div>{data}</div>
+                projects.map((data, index) => (
+                    <div key={index}>{data}</div>
                 ))
             }
+
             {/* <Project1 />
 
             <Project2 />

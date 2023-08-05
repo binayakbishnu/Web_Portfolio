@@ -12,6 +12,7 @@ import HomePage from './Pages/HomePage'
 import AllProjects from './Pages/AllProjects';
 import AllResearchWork from './Pages/AllResearchWork';
 import WebDev from './Pages/WebDev';
+import DataProjects from './Pages/DataProjects';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
           <Route path="/allprojects" element={<AllProjects />} />
           <Route path="/allresearchWork" element={<AllResearchWork />} />
+          <Route path="/dataprojects" element={<DataProjects />} />
 
         </Routes>
       </BrowserRouter>
