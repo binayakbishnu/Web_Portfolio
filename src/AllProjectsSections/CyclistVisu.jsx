@@ -43,13 +43,13 @@ function CyclistVisu({topProject}) {
                             <p>
                                 Analysing the trends in usage for a bike-sharing company.
                             </p>
-                                <p>This case study is part of the capstone project under Google’s Data Analytics Professional Certificate. Instead of limiting myself to the suggestions given in the instructions, I used Power Bi and Power Query to transform the data and then created a dashboard.</p>
+                                <p>This case study is part of the capstone project under Google's Data Analytics Professional Certificate. Instead of limiting myself to the suggestions given in the instructions, I used Power Bi and Power Query to transform the data and then created a dashboard.</p>
                         </div>
                         <div className={`${CyclistVisuStyles.bottomBtnsDiv}`}>
                             <a href="https://medium.com/@binayakbishnu/case-study-how-does-a-bike-share-navigate-speedy-success-f537b29b45f5?source=friends_link&sk=f0d0caccb33a270d7f2529cf5ac5494b" target="_blank" rel="noopener noreferrer" className={`${CyclistVisuStyles.projectBtnLink}`}>
                                 <input type="button" value="Medium Blog" className={`${CyclistVisuStyles.projectBtn}`} />
                             </a>
-                            <a href="https://www.linkedin.com/in/binayakbishnu" target="_blank" rel="noopener noreferrer" className={`${CyclistVisuStyles.projectBtnLink}`}>
+                            <a href="https://www.linkedin.com/posts/binayakbishnu_case-study-report-activity-7094187914229690368-rIms" target="_blank" rel="noopener noreferrer" className={`${CyclistVisuStyles.projectBtnLink}`}>
                                 <input type="button" value="LinkedIn post" className={`${CyclistVisuStyles.projectBtn}`} />
                             </a>
                         </div>
