@@ -2,6 +2,8 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
+import onyxHotelThumbnail from '../assets/projects/OnyxHotel1.svg'
+import spotifyThumbnail from '../assets/projects/Spotify1.svg'
 import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import linkedInProjThumbnail from '../assets/projects/LinkedInScrape1.png'
 import rainFallProjThumbnail from '../assets/projects/RainfallAnalysis1.png'
@@ -114,6 +116,38 @@ function Projects() {
                             </a>
                         </div>
                         <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Power Bi</p>
+                    </div>
+                    <div id="onyxHotel" className={`${projectStyles.project} ${projectStyles.onyxHotel} analytics dashboards Excel`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#onyxHotel">
+                                <img src={onyxHotelThumbnail} alt="onyxHotel" className={`${projectStyles.projectImg} ${projectStyles.onyxHotelImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Participation: Onyx Data Challenge</h5>
+                                        <p>Presented a report for Hotel bookings dataset for the Onyx dataset challenge.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
+                    </div>
+                    <div id="spotify" className={`${projectStyles.project} ${projectStyles.spotify} analytics dashboards Excel`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#spotify">
+                                <img src={spotifyThumbnail} alt="spotify" className={`${projectStyles.projectImg} ${projectStyles.spotifyImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Spotify Wrapped 2022</h5>
+                                        <p>Created a spotify wrapped for my own profile.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
                     </div>
                     <div id="linkedInProj" className={`${projectStyles.project} ${projectStyles.linkedInProj} webscrapping Python Others`}>
                         <div className={`${projectStyles.container}`}>

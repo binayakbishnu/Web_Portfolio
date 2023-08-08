@@ -9,10 +9,14 @@ import RainFallProj from '../AllProjectsSections/RainFallProj'
 import MediServ from '../AllProjectsSections/MediServ'
 import BookRev from '../AllProjectsSections/BookRev'
 import CyclistVisu from '../AllProjectsSections/CyclistVisu'
+import Spotify from '../AllProjectsSections/Spotify'
+import OnyxHotel from '../AllProjectsSections/OnyxHotel'
 
 function MoreProjects() {
     const projects = [
         <CyclistVisu topProject={true} />,
+        <OnyxHotel topProject={false} />,
+        <Spotify topProject={false} />,
         <LinkedInProj topProject={false} />,
         <RainFallProj topProject={false} />,
         <MediServ topProject={false} />,
