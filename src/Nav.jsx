@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import * as ReactBootstrap from 'react-bootstrap'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -48,6 +48,12 @@ export class Nav extends Component {
                                 <ReactBootstrap.Nav.Link href={this.props.scrollLinks === "webdev" ? "webdev/#coCurricularwebdev" : "#coCurricular"} className={`${navStyles.links} ${navStyles.leftLinks}`} style={{ "display": `${this.props.navDisplay}` }}>Others</ReactBootstrap.Nav.Link>
                             </ReactBootstrap.Nav>
                             <ReactBootstrap.Nav className={`${navStyles.socialLinksParent} d-flex flex-row`}>
+                                <ReactBootstrap.Nav.Link href="https://medium.com/@binayakbishnu"
+                                    target="_blank"
+                                    className={`${navStyles.socialLinks} ${navStyles.links}`}
+                                >
+                                    <FontAwesomeIcon icon={faMedium} />
+                                </ReactBootstrap.Nav.Link>
                                 <ReactBootstrap.Nav.Link href="https://www.github.com/binayakbishnu"
                                     target="_blank"
                                     className={`${navStyles.socialLinks} ${navStyles.links}`}
@@ -60,12 +66,12 @@ export class Nav extends Component {
                                 >
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </ReactBootstrap.Nav.Link>
-                                <ReactBootstrap.Nav.Link href="https://www.behance.net/binayakbishnu"
+                                {/* <ReactBootstrap.Nav.Link href="https://www.behance.net/binayakbishnu"
                                     target="_blank"
                                     className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}
                                 >
                                     <FontAwesomeIcon icon={faBehance} />
-                                </ReactBootstrap.Nav.Link>
+                                </ReactBootstrap.Nav.Link> */}
                                 <ReactBootstrap.Nav.Link href="https://www.instagram.com/binayakbishnu"
                                     target="_blank"
                                     className={`${navStyles.socialLinks} ${navStyles.links} ms-2 ms-md-1`}

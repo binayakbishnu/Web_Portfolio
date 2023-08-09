@@ -10,7 +10,7 @@ import {
 import footerStyles from './Footer.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -32,6 +32,10 @@ export class Footer extends Component {
                 <MDBFooter className={`${footerStyles.MDBParent} text-center`} color='black'>
                     <MDBContainer className='p-4'>
                         <section className={`${footerStyles.socialIconSection} mb-4`}>
+                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 ms-0`} href='https://medium.com/@binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faMedium} />
+                            </a>
+
                             <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1 ms-0`} href='https://www.github.com/BinayakBishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
@@ -40,14 +44,14 @@ export class Footer extends Component {
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
 
-                            <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.behance.net/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
+                            {/* <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.behance.net/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faBehance} />
-                            </a>
+                            </a> */}
 
                             <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://www.instagram.com/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            
+
                             <a className={`${footerStyles.socialIcons} btn btn-outline-light btn-floating m-1`} href='https://twitter.com/binayakbishnu' role='button' target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
