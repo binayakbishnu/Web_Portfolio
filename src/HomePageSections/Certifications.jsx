@@ -17,8 +17,18 @@ function Certifications() {
                 <div className={`${certificationsStyles.certificationsMainPart}`}>
                     <p className={`m-0 mb-2`}>
                         <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
+                            target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6cda38ec-e351-4848-8044-73669493d673/public_url"
+                        >Google Data Analytics Professional Certificate | Google&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                    </p>
+                    {/* <p className={`m-0 mb-2`}>
+                        <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
                             target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/account/accomplishments/specialization/certificate/BM695QNUX7V7"
-                        >Excel Skills for Data Analytics and Visualization Specialization | Macquarie University | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                        >Schneider Global Student Experience Program, Supply Chain Track | Schneider Electric&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                    </p> */}
+                    <p className={`m-0 mb-2`}>
+                        <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
+                            target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/account/accomplishments/specialization/certificate/BM695QNUX7V7"
+                        >Excel Skills for Data Analytics and Visualization Specialization | Macquarie University &nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                     </p>
                     <p className={`m-0 mb-2`}>
                         <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
@@ -33,12 +43,12 @@ function Certifications() {
                     <p className={`m-0 mb-2`}>
                         <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
                             target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/verify/L5C7CNMPDDRS"
-                        >Introduction to Data Analysis using Excel | Rice University | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                        >Introduction to Data Analysis using Excel | Rice University&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                     </p>
                     <p className={`m-0 mb-2`}>
                         <a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }}
                             target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/verify/QMFN2QEPAAL8"
-                        >Share Data Through the Art of Visualization | Google | Coursera&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                        >Share Data Through the Art of Visualization | Google&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                     </p>
                     {/* <p className={`m-0 mb-2`}><a style={{ "color": "white", "textDecoration": "none", "cursor": "pointer" }} target="_blank" rel="noopener noreferrer" href="https://verify.skilljar.com/c/ehva5ydbh82h">Get started with Tableau | Tableau&nbsp;<FontAwesomeIcon icon={faExternalLinkAlt} /></a></p> */}
                     <p className={`m-0 mb-2`}>
