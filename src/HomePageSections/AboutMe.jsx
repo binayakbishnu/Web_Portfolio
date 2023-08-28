@@ -150,10 +150,10 @@ function AboutMe() {
                         </div>
                     </div> */}
 
-                    <div className={`${aboutStyles.education}`}>
+                    <div className={`${aboutStyles.education} cursor-pointer`} onClick={toggleEducationExpand}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
-                            <h5 className={`${aboutStyles.subHeadEducation}`} onClick={toggleEducationExpand}>Education</h5>
-                            <input type="button" value={toggleCollapseBtnValueEducation} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleEducationExpand} />
+                            <h5 className={`${aboutStyles.subHeadEducation}`} /* onClick={toggleEducationExpand} */>Education</h5>
+                            <input type="button" value={toggleCollapseBtnValueEducation} className={`${aboutStyles.toggleCollapseBtn}`} /* onClick={toggleEducationExpand} */ />
                         </div>
                         <hr style={{ "display": "none" }} id="educationhLine" className={`${aboutStyles.hLine}`} />
                         <div className={`${aboutStyles.educationMain}`} style={{ "display": "none" }} id="educationLists">
