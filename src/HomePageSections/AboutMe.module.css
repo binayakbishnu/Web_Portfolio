@@ -185,6 +185,12 @@
     align-items: flex-start;
 }
 
+.educationMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .education {
     color: white;
 
@@ -199,9 +205,6 @@
     padding: 2%;
     flex: 1;
     margin-right: 1%;
-
-    max-width: 48%;
-    min-width: 48%;
 }
 
 .subHeadEducation {
@@ -211,6 +214,14 @@
     margin-left: 1%;
 
     cursor: pointer;
+}
+
+.educationList1 {
+    width: 45%;
+}
+
+.educationList2 {
+    flex: 1;
 }
 
 .educationListHead {
@@ -327,9 +338,9 @@
         display: none;
     }
 
-    .skillsSection {
+    /* .skillsSection {
         display: none;
-    }
+    } */
 
     .introDiv .subHeadings {
         margin-left: 4%;
@@ -362,6 +373,19 @@
 
     .aboutMeExtended {
         flex-direction: column;
+    }
+
+    .educationMain {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .educationList1 {
+        width: auto
+    }
+
+    .educationList2 {
+        flex: auto;
     }
 
     .education {

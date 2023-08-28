@@ -26,7 +26,7 @@ function AboutMe() {
         document.getElementById("educationhLine").style.display =
             document.getElementById("educationhLine").style.display === "block" ? "none" : "block";
         document.getElementById("educationLists").style.display =
-            document.getElementById("educationLists").style.display === "block" ? "none" : "block";
+            document.getElementById("educationLists").style.display === "flex" ? "none" : "flex";
     }
     const toggleOtherSkillsExpand = () => {
         toggleCollapseBtnValueOtherSkills === "Collapse" ? setToggleCollapseBtnValueOtherSkills("Expand") : setToggleCollapseBtnValueOtherSkills("Collapse");
@@ -140,21 +140,16 @@ function AboutMe() {
                 </div>
 
                 <div className={`${aboutStyles.aboutMeExtended}`}>
-                    <div className={`${aboutStyles.skillsToggle}`}>
+                    {/* <div className={`${aboutStyles.skillsToggle}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <h5 className={`${aboutStyles.subHeadSkillsToggle}`} onClick={toggleSkillsExpand}>Skills</h5>
                             <input type="button" value={toggleCollapseBtnValueSkills} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleSkillsExpand} />
                         </div>
                         <hr style={{ "display": "none" }} id="skillsTogglehLine" className={`${aboutStyles.hLine}`} />
                         <div style={{ "display": "none" }} id="skillsToggleLists">
-                            {/* Programming: C++, Java, Python, ReactJs, NodeJs, R
-                                Technical Skills: Excel, SQL, Power Bi, MongoDB
-                                Soft Skills: Leadership, Team management, Event management 
-                            */}
                             <div className={`${aboutStyles.skillsToggleList} ${aboutStyles.skillsToggleList1}`}>
                                 <p className={`${aboutStyles.skillsToggleListHead}`}>Programming</p>
                                 <ul className={`${aboutStyles.skillsToggleListBody}`}>
-                                    {/* <li>Dashboarding</li> */}
                                     <li>C++, Java, Python</li>
                                     <li>ReactJs, NodeJs, R</li>
                                 </ul>
@@ -177,7 +172,7 @@ function AboutMe() {
 
                             <a href="/#coCurricular" style={{ "color": "white", "fontWeight": "", "textDecoration": "underline", "cursor": "pointer" }}>Co-Curricular/Volunteer work</a>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className={`${aboutStyles.education}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -185,7 +180,7 @@ function AboutMe() {
                             <input type="button" value={toggleCollapseBtnValueEducation} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleEducationExpand} />
                         </div>
                         <hr style={{ "display": "none" }} id="educationhLine" className={`${aboutStyles.hLine}`} />
-                        <div style={{ "display": "none" }} id="educationLists">
+                        <div className={`${aboutStyles.educationMain}`} style={{ "display": "none" }} id="educationLists">
                             <div className={`${aboutStyles.educationList} ${aboutStyles.educationList1}`}>
                                 <p className={`${aboutStyles.educationListHead}`}>B.Tech. | Vellore Institute of Technology | 2020-24</p>
                                 <ul className={`${aboutStyles.educationListBody}`}>
@@ -195,22 +190,25 @@ function AboutMe() {
                                     <li>Volunteered as a student coordinator of the placement cell.</li>
                                 </ul>
                             </div>
-                            <div className={`${aboutStyles.educationList} ${aboutStyles.educationList2}`}>
-                                <p className={`${aboutStyles.educationListHead}`}>Class 12 | Delhi Public School, Ruby Park, Kolkata | 2018-20</p>
-                                <ul className={`${aboutStyles.educationListBody}`}>
-                                    <li>AISSCE: 95.2%</li>
-                                </ul>
-                            </div>
-                            <div className={`${aboutStyles.educationList} ${aboutStyles.educationList3}`}>
-                                <p className={`${aboutStyles.educationListHead}`}>Class 10 | Delhi Public School, Ruby Park, Kolkata | 2008-18</p>
-                                <ul className={`${aboutStyles.educationListBody}`}>
-                                    <li>AISSE: 94.2%</li>
-                                </ul>
+                            {/* school */}
+                            <div>
+                                <div className={`${aboutStyles.educationList} ${aboutStyles.educationList2}`}>
+                                    <p className={`${aboutStyles.educationListHead}`}>Class 12 | Delhi Public School, Ruby Park, Kolkata | 2020</p>
+                                    <ul className={`${aboutStyles.educationListBody}`}>
+                                        <li>AISSCE: 95.2%</li>
+                                    </ul>
+                                </div>
+                                <div className={`${aboutStyles.educationList} ${aboutStyles.educationList3}`}>
+                                    <p className={`${aboutStyles.educationListHead}`}>Class 10 | Delhi Public School, Ruby Park, Kolkata | 2018</p>
+                                    <ul className={`${aboutStyles.educationListBody}`}>
+                                        <li>AISSE: 94.2%</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className={`${aboutStyles.otherSkills}`}>
+                    {/* <div className={`${aboutStyles.otherSkills}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <h5 className={`${aboutStyles.subHeadOtherSkills}`} onClick={toggleOtherSkillsExpand}>Other skills</h5>
                             <input type="button" value={toggleCollapseBtnValueOtherSkills} className={`${aboutStyles.toggleCollapseBtn}`} onClick={toggleOtherSkillsExpand} />
@@ -220,7 +218,6 @@ function AboutMe() {
                             <div className={`${aboutStyles.otherSkillsList} ${aboutStyles.otherSkillsList1}`}>
                                 <p className={`${aboutStyles.otherSkillsListHead}`}>Tech</p>
                                 <ul className={`${aboutStyles.otherSkillsListBody}`}>
-                                    {/* <li>Dashboarding</li> */}
                                     <li>C++, Java, R</li>
                                     <li>Open Source collaboration using Git/Github</li>
                                 </ul>
@@ -236,7 +233,7 @@ function AboutMe() {
 
                             <a href="/#coCurricular" style={{ "color": "white", "fontWeight": "", "textDecoration": "underline", "cursor": "pointer" }}>Co-Curricular/Volunteer work</a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </section >
