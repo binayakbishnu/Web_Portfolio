@@ -100,9 +100,9 @@ function AboutMe() {
                         </div>
 
                         <div className={`${aboutStyles.resumeBtnsDiv}`}>
-                            <a className={`${aboutStyles.aboutMeTechBtnDecoy}`}>
+                            <div className={`${aboutStyles.aboutMeTechBtnDecoy}`}>
                                 
-                            </a>
+                            </div>
                             <a className={`${aboutStyles.resumeBtn}`} href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                 {/* <button className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`}> */}
                                     Download my Resume&nbsp;&nbsp;<FontAwesomeIcon icon={faGoogleDrive} />
