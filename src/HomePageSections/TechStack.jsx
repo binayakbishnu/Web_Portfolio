@@ -12,6 +12,40 @@ import reactjsLogo from '../assets/techStackLogos/reactjslogo.webp'
 import nodejsLogo from '../assets/techStackLogos/nodejslogo.webp'
 import cppLogo from '../assets/techStackLogos/cpplogo.webp'
 import rLogo from '../assets/techStackLogos/Rlogo.webp'
+import figmaLogo from '../assets/techStackLogos/figmalogo.webp'
+
+const programmingSkills = [
+    { name: 'C++', logo: cppLogo, alt: 'cpp' },
+    { name: 'Java', logo: cppLogo, alt: 'java' },
+    { name: 'Python', logo: pythonLogo, alt: 'py' },
+    { name: 'SQL', logo: sqlLogo, alt: 'sql' },
+    { name: 'React.js', logo: reactjsLogo, alt: 'reactjs' },
+    { name: 'Node.js', logo: nodejsLogo, alt: 'nodejs' },
+    { name: 'JavaScript', logo: cppLogo, alt: 'js' },
+    { name: 'R', logo: rLogo, alt: 'r' },
+]
+const technicalSkills = [
+    { name: 'Excel', logo: excelLogo, alt: 'excel' },
+    { name: 'PowerBi', logo: cppLogo, alt: 'powerbi' },
+    { name: 'MongoDB', logo: mongodbLogo, alt: 'mongodb' },
+    { name: 'HTML', logo: cppLogo, alt: 'html' },
+    { name: 'CSS', logo: cppLogo, alt: 'CSS' },
+    { name: 'Bootstrap', logo: cppLogo, alt: 'bootstrap' },
+    { name: 'Tailwind', logo: cppLogo, alt: 'tailwind' },
+]
+const otherTools = [
+    { name: 'Power Query', logo: cppLogo, alt: 'power query' },
+    { name: 'Power Pivot', logo: cppLogo, alt: 'power pivot' },
+    { name: 'Git', logo: gitLogo, alt: 'git' },
+    { name: 'Jenkins', logo: cppLogo, alt: 'jenkins' },
+    { name: 'Figma', logo: figmaLogo, alt: 'figma' },
+    { name: 'Flutter', logo: cppLogo, alt: 'flutter' },
+]
+const softSkills = [
+    { name: 'Team Lead' },
+    { name: 'Team Management' },
+    { name: 'Event Management' },
+]
 
 function TechStack() {
     return (
@@ -24,46 +58,64 @@ function TechStack() {
 
                 <div className={`${techStackStyles.techStackMainPart}`}>
 
-                    <div className={`${techStackStyles.mainTech}`}>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}>
-                            <img src={excelLogo} alt="Excel" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.excelLogo}`} />
-                            Excel
+                    <div className={`${techStackStyles.skillSectionParents}`}>
+                        <p>Programming:</p>
+                        <div className={`${techStackStyles.skillSections}`}>
+                            {
+                                programmingSkills.map((data, index) => (
+                                    (
+                                        <div key={index} className={`${techStackStyles.techMembers}`}>
+                                            {/* <img src={data.logo} alt={data.alt} className={`${techStackStyles.techLogos}`} /> */}
+                                            {data.name}
+                                        </div>
+                                    )
+                                ))
+                            }
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.sql}`}>
-                            <img src={sqlLogo} alt="SQL" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.sqlLogo}`} />
-                            SQL
+                    </div>
+                    <div className={`${techStackStyles.skillSectionParents}`}>
+                        <p>Technical:</p>
+                        <div className={`${techStackStyles.skillSections}`}>
+                            {
+                                technicalSkills.map((data, index) => (
+                                    (
+                                        <div key={index} className={`${techStackStyles.techMembers}`}>
+                                            {/* <img src={data.logo} alt={data.alt} className={`${techStackStyles.techLogos}`} /> */}
+                                            {data.name}
+                                        </div>
+                                    )
+                                ))
+                            }
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.tableau}`}>
-                            <img src={tableauLogo} alt="Tableau" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.tableauLogo}`} />
-                            Tableau
+                    </div>
+                    <div className={`${techStackStyles.skillSectionParents}`}>
+                        <p>Other tools:</p>
+                        <div className={`${techStackStyles.skillSections}`}>
+                            {
+                                otherTools.map((data, index) => (
+                                    (
+                                        <div key={index} className={`${techStackStyles.techMembers}`}>
+                                            {/* <img src={data.logo} alt={data.alt} className={`${techStackStyles.techLogos}`} /> */}
+                                            {data.name}
+                                        </div>
+                                    )
+                                ))
+                            }
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.python}`}>
-                            <img src={pythonLogo} alt="Python" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.pythonLogo}`} />
-                            Python
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.mongodb}`}>
-                            <img src={mongodbLogo} alt="MongoDB" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.mongodbLogo}`} />
-                            MongoDB
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.r}`}>
-                            <img src={rLogo} alt="R" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.rLogo}`} />
-                            R
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.cpp}`}>
-                            <img src={cppLogo} alt="Cpp" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.cppLogo}`} />
-                            C++
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
-                            <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
-                            ReactJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.nodejs}`}>
-                            <img src={nodejsLogo} alt="NodeJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.nodejsLogo}`} />
-                            NodeJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git}`}>
-                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
-                            Git/Github
+                    </div>
+                    <div className={`${techStackStyles.skillSectionParents}`}>
+                        <p>Soft skills:</p>
+                        <div className={`${techStackStyles.skillSections}`}>
+                            {
+                                softSkills.map((data, index) => (
+                                    (
+                                        <div key={index} className={`${techStackStyles.techMembers} ${techStackStyles.softSkillsMembers}`}>
+                                            {/* <img src={data.logo} alt={data.alt} className={`${techStackStyles.techLogos}`} /> */}
+                                            {data.name}
+                                        </div>
+                                    )
+                                ))
+                            }
                         </div>
                     </div>
 
