@@ -53,24 +53,20 @@ function AboutMe() {
                         <div className={`${aboutStyles.introDiv}`}>
                             <div>
                                 <span className={`${aboutStyles.subHeadings}`}>Hi</span>
-                                <p>
-                                    I am an undergraduate student pursuing BTech in IT, currently looking for internship roles to improve my skills and gain industry experience.
-                                </p>
+                                <p>I am an undergraduate student pursuing BTech in IT, currently looking for internship roles to improve my skills and gain industry experience.</p>
                                 <span className={`${aboutStyles.subHeadings} ${aboutStyles.hiddenSubHeading}`}>My motto&nbsp;
                                     <a href="/#projects" style={{
                                         "color": "white", "fontWeight": "",
                                         "textDecoration": "underline", "cursor": "pointer",
                                         "fontSize": "0.8rem",
                                     }}>Projects</a></span>
-                                <p>
-                                    I have a principle of experiment-observation in common day-to-day activities which helps me understand and analyse them better. I have also explored UI/UX which taught me to understand user perspective and how to tailor products and interfaces accordingly.
-                                </p>
-                                <div className={`${aboutStyles.resumeBtnsDiv} ${aboutStyles.resumeBtnLaptop}`}>
-                                    {/* <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
+                                <p>I have a principle of experiment-observation in common day-to-day activities which helps me understand and analyse them better. I have also explored UI/UX which taught me to understand user perspective and how to tailor products and interfaces accordingly.</p>
+                                {/* <div className={`${aboutStyles.resumeBtnsDiv} ${aboutStyles.resumeBtnLaptop}`}>
+                                    <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
                                         <button className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`}>Download my Resume&nbsp;&nbsp;<FontAwesomeIcon icon={faGoogleDrive} />
                                         </button>
-                                    </a> */}
-                                </div>
+                                    </a>
+                                </div> */}
                             </div>
                             <div className={`${aboutStyles.skillsSection}`}>
                                 <span className={`${aboutStyles.subHeadings}`}>Data Analytics and BI&nbsp;
@@ -104,9 +100,16 @@ function AboutMe() {
                         </div>
 
                         <div className={`${aboutStyles.resumeBtnsDiv}`}>
-                            <a href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
-                                <button className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`}>Download my Resume&nbsp;&nbsp;<FontAwesomeIcon icon={faGoogleDrive} />
-                                </button>
+                            <a className={`${aboutStyles.aboutMeTechBtnDecoy}`}>
+                                
+                            </a>
+                            <a className={`${aboutStyles.resumeBtn}`} href="https://drive.google.com/drive/folders/1YLMcfYHqf2WRmurqZciduCF_YllDD5rV?usp=sharing" target="_blank" rel="noopener noreferrer" title="Resume Link">
+                                {/* <button className={`${aboutStyles.resumeBtn} ${aboutStyles.downloadResume}`}> */}
+                                    Download my Resume&nbsp;&nbsp;<FontAwesomeIcon icon={faGoogleDrive} />
+                                {/* </button> */}
+                            </a>
+                            <a className={`${aboutStyles.aboutMeTechBtn}`} href='#techStack'>
+                                Tech Stack
                             </a>
                         </div>
                     </div>
