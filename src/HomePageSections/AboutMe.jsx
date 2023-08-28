@@ -8,18 +8,17 @@ import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
 // import aboutMeFig from '../assets/aboutMeFigure.svg'
 
 function AboutMe() {
-    const [toggleCollapseBtnValueSkills, setToggleCollapseBtnValueSkills] = useState("Expand");
-    const [toggleCollapseBtnValueEducation, setToggleCollapseBtnValueEducation] = useState("Expand");
-    const [toggleCollapseBtnValueOtherSkills, setToggleCollapseBtnValueOtherSkills] = useState("Expand");
-
-    const toggleSkillsExpand = () => {
+    // const [toggleCollapseBtnValueSkills, setToggleCollapseBtnValueSkills] = useState("Expand");    
+    /* const toggleSkillsExpand = () => {
         toggleCollapseBtnValueSkills === "Collapse" ? setToggleCollapseBtnValueSkills("Expand") : setToggleCollapseBtnValueSkills("Collapse");
-
+        
         document.getElementById("skillsTogglehLine").style.display =
-            document.getElementById("skillsTogglehLine").style.display === "block" ? "none" : "block";
+        document.getElementById("skillsTogglehLine").style.display === "block" ? "none" : "block";
         document.getElementById("skillsToggleLists").style.display =
-            document.getElementById("skillsToggleLists").style.display === "block" ? "none" : "block";
-    }
+        document.getElementById("skillsToggleLists").style.display === "block" ? "none" : "block";
+    } */
+
+    const [toggleCollapseBtnValueEducation, setToggleCollapseBtnValueEducation] = useState("Expand");
     const toggleEducationExpand = () => {
         toggleCollapseBtnValueEducation === "Collapse" ? setToggleCollapseBtnValueEducation("Expand") : setToggleCollapseBtnValueEducation("Collapse");
 
@@ -28,14 +27,16 @@ function AboutMe() {
         document.getElementById("educationLists").style.display =
             document.getElementById("educationLists").style.display === "flex" ? "none" : "flex";
     }
-    const toggleOtherSkillsExpand = () => {
+
+    // const [toggleCollapseBtnValueOtherSkills, setToggleCollapseBtnValueOtherSkills] = useState("Expand");
+    /* const toggleOtherSkillsExpand = () => {
         toggleCollapseBtnValueOtherSkills === "Collapse" ? setToggleCollapseBtnValueOtherSkills("Expand") : setToggleCollapseBtnValueOtherSkills("Collapse");
 
         document.getElementById("otherSkillshLine").style.display =
             document.getElementById("otherSkillshLine").style.display === "block" ? "none" : "block";
         document.getElementById("otherSkillsLists").style.display =
             document.getElementById("otherSkillsLists").style.display === "block" ? "none" : "block";
-    }
+    } */
 
     return (
         <section className={`${aboutStyles.aboutParent}`} id="aboutme">
@@ -108,34 +109,6 @@ function AboutMe() {
                                 </button>
                             </a>
                         </div>
-
-                        {/* <div className={`${aboutStyles.progressDiv}`}>
-                            <div className={`${aboutStyles.progressHeaders}`}>
-                                <ul className={`${aboutStyles.progressHeadersList}`}>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>SQL</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Tableau</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Excel</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Python</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Statistics</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>R</li>
-                                </ul>
-                            </div>
-
-                            <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
-                        </div>
-                        <div className={`${aboutStyles.progressDiv}`}>
-                            <div className={`${aboutStyles.progressHeaders}`}>
-                                <ul className={`${aboutStyles.progressHeadersList}`}>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>HTML/CSS</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>CSS</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>Js</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>ReactJs</li>
-                                    <li className={`${aboutStyles.progressHeadersListMembers}`}>NodeJs</li>
-                                </ul>
-                            </div>
-
-                            <meter min="0" max="14" value="11" className={`${aboutStyles.progressBar}`} />
-                        </div> */}
                     </div>
                 </div>
 
