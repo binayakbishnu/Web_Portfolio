@@ -4,7 +4,7 @@ import techStackStyles from './TechStack.module.css'
 
 import excelLogo from '../assets/techStackLogos/excellogo.webp'
 import sqlLogo from '../assets/techStackLogos/SQLlogo.webp'
-import tableauLogo from '../assets/techStackLogos/tableaulogo.webp'
+// import tableauLogo from '../assets/techStackLogos/tableaulogo.webp'
 import pythonLogo from '../assets/techStackLogos/pythonlogo.webp'
 import gitLogo from '../assets/techStackLogos/gitlogo.webp'
 import mongodbLogo from '../assets/techStackLogos/mongodblogo.webp'
