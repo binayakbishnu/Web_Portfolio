@@ -2,22 +2,16 @@ import React from 'react'
 
 import techStackStyles from './TechStack.module.css'
 
-import excelLogo from '../assets/excellogo.png'
-import sqlLogo from '../assets/SQLlogo.png'
-import tableauLogo from '../assets/tableaulogo.png'
-import pythonLogo from '../assets/pythonlogo.png'
-import gitLogo from '../assets/gitlogo.png'
-import mongodbLogo from '../assets/mongodblogo.png'
-import reactjsLogo from '../assets/reactjslogo.png'
-import nodejsLogo from '../assets/nodejslogo.png'
-import cppLogo from '../assets/cpplogo.png'
-import rLogo from '../assets/Rlogo.png'
-import uiuxLogo from '../assets/uiuxlogo.png'
-// import figmaLogo from '../assets/figmalogo.png'
-// import behanceLogo from '../assets/behancelogo.jpg'
-// import dribbbleLogo from '../assets/dribbblelogo.png'
-// import vscodeLogo from '../assets/vscodelogo.png'
-// import jupyterLogo from '../assets/jupyterlogo.png'
+import excelLogo from '../assets/techStackLogos/excellogo.webp'
+import sqlLogo from '../assets/techStackLogos/SQLlogo.webp'
+import tableauLogo from '../assets/techStackLogos/tableaulogo.webp'
+import pythonLogo from '../assets/techStackLogos/pythonlogo.webp'
+import gitLogo from '../assets/techStackLogos/gitlogo.webp'
+import mongodbLogo from '../assets/techStackLogos/mongodblogo.webp'
+import reactjsLogo from '../assets/techStackLogos/reactjslogo.webp'
+import nodejsLogo from '../assets/techStackLogos/nodejslogo.webp'
+import cppLogo from '../assets/techStackLogos/cpplogo.webp'
+import rLogo from '../assets/techStackLogos/Rlogo.webp'
 
 function TechStack() {
     return (
@@ -29,14 +23,6 @@ function TechStack() {
                 </div>
 
                 <div className={`${techStackStyles.techStackMainPart}`}>
-                    {/* <div className={`${techStackStyles.editorsSubPart}`}>
-                        <div className={`${techStackStyles.editorsSubPartMembers} ${techStackStyles.vscode}`}>
-                            <img src={vscodeLogo} alt="VSCode" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.vscodeLogo}`} />
-                        </div>
-                        <div className={`${techStackStyles.editorsSubPartMembers} ${techStackStyles.jupyter}`}>
-                            <img src={jupyterLogo} alt="Jupyter" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.jupyterLogo}`} />
-                        </div>
-                    </div> */}
 
                     <div className={`${techStackStyles.mainTech}`}>
                         <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}>
@@ -79,41 +65,8 @@ function TechStack() {
                             <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
                             Git/Github
                         </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
-                            <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
-                            UI/UX
-                        </div>
                     </div>
-                    {/* <div className={`${techStackStyles.mainTech} ${techStackStyles.mobileHide}`}>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.reactjs}`}>
-                            <img src={reactjsLogo} alt="ReactJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.reactjsLogo}`} />
-                            ReactJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.nodejs}`}>
-                            <img src={nodejsLogo} alt="NodeJs" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.nodejsLogo}`} />
-                            NodeJs
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.git}`}>
-                            <img src={gitLogo} alt="Git" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.gitLogo}`} />
-                            Git/Github
-                        </div>
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
-                            <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
-                            UI/UX
-                        </div>
-                    </div> */}
 
-                    {/* <div className={`${techStackStyles.uiuxSubPart}`}>
-                        <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.figma}`}>
-                            <img src={figmaLogo} alt="Figma" className={`${techStackStyles.techLogos} ${techStackStyles.figmaLogo}`} />
-                        </div>
-                        <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.behance}`}>
-                            <img src={behanceLogo} alt="Behance" className={`${techStackStyles.techLogos} ${techStackStyles.behanceLogo}`} />
-                        </div>
-                        <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.dribble}`}>
-                            <img src={dribbbleLogo} alt="Dribbble" className={`${techStackStyles.techLogos} ${techStackStyles.dribbbleLogo}`} />
-                        </div>
-                    </div> */}
                 </div>
             </section>
         </section >

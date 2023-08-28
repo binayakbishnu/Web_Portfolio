@@ -2,20 +2,20 @@ import React from 'react'
 
 import techStackStyles from './TechStackWebDev.module.css'
 
-import excelLogo from '../assets/excellogo.png'
-import sqlLogo from '../assets/SQLlogo.png'
-import tableauLogo from '../assets/tableaulogo.png'
-import pythonLogo from '../assets/pythonlogo.png'
-import gitLogo from '../assets/gitlogo.png'
-import mongodbLogo from '../assets/mongodblogo.png'
-import reactjsLogo from '../assets/reactjslogo.png'
-import nodejsLogo from '../assets/nodejslogo.png'
-import uiuxLogo from '../assets/uiuxlogo.png'
-import figmaLogo from '../assets/figmalogo.png'
-import behanceLogo from '../assets/behancelogo.jpg'
-import dribbbleLogo from '../assets/dribbblelogo.png'
-import vscodeLogo from '../assets/vscodelogo.png'
-import jupyterLogo from '../assets/jupyterlogo.png'
+import excelLogo from '../assets/techStackLogos/excellogo.webp'
+import sqlLogo from '../assets/techStackLogos/SQLlogo.webp'
+import tableauLogo from '../assets/techStackLogos/tableaulogo.webp'
+import pythonLogo from '../assets/techStackLogos/pythonlogo.webp'
+import gitLogo from '../assets/techStackLogos/gitlogo.webp'
+import mongodbLogo from '../assets/techStackLogos/mongodblogo.webp'
+import reactjsLogo from '../assets/techStackLogos/reactjslogo.webp'
+import nodejsLogo from '../assets/techStackLogos/nodejslogo.webp'
+// import uiuxLogo from '../assets/techStackLogos/uiuxlogo.webp'
+import figmaLogo from '../assets/techStackLogos/figmalogo.webp'
+// import behanceLogo from '../assets/techStackLogos/behancelogo.jpg'
+// import dribbbleLogo from '../assets/techStackLogos/dribbblelogo.webp'
+import vscodeLogo from '../assets/techStackLogos/vscodelogo.webp'
+import jupyterLogo from '../assets/techStackLogos/jupyterlogo.webp'
 
 function TechStackWebDev() {
     return (
@@ -71,10 +71,10 @@ function TechStackWebDev() {
                         </div>
                         {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.hidden}`}>
                         </div> */}
-                        <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
+                        {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.uiux}`}>
                             <img src={uiuxLogo} alt="UI/UX" className={`${techStackStyles.techLogos} ${techStackStyles.mainTechLogos} ${techStackStyles.uiuxLogo}`} />
                             UI/UX
-                        </div>
+                        </div> */}
                         {/* <div className={`${techStackStyles.mainTechMembers} ${techStackStyles.excel}`}></div> */}
                     </div>
 
@@ -83,10 +83,10 @@ function TechStackWebDev() {
                             <img src={figmaLogo} alt="Figma" className={`${techStackStyles.techLogos} ${techStackStyles.figmaLogo}`} />
                         </div>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.behance}`}>
-                            <img src={behanceLogo} alt="Behance" className={`${techStackStyles.techLogos} ${techStackStyles.behanceLogo}`} />
+                            {/* <img src={behanceLogo} alt="Behance" className={`${techStackStyles.techLogos} ${techStackStyles.behanceLogo}`} /> */}
                         </div>
                         <div className={`${techStackStyles.uiuxSubPartMembers} ${techStackStyles.dribble}`}>
-                            <img src={dribbbleLogo} alt="Dribbble" className={`${techStackStyles.techLogos} ${techStackStyles.dribbbleLogo}`} />
+                            {/* <img src={dribbbleLogo} alt="Dribbble" className={`${techStackStyles.techLogos} ${techStackStyles.dribbbleLogo}`} /> */}
                         </div>
                     </div>
                 </div>
