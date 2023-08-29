@@ -3,12 +3,11 @@ import React, { Component } from "react";
 import contactStyles from './ContactMe.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faSearchLocation } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faEnvelope, faHome, faUniversity } from '@fortawesome/free-solid-svg-icons'
 
 export class ContactMe extends Component {
     closeContactPopUp() {
-            document.getElementById("contactMePopUp").style.display = "none";
+        document.getElementById("contactMePopUp").style.display = "none";
     }
 
     render() {
@@ -23,7 +22,15 @@ export class ContactMe extends Component {
                             <span className={`${contactStyles.ContactContentMain}`}>bishnu.binayak12@gmail.com</span>
                         </div>
                         <div className={`${contactStyles.ContactContentMainDiv}`}>
-                            <FontAwesomeIcon icon={faSearchLocation} className={`${contactStyles.contactIconsMain}`} />
+                            <FontAwesomeIcon icon={faBriefcase} className={`${contactStyles.contactIconsMain}`} />
+                            <span className={`${contactStyles.ContactContentMain}`}>binayak.bishnu2020@vitstudent.ac.in</span>
+                        </div>
+                        <div className={`${contactStyles.ContactContentMainDiv}`}>
+                            <FontAwesomeIcon icon={faUniversity} className={`${contactStyles.contactIconsMain}`} />
+                            <span className={`${contactStyles.ContactContentMain}`}>Vellore, Tamil Nadu</span>
+                        </div>
+                        <div className={`${contactStyles.ContactContentMainDiv}`}>
+                            <FontAwesomeIcon icon={faHome} className={`${contactStyles.contactIconsMain}`} />
                             <span className={`${contactStyles.ContactContentMain}`}>Kolkata, West Bengal</span>
                         </div>
                     </div>
