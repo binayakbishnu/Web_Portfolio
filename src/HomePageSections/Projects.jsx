@@ -2,9 +2,10 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
+import valuationCalcThumbnail from '../assets/projects/ValuationCalc1.jpg'
+import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import onyxHotelThumbnail from '../assets/projects/OnyxHotel1.svg'
 import spotifyThumbnail from '../assets/projects/Spotify1.svg'
-import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import linkedInProjThumbnail from '../assets/projects/LinkedInScrape1.png'
 import rainFallProjThumbnail from '../assets/projects/RainfallAnalysis1.png'
 import mediServThumbnail from '../assets/projects/MediServ1.webp'
@@ -101,6 +102,22 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
+                    <div id="valuationCalc" className={`${projectStyles.project} ${projectStyles.valuationCalc} analytics dashboards Excel Others`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#valuationCalc">
+                                <img src={valuationCalcThumbnail} alt="valuationCalc" className={`${projectStyles.projectImg} ${projectStyles.valuationCalcImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Company Valuation Calculator</h5>
+                                        <p>Excel based calculator for company valuations and metrics.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Finance&nbsp;|&nbsp;Analytics&nbsp;|&nbsp;Dashboards&nbsp;|&nbsp;Excel</p>
+                    </div>
                     <div id="cyclistVisu" className={`${projectStyles.project} ${projectStyles.cyclistVisu} analytics dashboards PowerBi Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#cyclistVisu">

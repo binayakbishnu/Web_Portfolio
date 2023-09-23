@@ -8,9 +8,11 @@ import RainFallProj from '../AllProjectsSections/RainFallProj'
 import CyclistVisu from '../AllProjectsSections/CyclistVisu'
 import Spotify from '../AllProjectsSections/Spotify'
 import OnyxHotel from '../AllProjectsSections/OnyxHotel'
+import ValuationCalc from '../AllProjectsSections/ValuationCalc'
 
 function DataProjects() {
     const projects = [
+        <ValuationCalc />,
         <CyclistVisu />,
         <OnyxHotel />,
         <Spotify />,

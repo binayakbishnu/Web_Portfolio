@@ -11,10 +11,12 @@ import BookRev from '../AllProjectsSections/BookRev'
 import CyclistVisu from '../AllProjectsSections/CyclistVisu'
 import Spotify from '../AllProjectsSections/Spotify'
 import OnyxHotel from '../AllProjectsSections/OnyxHotel'
+import ValuationCalc from '../AllProjectsSections/ValuationCalc'
 
 function MoreProjects() {
     const projects = [
-        <CyclistVisu topProject={true} />,
+        <ValuationCalc topProject={true} />,
+        <CyclistVisu topProject={false} />,
         <OnyxHotel topProject={false} />,
         <Spotify topProject={false} />,
         <LinkedInProj topProject={false} />,
