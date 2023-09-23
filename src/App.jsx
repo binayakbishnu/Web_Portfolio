@@ -13,7 +13,9 @@ import AllProjects from './Pages/AllProjects';
 import AllResearchWork from './Pages/AllResearchWork';
 import DataProjects from './Pages/DataProjects';
 
-// import WebDev from './Pages/WebDev';
+import WebDevHome from './Pages/WebDevHome';
+import WebDevWrapper from './Pages/WebDevWrapper';
+import WebDevAllProjects from './WebDevComponents/WebDevAllProjects';
 
 function App() {
   return (
@@ -21,11 +23,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/webdev" element={<WebDev />} /> */}
-
           <Route path="/allprojects" element={<AllProjects />} />
           <Route path="/allresearchWork" element={<AllResearchWork />} />
           <Route path="/dataprojects" element={<DataProjects />} />
+
+          <Route path="/webdev" element={<WebDevWrapper />}>
+            <Route path="/webdev" element={<WebDevHome />} />
+            <Route path="projects" element={<WebDevAllProjects />} />
+          </Route>
 
         </Routes>
       </BrowserRouter>

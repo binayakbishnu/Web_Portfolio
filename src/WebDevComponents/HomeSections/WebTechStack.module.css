@@ -1,0 +1,175 @@
+.techStackParent {
+    padding-top: 6%;
+}
+
+.techStack {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+
+    margin: 0% 1%;
+    border-radius: 10px;
+
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.techStackHead {
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+    margin-left: 1%;
+}
+
+.hLine {
+    height: 2px;
+    border-width: 0px;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.techStackMainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 8px;
+
+    flex: 1;
+    min-height: fit-content !important;
+}
+
+.skillSectionParents {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    color: white;
+    min-width: 15%;
+}
+
+.skillSectionParents>p {
+    margin: 0;
+    padding: 0;
+    min-width: 12%;
+}
+
+.skillSections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+    /* width: 100%; */
+    column-gap: 8px;
+    row-gap: 8px;
+
+    flex: 1;
+}
+
+.techMembers {
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    /* backdrop-filter: blur(5px); */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+
+    font-size: 0.8em;
+
+    color: #ffffff;
+    padding: 1% 2%;
+}
+
+.softSkillsMembers {
+    justify-content: center;
+}
+
+.techLogos {
+    margin: 0%;
+    height: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .skillSectionParents>p{
+        min-width: 16%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .techStack {
+        margin: 0% 2%;
+    }
+
+    .skillSectionParents>p{
+        min-width: 20%;
+    }
+
+    .techMembers {
+        border-radius: 5px;
+        padding: 1% 1.2%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skillSectionParents {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .skillSectionParents>p{
+        min-width: auto;
+    }
+
+    .skillSections {
+        justify-content: center;
+        min-width: 100%;
+
+        column-gap: auto;
+        row-gap: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .techMembers {
+        min-width: 70px;
+        height: 50px;
+        justify-content: center;
+        padding: 1% 5%;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .techStack {
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .techStackParent {
+        padding-top: 18%;
+    }
+
+    .techStack {
+        padding: 5%;
+    }
+
+    .mainTechLogos {
+        width: 25px;
+    }
+
+    .sqlLogo {
+        width: 20px;
+    }
+}
