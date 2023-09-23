@@ -4,9 +4,10 @@
  * `mainPart`.
  */
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 // import Blink from 'react-blink-text';
 
-import welcomeStyles from './WebWelcome.module.css'
+import webWelcomeStyles from './WebWelcome.module.css'
 // import BlinkingText from './BlinkingText'
 
 // import ball from '../assets/Ball.png'
@@ -16,50 +17,37 @@ import welcomeStyles from './WebWelcome.module.css'
 import figure from '../../assets/webdevwelcomepic.svg'
 
 function Welcome() {
+    const navigate = useNavigate();
+    const goToDAProfile = () => {
+        navigate('/');
+    }
+
     return (
-        <section className={`${welcomeStyles.welcomeParent}`} id="welcome">
-            <section className={`${welcomeStyles.welcome}`} id="welcome">
-                <div className={`${welcomeStyles.welcomeMainPart}`}>
-                    {/* <video autoPlay muted loop className={`${welcomeStyles.vid}`} autoplay>
-                    <source src={video} type="video/mp4" />
-                </video> */}
-                    <h1 className={`${welcomeStyles.mainHead}`}>
+        <section className={`${webWelcomeStyles.welcomeParent}`} id="welcome">
+            <section className={`${webWelcomeStyles.welcome}`} id="welcome">
+                <div className={`${webWelcomeStyles.welcomeMainPart}`}>
+                    <h1 className={`${webWelcomeStyles.mainHead}`}>
                         Hello,<br />
                         I am<br />
-                        Binayak Bishnu{/* <span className={`${welcomeStyles.blinkerText}`}>_</span> */}
-                        {/* Binayak Bishnu<span className={`${welcomeStyles.blink_me}`}>_</span> */}
-                        {/* Binayak Bishnu<Blink color='blue' text='TestReactApp' fontSize='20'>_</Blink> */}
-                        {/* Binayak Bishnu<BlinkingText /> */}
-                    </h1>
-                    {/* <div>
-                    <h1 className={`${welcomeStyles.mainHead}`}>
-                        Welcome,
-                    </h1>
-                    <br />
-                    <h1 className={`${welcomeStyles.mainHead}`}>
-                        I am
-                    </h1>
-                    <br />
-                    <h1 className={`${welcomeStyles.mainHead}`}>
                         Binayak Bishnu
                     </h1>
-                </div> */}
-                    {/* <div className={`${welcomeStyles.illustrations}`}>
-                    <img src={ball} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.ball}`} />
-                    <img src={ball2} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.ball2}`} />
-                    <img src={cube} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.cube}`} />
-                    <img src={torus} className={`${welcomeStyles.rightIllustration} ${welcomeStyles.torus}`} />
-                </div> */}
-                    <img alt="Illustration of Person with desk" src={figure} className={`${welcomeStyles.figure}`} />
+                    <img alt="Illustration of Person with desk" src={figure} className={`${webWelcomeStyles.figure}`} />
                 </div>
 
-                <hr className={`${welcomeStyles.hLine}`} />
+                <hr className={`${webWelcomeStyles.hLine}`} />
 
-                <div className={`${welcomeStyles.scroll}`}>
+                <div className={`${webWelcomeStyles.profileSwitch}`}
+                    onClick={goToDAProfile}>
+                    <p>
+                        go to Data Analytics profile
+                    </p>
+                </div>
+
+                <div className={`${webWelcomeStyles.scroll}`}>
                     <a href="#aboutme">&#xbb;</a>
                 </div>
             </section>
-        </section>
+        </section >
     )
 }
 

@@ -96,6 +96,25 @@
     background-color: #ffffff;
 }
 
+.profileSwitch {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.profileSwitch>p {
+    margin: 0;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.profileSwitch>p:hover {
+    text-decoration: underline;
+}
+
 .scroll {
     margin: 0% auto;
     margin-top: auto;
@@ -113,7 +132,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .scroll a {

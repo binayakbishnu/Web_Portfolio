@@ -4,6 +4,7 @@
  * `mainPart`.
  */
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 // import Blink from 'react-blink-text';
 
 import welcomeStyles from './Welcome.module.css'
@@ -16,6 +17,11 @@ import welcomeStyles from './Welcome.module.css'
 import figure from '../assets/welcomeFigure.svg'
 
 function Welcome() {
+    const navigate = useNavigate();
+    const goToWebProfile = () => {
+        navigate('/webdev');
+    }
+
     return (
         <section className={`${welcomeStyles.welcomeParent}`} id="welcome">
             <section className={`${welcomeStyles.welcome}`} id="welcome">
@@ -54,6 +60,13 @@ function Welcome() {
                 </div>
 
                 <hr className={`${welcomeStyles.hLine}`} />
+
+                <div className={`${welcomeStyles.profileSwitch}`}
+                    onClick={goToWebProfile}>
+                    <p>
+                        go to Web Development profile
+                    </p>
+                </div>
 
                 <div className={`${welcomeStyles.scroll}`}>
                     <a href="#aboutme">&#xbb;</a>
