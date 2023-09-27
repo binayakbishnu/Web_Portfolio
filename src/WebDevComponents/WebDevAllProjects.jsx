@@ -6,9 +6,11 @@ import Nav from '../Nav'
 import WebDevProjectsStyles from './WebDevAllProjects.module.css'
 import BookRev from '../AllProjectsSections/BookRev'
 import MediServ from '../AllProjectsSections/MediServ'
+import HowHotIsIt from '../AllProjectsSections/Howhotisit'
 
 function WebDevAllProjects() {
     const projects = [
+        <HowHotIsIt />,
         <MediServ />,
         <BookRev />,
     ]

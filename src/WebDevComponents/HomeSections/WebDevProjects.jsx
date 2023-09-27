@@ -2,6 +2,7 @@ import React from 'react'
 
 import projectStyles from './WebProjects.module.css'
 
+import howHotIsItThumbnail from '../../assets/projects/HowHotIsIt1.jpg'
 import mediServThumbnail from '../../assets/projects/MediServ1.webp'
 import bookRevThumbnail from '../../assets/projects/BookRev1.webp'
 
@@ -81,6 +82,22 @@ function WebProjects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
+                    <div id="howHotIsIt" className={`${projectStyles.project} ${projectStyles.howHotIsIt} fullStack Reactjs Nodejs MongoDB Others`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#howHotIsIt">
+                                <img src={howHotIsItThumbnail} alt="howHotIsIt" className={`${projectStyles.projectImg} ${projectStyles.howHotIsItImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>HowHowIsIt</h5>
+                                        <p>Real-time global weather report</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Front end&nbsp;|&nbsp;API&nbsp;|&nbsp;ReactJs&nbsp;|&nbsp;NodeJs</p>
+                    </div>
                     <div id="mediServ" className={`${projectStyles.project} ${projectStyles.mediServ} fullStack Reactjs Nodejs MongoDB Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#mediServ">
