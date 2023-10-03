@@ -7,9 +7,11 @@ import WebDevProjectsStyles from './WebDevAllProjects.module.css'
 import BookRev from '../AllProjectsSections/BookRev'
 import MediServ from '../AllProjectsSections/MediServ'
 import HowHotIsIt from '../AllProjectsSections/Howhotisit'
+import Tastalchemy from '../AllProjectsSections/Tastalchemy'
 
 function WebDevAllProjects() {
     const projects = [
+        <Tastalchemy />,
         <HowHotIsIt />,
         <MediServ />,
         <BookRev />,

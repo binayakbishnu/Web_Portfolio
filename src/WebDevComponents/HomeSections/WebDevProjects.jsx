@@ -2,6 +2,7 @@ import React from 'react'
 
 import projectStyles from './WebProjects.module.css'
 
+import tastalchemyThumbnail from '../../assets/projects/Tastalchemy1.jpg'
 import howHotIsItThumbnail from '../../assets/projects/HowHotIsIt1.jpg'
 import mediServThumbnail from '../../assets/projects/MediServ1.webp'
 import bookRevThumbnail from '../../assets/projects/BookRev1.webp'
@@ -82,9 +83,25 @@ function WebProjects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
-                    <div id="howHotIsIt" className={`${projectStyles.project} ${projectStyles.howHotIsIt} fullStack Reactjs Nodejs MongoDB Others`}>
+                    <div id="tastalchemy" className={`${projectStyles.project} ${projectStyles.tastalchemy} fullStack Reactjs Nodejs Firebase`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#howHotIsIt">
+                            <a href="/webdev/projects#tastalchemy">
+                                <img src={tastalchemyThumbnail} alt="tastalchemy" className={`${projectStyles.projectImg} ${projectStyles.tastalchemyImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Tastalchemy</h5>
+                                        <p>Personal digital recipe book.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;ReactJs&nbsp;|&nbsp;NodeJs&nbsp;|&nbsp;Firebase</p>
+                    </div>
+                    <div id="howHotIsIt" className={`${projectStyles.project} ${projectStyles.howHotIsIt} Reactjs Nodejs MongoDB Others`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/webdev/projects#howHotIsIt">
                                 <img src={howHotIsItThumbnail} alt="howHotIsIt" className={`${projectStyles.projectImg} ${projectStyles.howHotIsItImg}`}
                                     width="100%"
                                     height="100%" />
@@ -100,7 +117,7 @@ function WebProjects() {
                     </div>
                     <div id="mediServ" className={`${projectStyles.project} ${projectStyles.mediServ} fullStack Reactjs Nodejs MongoDB Others`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#mediServ">
+                            <a href="/webdev/projects#mediServ">
                                 <img src={mediServThumbnail} alt="mediServ" className={`${projectStyles.projectImg} ${projectStyles.mediServImg}`}
                                     width="100%"
                                     height="100%" />
@@ -116,7 +133,7 @@ function WebProjects() {
                     </div>
                     <div id="bookRev" className={`${projectStyles.project} ${projectStyles.bookRev} fullStack HTML CSS Js Nodejs SQL`}>
                         <div className={`${projectStyles.container}`}>
-                            <a href="/allprojects#bookRev">
+                            <a href="/webdev/projects#bookRev">
                                 <img src={bookRevThumbnail} alt="bookRev" className={`${projectStyles.projectImg} ${projectStyles.bookRevImg}`}
                                     width="100%"
                                     height="100%" />

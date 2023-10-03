@@ -2,6 +2,7 @@ import React from 'react'
 
 import projectStyles from './Projects.module.css'
 
+import tastalchemyThumbnail from '../assets/projects/Tastalchemy1.jpg'
 import valuationCalcThumbnail from '../assets/projects/ValuationCalc1.jpg'
 import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import onyxHotelThumbnail from '../assets/projects/OnyxHotel1.svg'
@@ -102,6 +103,22 @@ function Projects() {
 
                 <div id="projectsMainPart" className={`${projectStyles.projectsMainPart}`}>
                     <p className={`${projectStyles.mobileHint} m-0 mb-2 p-0`}>Click on any to expand</p>
+                    <div id="tastalchemy" className={`${projectStyles.project} ${projectStyles.tastalchemy} fullStack Reactjs Nodejs Firebase`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#tastalchemy">
+                                <img src={tastalchemyThumbnail} alt="tastalchemy" className={`${projectStyles.projectImg} ${projectStyles.tastalchemyImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>Tastalchemy</h5>
+                                        <p>Personal digital recipe book.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;ReactJs&nbsp;|&nbsp;NodeJs&nbsp;|&nbsp;Firebase</p>
+                    </div>
                     <div id="valuationCalc" className={`${projectStyles.project} ${projectStyles.valuationCalc} analytics dashboards Excel Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#valuationCalc">
