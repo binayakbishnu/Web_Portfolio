@@ -3,6 +3,7 @@ import React from 'react'
 import projectStyles from './WebProjects.module.css'
 
 import tastalchemyThumbnail from '../../assets/projects/Tastalchemy1.jpg'
+import oneResumeThumbnail from '../../assets/projects/OneResume1.jpg'
 import howHotIsItThumbnail from '../../assets/projects/HowHotIsIt1.jpg'
 import mediServThumbnail from '../../assets/projects/MediServ1.webp'
 import bookRevThumbnail from '../../assets/projects/BookRev1.webp'
@@ -93,6 +94,22 @@ function WebProjects() {
                                     <div className={`${projectStyles.text}`}>
                                         <h5>Tastalchemy</h5>
                                         <p>Personal digital recipe book.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;ReactJs&nbsp;|&nbsp;NodeJs&nbsp;|&nbsp;Firebase</p>
+                    </div>
+                    <div id="oneResume" className={`${projectStyles.project} ${projectStyles.oneResume} fullStack Reactjs Nodejs Firebase`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/webdev/projects#oneResume">
+                                <img src={oneResumeThumbnail} alt="oneResume" className={`${projectStyles.projectImg} ${projectStyles.oneResumeImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>OneResume</h5>
+                                        <p>Single-link resume sharing portal.</p>
                                     </div>
                                 </div>
                             </a>

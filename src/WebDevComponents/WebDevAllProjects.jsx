@@ -8,10 +8,12 @@ import BookRev from '../AllProjectsSections/BookRev'
 import MediServ from '../AllProjectsSections/MediServ'
 import HowHotIsIt from '../AllProjectsSections/Howhotisit'
 import Tastalchemy from '../AllProjectsSections/Tastalchemy'
+import OneResume from '../AllProjectsSections/OneResume'
 
 function WebDevAllProjects() {
     const projects = [
         <Tastalchemy />,
+        <OneResume />,
         <HowHotIsIt />,
         <MediServ />,
         <BookRev />,

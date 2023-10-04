@@ -13,10 +13,12 @@ import Spotify from '../AllProjectsSections/Spotify'
 import OnyxHotel from '../AllProjectsSections/OnyxHotel'
 import ValuationCalc from '../AllProjectsSections/ValuationCalc'
 import Tastalchemy from '../AllProjectsSections/Tastalchemy'
+import OneResume from '../AllProjectsSections/OneResume'
 
 function MoreProjects() {
     const projects = [
         <Tastalchemy topProject={true} />,
+        <OneResume topProject={false} />,
         <ValuationCalc topProject={false} />,
         <CyclistVisu topProject={false} />,
         <OnyxHotel topProject={false} />,

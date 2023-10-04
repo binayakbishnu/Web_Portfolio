@@ -3,6 +3,7 @@ import React from 'react'
 import projectStyles from './Projects.module.css'
 
 import tastalchemyThumbnail from '../assets/projects/Tastalchemy1.jpg'
+import oneResumeThumbnail from '../assets/projects/OneResume1.jpg'
 import valuationCalcThumbnail from '../assets/projects/ValuationCalc1.jpg'
 import cyclistVisuThumbnail from '../assets/projects/CyclistVisu1.svg'
 import onyxHotelThumbnail from '../assets/projects/OnyxHotel1.svg'
@@ -113,6 +114,22 @@ function Projects() {
                                     <div className={`${projectStyles.text}`}>
                                         <h5>Tastalchemy</h5>
                                         <p>Personal digital recipe book.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <p className={projectStyles.projectTechStack}>Full stack&nbsp;|&nbsp;ReactJs&nbsp;|&nbsp;NodeJs&nbsp;|&nbsp;Firebase</p>
+                    </div>
+                    <div id="oneResume" className={`${projectStyles.project} ${projectStyles.oneResume} fullStack Reactjs Nodejs Firebase`}>
+                        <div className={`${projectStyles.container}`}>
+                            <a href="/allprojects#oneResume">
+                                <img src={oneResumeThumbnail} alt="oneResume" className={`${projectStyles.projectImg} ${projectStyles.oneResumeImg}`}
+                                    width="100%"
+                                    height="100%" />
+                                <div className={`${projectStyles.overlay}`}>
+                                    <div className={`${projectStyles.text}`}>
+                                        <h5>OneResume</h5>
+                                        <p>Single-link resume sharing portal.</p>
                                     </div>
                                 </div>
                             </a>
