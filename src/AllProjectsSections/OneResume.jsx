@@ -60,7 +60,7 @@ function OneResume({ topProject }) {
                     <div className={`${OneResumeStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic1}
                                     alt="First slide"
@@ -70,7 +70,7 @@ function OneResume({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
@@ -80,7 +80,7 @@ function OneResume({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic3}
                                     alt="Third slide"

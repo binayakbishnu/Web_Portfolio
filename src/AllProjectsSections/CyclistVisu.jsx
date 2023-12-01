@@ -57,7 +57,7 @@ function CyclistVisu({topProject}) {
                     <div className={`${CyclistVisuStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic1}
                                     alt="First slide"
@@ -71,7 +71,7 @@ function CyclistVisu({topProject}) {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
@@ -86,7 +86,7 @@ function CyclistVisu({topProject}) {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic3}
                                     alt="Third slide"
@@ -101,7 +101,7 @@ function CyclistVisu({topProject}) {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             {/* <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic4}
                                     alt="Fourth slide"

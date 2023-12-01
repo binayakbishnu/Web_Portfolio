@@ -58,7 +58,7 @@ function ValuationCalc({ topProject }) {
                     <div className={`${ValuationCalcStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic1}
                                     alt="First slide"
@@ -72,7 +72,7 @@ function ValuationCalc({ topProject }) {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
