@@ -53,7 +53,7 @@ function BookRev() {
                     <div className={`${bookRevStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
@@ -68,7 +68,7 @@ function BookRev() {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic3}
                                     alt="Third slide"
@@ -83,7 +83,7 @@ function BookRev() {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic4}
                                     alt="Third slide"
@@ -98,7 +98,7 @@ function BookRev() {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic5}
                                     alt="Third slide"

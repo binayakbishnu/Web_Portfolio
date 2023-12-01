@@ -107,7 +107,7 @@ function Projects() {
                     <div id="tastalchemy" className={`${projectStyles.project} ${projectStyles.tastalchemy} fullStack Reactjs Nodejs Firebase`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#tastalchemy">
-                                <img src={tastalchemyThumbnail} alt="tastalchemy" className={`${projectStyles.projectImg} ${projectStyles.tastalchemyImg}`}
+                                <img loading='lazy' src={tastalchemyThumbnail} alt="tastalchemy" className={`${projectStyles.projectImg} ${projectStyles.tastalchemyImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -123,7 +123,7 @@ function Projects() {
                     <div id="oneResume" className={`${projectStyles.project} ${projectStyles.oneResume} fullStack Reactjs Nodejs Firebase`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#oneResume">
-                                <img src={oneResumeThumbnail} alt="oneResume" className={`${projectStyles.projectImg} ${projectStyles.oneResumeImg}`}
+                                <img loading='lazy' src={oneResumeThumbnail} alt="oneResume" className={`${projectStyles.projectImg} ${projectStyles.oneResumeImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -139,7 +139,7 @@ function Projects() {
                     <div id="valuationCalc" className={`${projectStyles.project} ${projectStyles.valuationCalc} analytics dashboards Excel Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#valuationCalc">
-                                <img src={valuationCalcThumbnail} alt="valuationCalc" className={`${projectStyles.projectImg} ${projectStyles.valuationCalcImg}`}
+                                <img loading='lazy' src={valuationCalcThumbnail} alt="valuationCalc" className={`${projectStyles.projectImg} ${projectStyles.valuationCalcImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -155,7 +155,7 @@ function Projects() {
                     <div id="cyclistVisu" className={`${projectStyles.project} ${projectStyles.cyclistVisu} analytics dashboards PowerBi Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#cyclistVisu">
-                                <img src={cyclistVisuThumbnail} alt="cyclistVisu" className={`${projectStyles.projectImg} ${projectStyles.cyclistVisuImg}`}
+                                <img loading='lazy' src={cyclistVisuThumbnail} alt="cyclistVisu" className={`${projectStyles.projectImg} ${projectStyles.cyclistVisuImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -171,7 +171,7 @@ function Projects() {
                     <div id="onyxHotel" className={`${projectStyles.project} ${projectStyles.onyxHotel} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#onyxHotel">
-                                <img src={onyxHotelThumbnail} alt="onyxHotel" className={`${projectStyles.projectImg} ${projectStyles.onyxHotelImg}`}
+                                <img loading='lazy' src={onyxHotelThumbnail} alt="onyxHotel" className={`${projectStyles.projectImg} ${projectStyles.onyxHotelImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -187,7 +187,7 @@ function Projects() {
                     <div id="spotify" className={`${projectStyles.project} ${projectStyles.spotify} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#spotify">
-                                <img src={spotifyThumbnail} alt="spotify" className={`${projectStyles.projectImg} ${projectStyles.spotifyImg}`}
+                                <img loading='lazy' src={spotifyThumbnail} alt="spotify" className={`${projectStyles.projectImg} ${projectStyles.spotifyImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -203,7 +203,7 @@ function Projects() {
                     <div id="linkedInProj" className={`${projectStyles.project} ${projectStyles.linkedInProj} webscrapping Python Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#linkedInProj">
-                                <img src={linkedInProjThumbnail} alt="linkedInProj" className={`${projectStyles.projectImg} ${projectStyles.linkedInProjImg}`}
+                                <img loading='lazy' src={linkedInProjThumbnail} alt="linkedInProj" className={`${projectStyles.projectImg} ${projectStyles.linkedInProjImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -219,7 +219,7 @@ function Projects() {
                     <div id="rainFallProj" className={`${projectStyles.project} ${projectStyles.rainFallProj} analytics dashboards Excel`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#rainFallProj">
-                                <img src={rainFallProjThumbnail} alt="rainFallProj" className={`${projectStyles.projectImg} ${projectStyles.rainFallProjImg}`}
+                                <img loading='lazy' src={rainFallProjThumbnail} alt="rainFallProj" className={`${projectStyles.projectImg} ${projectStyles.rainFallProjImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -235,7 +235,7 @@ function Projects() {
                     <div id="mediServ" className={`${projectStyles.project} ${projectStyles.mediServ} fullStack MongoDB Others`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#mediServ">
-                                <img src={mediServThumbnail} alt="mediServ" className={`${projectStyles.projectImg} ${projectStyles.mediServImg}`}
+                                <img loading='lazy' src={mediServThumbnail} alt="mediServ" className={`${projectStyles.projectImg} ${projectStyles.mediServImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>
@@ -251,7 +251,7 @@ function Projects() {
                     <div id="bookRev" className={`${projectStyles.project} ${projectStyles.bookRev} fullStack SQL`}>
                         <div className={`${projectStyles.container}`}>
                             <a href="/allprojects#bookRev">
-                                <img src={bookRevThumbnail} alt="bookRev" className={`${projectStyles.projectImg} ${projectStyles.bookRevImg}`}
+                                <img loading='lazy' src={bookRevThumbnail} alt="bookRev" className={`${projectStyles.projectImg} ${projectStyles.bookRevImg}`}
                                     width="100%"
                                     height="100%" />
                                 <div className={`${projectStyles.overlay}`}>

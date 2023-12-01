@@ -51,7 +51,7 @@ function MediServ() {
                     <div className={`${mediServStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic1}
                                     alt="First slide"
@@ -65,7 +65,7 @@ function MediServ() {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
@@ -80,7 +80,7 @@ function MediServ() {
                                 </Carousel.Caption> */}
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic3}
                                     alt="Third slide"

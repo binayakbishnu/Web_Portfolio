@@ -65,7 +65,7 @@ function Tastalchemy({ topProject }) {
                     <div className={`${TastalchemyStyles.projectSlideShow}`}>
                         <Carousel activeIndex={index} onSelect={handleSelect} fade variant="dark">
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic1}
                                     alt="First slide"
@@ -75,7 +75,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic2}
                                     alt="Second slide"
@@ -85,7 +85,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic3}
                                     alt="Third slide"
@@ -95,7 +95,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic4}
                                     alt="Fourth slide"
@@ -105,7 +105,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic5}
                                     alt="Fifth slide"
@@ -115,7 +115,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic6}
                                     alt="Sixth slide"
@@ -125,7 +125,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic7}
                                     alt="Seventh slide"
@@ -135,7 +135,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic8}
                                     alt="Eighth slide"
@@ -145,7 +145,7 @@ function Tastalchemy({ topProject }) {
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
+                                <img loading='lazy'
                                     className="d-block w-100"
                                     src={carouselPic9}
                                     alt="Ninth slide"
