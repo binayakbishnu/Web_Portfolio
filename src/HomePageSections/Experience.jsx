@@ -13,7 +13,13 @@ function Experience() {
 
                 <div className={`${experienceStyles.experienceMainPart}`}>
                     <div className={`${experienceStyles.experienceSection} ${experienceStyles.experienceSection1}`}>
-                        {/* <h5>Student clubs and chapters&nbsp;&nbsp;<button className={`${experienceStyles.expandBtn}`} onClick={cCPositionToggle}>{cCPositionToggleValue}</button></h5> */}
+                        Web Developer | Web App Team | TaskHuman | October 2023-January 2024
+                        <p style={{ "fontStyle": "italic", "margin": "0" }}>Intern under the web app team.</p>
+                        <ul>
+                            <li>Worked directly on the production code for web app and teams app.</li>
+                            <li>Concentrated on bug fixing and QA ticket resolution, having worked in 40+ tickets.</li>
+                            <li>Majorly worked with ReactJs, ChakraUI, Git, and Jira.</li>
+                        </ul>
                         Tech Lead | Core Team | eZ | February 2023-June 2023
                         <p style={{ "fontStyle": "italic", "margin": "0" }}>Part of the pre-launch team, delegation, communication, repository admin, code ownership.</p>
                         <ul>
